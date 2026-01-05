@@ -10835,3 +10835,12 @@ textarea.form-control-lg {
     color: #ddd;                  /* lighter on hover */
     text-decoration: underline;   /* optional underline on hover */
   }
+
+  .adsense-reserved {
+  min-height: 280px;
+}
+@media (max-width: 768px) {
+  .adsense-reserved {
+    min-height: 200px;
+  }
+}
