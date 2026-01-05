@@ -10841,6 +10841,6 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .adsense-reserved {
-    min-height: 200px;
+    min-height: 250px;
   }
 }
