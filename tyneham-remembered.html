@@ -102,118 +102,172 @@
                 <div class="col-lg-8">
                     <!-- Post content-->
                     <article>
-                        <div class="container pt-4 max_width text-center">
-      <img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD">
-      <h1 class="text-secondary mt-3">The Real story of Tyneham village, told by the villagers themselves...</h1>
-       
+                        <div class="container pt-5 pb-4 text-center">
+  <div class="row justify-content-center">
+    <div class="">
+      <img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover">
+      <h1 class="display-4 fw-bold text-secondary mt-4 mb-3">
+        The Real Story of Tyneham</br>Told by the Villagers Themselves
+      </h1>
+      <p class="lead fs-5 text-muted mb-5">
+        Rare interviews with the last residents of Dorset's "forgotten village" - captured before they passed away. A moving and unique piece of living history.
+      </p>
     </div>
-    
-    
+  </div>
+</div>
 
-    <section id="order">
-    <div class="container max_width mt-4">
-        
-        <h2 class="fw-bold pt-5 fs-1 max_width">Available as DVD or Digital Download</h2>
-        <p class="fs-5">
-            Go for the digital download for cracking Full HD quality—miles better than the DVD—and get it instantly to watch on your mobile, tablet, or laptop, no player needed. It's cheaper, greener, and dead easy.<br><br>
-            Prefer to own the physical copy? The DVD's a smashing collectible for your shelf. Either way, purchasing Tyneham Remembered helps maintain this website and helps keep the story of Tyneham alive.
+<section id="order" class="bg-light py-5">
+  <div class="container max_width">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h2 class="display-6 fw-bold text-center mb-4">Available as Physical DVD or Instant HD Digital Download</h2>
+
+        <p class="fs-5 text-center mb-5">
+          Choose the <strong>HD Digital Download</strong> for the best picture quality (full 1080p), instant access, and the ability to watch on any device - phone, tablet, laptop, or smart TV. It's also cheaper and more environmentally friendly.<br><br>
+          Prefer a tangible keepsake? The <strong>physical DVD</strong> makes a wonderful collectible and gift.<br><br>
+          <strong>Every purchase directly supports the upkeep of this website and helps keep the memory of Tyneham alive.</strong>
         </p>
-        
-        <div class="container my-5 pb-5">
-          <h3>Select Your Version</h3>
-          <div class="card text-bg-dark p-3">
-            <label for="dvdVersion" class="form-label">Choose Version:</label>
-            <select class="form-select" id="dvdVersion" onchange="updatePrice()">
-              <option value="standard" selected>DVD Standard Edition - £15.49 inc p&p</option>
-              <option value="special">HD Digital Edition (Instant Download) - £10.99</option>
-            </select>
-            <p id="description" class="mt-2">
-              Standard: 1 Disc DVD, delivered to your door
-            </p>
-            <button class="btn btn-primary mt-3" onclick="buyNow()">Buy Now</button>
+
+        <div class="row g-4 justify-content-center">
+          <!-- DVD Card -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center p-4">
+                <h4 class="card-title fw-bold">Physical DVD</h4>
+                <p class="card-text text-muted mb-4">
+                  1-disc edition delivered to your door<br>
+                  Perfect as a collectible or gift
+                </p>
+                <div class="price fs-3 fw-bold text-primary mb-4">£15.49</div>
+                <small class="text-muted">includes UK postage & packing</small>
+                <button class="btn btn-primary btn-lg w-100 mt-3" onclick="buyNow('standard')">
+                  Buy DVD Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Card -->
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0 border-success">
+              <div class="card-header bg-success text-white text-center py-2">
+                Most Popular
+              </div>
+              <div class="card-body text-center p-4">
+                <h4 class="card-title fw-bold">HD Digital Download</h4>
+                <p class="card-text text-muted mb-4">
+                  Instant Full HD download<br>
+                  Watch immediately on any device<br>
+                  No waiting, no shipping
+                </p>
+                <div class="price fs-3 fw-bold text-success mb-4">£10.99</div>
+                <button class="btn btn-success btn-lg w-100 mt-3" onclick="buyNow('digital')">
+                  Buy Digital Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <script>
-          function updatePrice() {
-            const version = document.getElementById('dvdVersion').value;
-            const desc = document.getElementById('description');
-            desc.textContent = version === 'standard' 
-              ? 'Standard: 1 Disc DVD, delivered to your door' 
-              : 'Special: HD Digital Download, instant download to watch on any device';
-          }
-        
-          function buyNow() {
-            const selected = document.getElementById('dvdVersion').value;
-            if (selected === 'standard') {
-              window.location.href = 'https://checkout.square.site/merchant/MLQBM12D0DG67/checkout/IWO34Z7CSLLYSOR5INGZN7EU'; // Redirect for Standard DVD
-            } else {
-              window.location.href = 'https://payhip.com/b/9sXFQ'; // Redirect for HD Digital
-            }
-          }
-        </script>
 
+        <div class="text-center mt-5">
+          <p class="text-muted small">
+            Secure payment via Square (DVD) or Payhip (Digital).<br>
+            Digital downloads delivered instantly after payment.
+          </p>
+        </div>
 
-        
-</section>
-  <section id="faq">
-    <div class="container max_width mt-5 mb-3">
-        <h4 class="fs-2 fw-bold mt-2">FAQ</h4>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button fw-bold text-capitalize fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  How Do I Watch The Digital Version?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Once you've purchased, <strong>you will receive an email with a download link</strong>. Download it which should only take a couple of minutes depending on your connection. Watch it on your phone, tablet or put it on a USB stick and plug it into your TV. 
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold text-capitalize fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  How Long Does Delivery Take?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  The DVD is usually dispatched within 1 or 2 days, so it should be with you within 3 days. The digital download should only take a couple of minutes to download depending on your internet connection. 
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold text-capitalize fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Which Version is Better Quality?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>The digital download is in HD</strong> so the visual quality is a lot higher than the physical DVD. Both versions tell the same fascinating story.
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold text-capitalize fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Are Any of The People Featured Still Alive?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Sadly the last remaining former residents of Tyneham have now passed away. Tyneham Remembered, contains interviews with Arthur Grant, Peter Wellman, Doug Churchill and others. Their memories and accounts of village life will live on thanks to this documentary. 
-                </div>
-              </div>
-            </div>
-            
-          </div>
+      </div>
     </div>
-    
-  </section>
+  </div>
+</section>
+
+<script>
+  function buyNow(version) {
+    if (version === 'standard') {
+      window.location.href = 'https://checkout.square.site/merchant/MLQBM12D0DG67/checkout/IWO34Z7CSLLYSOR5INGZN7EU';
+    } else {
+      window.location.href = 'https://payhip.com/b/9sXFQ';
+    }
+  }
+</script>
+<figure class="text-center py-5">
+<img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover">
+</figure>
+<section id="faq" class="bg-light py-5 mt-5">
+  <div class="container max_width">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <h2 class="display-6 fw-bold text-center mb-5">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="tynehamFaqAccordion">
+
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                How do I watch the digital version?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#tynehamFaqAccordion">
+              <div class="accordion-body fs-5">
+                After purchase, you'll receive an email with your personal download link. The file is in Full HD MP4 format and typically downloads in just a few minutes (depending on your connection).<br><br>
+                You can then watch it on any device - phone, tablet, laptop, or smart TV - or transfer it to a USB stick for playback on your television. No special software needed.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                How long does delivery take?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#tynehamFaqAccordion">
+              <div class="accordion-body fs-5">
+                <strong>Digital download:</strong> Instant - you can start watching within minutes of payment.<br><br>
+                <strong>Physical DVD:</strong> Dispatched within 1-2 working days via Royal Mail. UK delivery usually arrives in 2-3 days total.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                Which version has better picture quality?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#tynehamFaqAccordion">
+              <div class="accordion-body fs-5">
+                The <strong>HD digital download</strong> offers significantly higher quality (1080p Full HD) compared to standard DVD resolution.<br><br>
+                Both versions contain exactly the same content and interviews - the digital edition simply gives you the sharpest possible picture.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                Are any of the people featured in the documentary still alive?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#tynehamFaqAccordion">
+              <div class="accordion-body fs-5">
+                Sadly, the last former residents of Tyneham have now passed away. This documentary is one of the final opportunities to hear their personal stories firsthand.<br><br>
+                It includes moving interviews with Arthur Grant, Peter Wellman, Doug Churchill, and others - preserving their memories of village life for future generations.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<figure class="text-center py-5">
+<img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover">
+</figure>
   <div class="text-center mb-5 pb-5">
       <a class="btn btn-primary btn-lg fw-bold" href="#order" role="button">Select Your Version</a>
       
@@ -232,9 +286,7 @@
       <p><img class="img-fluid" src="assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD"></p>
       <a class="btn btn-primary btn-lg fw-bold mt-2" href="#order" role="button">Select Your Version</a>
     </div>
-    <div class="footer bg-dark py-5 ">
-        <p class="text-light text text-center">&copy; Copyright TynehamVillage.org</p>
-    </div>
+    
                             
                 
             </section>
@@ -245,18 +297,7 @@
                 <!-- Side widgets -->
 <div class="col-lg-4">
 
-    <div class="my-5 adsense-reserved text-center">
-        <!-- generic_tall -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3540254334873866"
-     data-ad-slot="6705632190"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
+    
 
 <!-- Square Ad (Desktop only) -->
     <div class="card my-5 d-none d-lg-block">
@@ -314,18 +355,7 @@
   </div>
 </div>
 
-   <div class="my-5 adsense-reserved text-center">
-        <!-- generic_tall -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3540254334873866"
-     data-ad-slot="6705632190"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
+   
 
 <!-- Square Ad (Desktop only) -->
     <div class="card my-5 d-none d-lg-block">
