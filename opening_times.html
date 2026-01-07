@@ -108,7 +108,199 @@
                             <h1 class="fw-bolder">Tyneham Opening Times 2026</h1>
                         </header>
                         <section class="mb-5">
-                            
+                            <div class="container pt-4 text-center mb-5">
+  <div id="tynehamStatus" class="alert fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4" role="alert" style="min-height: 120px;">
+    <div class="spinner-border spinner-border-lg text-primary mb-3 d-none" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div id="statusContent">
+      Checking if Tyneham is open today...
+    </div>
+  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <p class="fs-5 text-muted mb-4">
+        <strong>Tyneham Village opening times powered by official MOD 2026 schedule</strong><br>
+        Hours: Typically 9am to dusk (exhibitions 10am-4pm). <a href="https://www.gov.uk/government/publications/lulworth-access-times" target="_blank" rel="noopener">Always confirm via GOV.UK</a> or call <a href="tel:+441929404714">01929 404714</a>.
+      </p>
+      <div class="text-center">
+        <a href="#calendar" class="btn btn-outline-primary btn-lg">View Full 2026 Calendar</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- AdSense -->
+    <div class="my-4 col-12 text-center adsense-reserved">
+    <!-- open_new_top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3540254334873866"
+     data-ad-slot="9990572407"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Full Calendar Section (SEO + UX) -->
+<section id="calendar" class="bg-light py-5">
+  <div class="container max_width">
+    <h2 class="display-6 fw-bold text-center mb-5">Tyneham Village Opening Dates 2026</h2>
+    <p class="lead text-center text-muted mb-5">
+      Tyneham is open on weekends, school holidays, and specific dates. Closed for military training on Lulworth Ranges.
+    </p>
+    
+    <!-- Monthly Calendar Grid -->
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Jan-Mar 2026</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled fs-6">
+              <li><strong>January:</strong> 1-4, 10-11, 24-25, 31</li>
+              <li><strong>February:</strong> 1, 7-8, 14-15, 21-22, 28</li>
+              <li><strong>March:</strong> 1, 7-8, 21-22, 28-29, 30-31</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Apr-Jun 2026</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled fs-6">
+              <li><strong>April:</strong> 1-12, 18-19, 25-26</li>
+              <li><strong>May:</strong> 2-4, 9-10, 16-17, 23-31</li>
+              <li><strong>June:</strong> 6-7, 20-21, 27-28</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-12">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-warning text-dark">
+            <h5 class="mb-0">Jul-Dec 2026</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled fs-6">
+              <li><strong>July:</strong> 4-5, 11-12, 18-19, 25-31</li>
+              <li><strong>August:</strong> 1-31 (all month!)</li>
+              <li><strong>September:</strong> 5-6, 19-20, 26-27</li>
+              <li><strong>October:</strong> 3-4, 17-18, 24-25, 31</li>
+              <li><strong>November:</strong> 1, 7-8, 21-22, 28-29</li>
+              <li><strong>December:</strong> 5-6, 12-13, 19-31</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-5">
+      <p class="fs-5 text-muted">
+        <em>Dates subject to change. Last updated January 2026. Source: MOD Lulworth Ranges.</em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  'use strict';
+  
+  // 2026 Tyneham open periods [month, startDate, endDate]
+  const openPeriods2026 = [
+    // Jan
+    [0, 1, 4], [0, 10, 11], [0, 24, 25], [0, 31, 31],
+    // Feb
+    [1, 1, 1], [1, 7, 8], [1, 14, 15], [1, 21, 22], [1, 28, 28],
+    // Mar
+    [2, 1, 1], [2, 7, 8], [2, 21, 22], [2, 28, 29], [2, 30, 31],
+    // Apr
+    [3, 1, 12], [3, 18, 19], [3, 25, 26],
+    // May
+    [4, 2, 4], [4, 9, 10], [4, 16, 17], [4, 23, 31],
+    // Jun
+    [5, 6, 7], [5, 20, 21], [5, 27, 28],
+    // Jul
+    [6, 4, 5], [6, 11, 12], [6, 18, 19], [6, 25, 31],
+    // Aug
+    [7, 1, 31],
+    // Sep
+    [8, 5, 6], [8, 19, 20], [8, 26, 27],
+    // Oct
+    [9, 3, 4], [9, 17, 18], [9, 24, 25], [9, 31, 31],
+    // Nov
+    [10, 1, 1], [10, 7, 8], [10, 21, 22], [10, 28, 29],
+    // Dec
+    [11, 5, 6], [11, 12, 13], [11, 19, 31]
+  ];
+
+  function isTynehamOpen(date) {
+    if (date.getFullYear() !== 2026) return false;
+    
+    const month = date.getMonth();
+    const day = date.getDate();
+    
+    return openPeriods2026.some(([m, start, end]) => 
+      month === m && day >= start && day <= end
+    );
+  }
+
+  function getNextOpenDate(today) {
+    let next = new Date(today);
+    for (let i = 1; i <= 30; i++) { // Look ahead 1 month max
+      next.setDate(today.getDate() + i);
+      if (isTynehamOpen(next)) {
+        return next;
+      }
+    }
+    return null;
+  }
+
+  // Initialize on load
+  document.addEventListener('DOMContentLoaded', function() {
+    const statusEl = document.getElementById('tynehamStatus');
+    const spinner = statusEl.querySelector('.spinner-border');
+    const content = document.getElementById('statusContent');
+    
+    spinner.classList.remove('d-none');
+    
+    setTimeout(() => { // Simulate quick check
+      spinner.classList.add('d-none');
+      const today = new Date();
+      const openToday = isTynehamOpen(today);
+      const nextOpen = getNextOpenDate(today);
+      
+      if (openToday) {
+        statusEl.className = 'alert alert-success fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4';
+        content.innerHTML = `
+          <i class="bi bi-check-circle-fill me-3" style="font-size: 3rem;"></i>
+          <strong>✅ Tyneham is OPEN TODAY!</strong><br>
+          <small class="text-success-emphasis">9am to dusk (exhibitions 10am-4pm)</small>
+        `;
+      } else {
+        statusEl.className = 'alert alert-danger fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4';
+        content.innerHTML = `
+  <i class="bi bi-x-circle-fill me-3" style="font-size: 3rem;"></i>
+  <strong>❌ Tyneham is CLOSED TODAY</strong><br>
+  ${nextOpen ? `<small class="text-danger-emphasis">Next open: ${nextOpen.toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  })}</small>` : '<small class="text-danger-emphasis">Check calendar for next open date</small>'}
+`;
+      }
+    }, 800);
+  });
+})();
+</script>
                             <p class="fs-5">Lulworth Range walks and the historic village of Tyneham are normally open to visitors on most weekends throughout the year, offering the chance to explore both Tyneham village and its unique stretch of  coastline.</p> 
 
                           <!-- AdSense -->
