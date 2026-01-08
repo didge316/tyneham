@@ -10836,11 +10836,29 @@ textarea.form-control-lg {
     text-decoration: underline;   /* optional underline on hover */
   }
 
-  .adsense-reserved {
-  min-height: 280px;
+ .adsense-reserved {
+  min-height: 300px; /* Covers most common ad heights (250-280px + padding) */
+  text-align: center; /* Centers the ad */
+  margin: 1.5rem 0; /* Consistent spacing */
+  display: block;
 }
+
+/* Mobile: Slightly less space */
 @media (max-width: 768px) {
   .adsense-reserved {
-    min-height: 250px;
+    min-height: 280px;
+  }
+}
+
+/* For sidebar vertical ads (taller) */
+.sidebar .adsense-reserved,
+.col-lg-4 .adsense-reserved {
+  min-height: 620px; /* Covers 300x600 skyscraper */
+}
+
+@media (max-width: 992px) {
+  .sidebar .adsense-reserved,
+  .col-lg-4 .adsense-reserved {
+    min-height: 280px; /* Falls back to horizontal on mobile */
   }
 }
