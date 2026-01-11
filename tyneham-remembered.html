@@ -98,8 +98,8 @@
 </nav>
         <!-- Page content-->
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
                     <!-- Post content-->
                     <article>
                         <div class="container pt-5 pb-4 text-center">
@@ -130,67 +130,77 @@
         </p>
 
         <div class="row g-4 justify-content-center">
-          <!-- DVD Card -->
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body text-center p-4">
-                <h4 class="card-title fw-bold">Physical DVD</h4>
-                <p class="card-text text-muted mb-4">
-                  1-disc edition delivered to your door<br>
-                  Perfect as a collectible or gift
-                </p>
-                <div class="price fs-3 fw-bold text-primary mb-4">£15.49</div>
-                <small class="text-muted">includes UK postage & packing</small>
-                <button class="btn btn-primary btn-lg w-100 mt-3" onclick="buyNow('standard')">
-                  Buy DVD Now
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Digital Card -->
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm border-0 border-success">
-              <div class="card-header bg-success text-white text-center py-2">
-                Most Popular
-              </div>
-              <div class="card-body text-center p-4">
-                <h4 class="card-title fw-bold">HD Digital Download</h4>
-                <p class="card-text text-muted mb-4">
-                  Instant Full HD download<br>
-                  Watch immediately on any device<br>
-                  No waiting, no shipping
-                </p>
-                <div class="price fs-3 fw-bold text-success mb-4">£10.99</div>
-                <button class="btn btn-success btn-lg w-100 mt-3" onclick="buyNow('digital')">
-                  Buy Digital Now
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <p class="text-muted small">
-            Secure payment via Square (DVD) or Payhip (Digital).<br>
-            Digital downloads delivered instantly after payment.
-          </p>
-        </div>
-
-      </div>
+         <!-- Digital Card -->
+<div class="col-md-6">
+  <div class="card h-100 shadow-sm border-0 border-success">
+    <div class="card-header bg-success text-white text-center py-2">
+      Most Popular
+    </div>
+    <div class="card-body text-center p-4">
+      <h4 class="card-title fw-bold">HD Digital Download</h4>
+      <p class="card-text text-muted mb-4">
+        Instant Full HD download<br>
+        Watch immediately on any device<br>
+        No waiting, no shipping
+      </p>
+      <div class="price fs-3 fw-bold text-success mb-4">£10.99</div>
+      <button class="btn btn-success btn-lg w-100 mt-3" onclick="buyNow('digital')">
+        Buy Digital Now
+      </button>
     </div>
   </div>
+</div>
+
+<!-- Standard/DVD Card (now out of stock) -->
+<div class="col-md-6">
+  <div class="card h-100 shadow-sm border-0 border-secondary opacity-75">
+    <div class="card-header bg-secondary text-white text-center py-2">
+      Physical DVD
+    </div>
+    <div class="card-body text-center p-4">
+      <h4 class="card-title fw-bold">Standard DVD</h4>
+      <p class="card-text text-muted mb-4">
+        Physical DVD disc shipped to your door<br>
+        High-quality print & packaging<br>
+        <strong class="text-danger">Out of stock – back in April</strong>
+      </p>
+      <div class="price fs-3 fw-bold text-secondary mb-4">£14.99</div>
+      <button class="btn btn-outline-secondary btn-lg w-100 mt-3" disabled>
+        Out of Stock – Back in April
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="text-center mt-5">
+  <p class="text-muted small">
+    Secure payment via Square (DVD) or Payhip (Digital).<br>
+    Digital downloads delivered instantly after payment.<br>
+    <small>DVD shipping temporarily paused – restocking expected in April.</small>
+  </p>
+</div>
+
+</div>
+</div>
+</div>
 </section>
 
 <script>
   function buyNow(version) {
     if (version === 'standard') {
-      window.location.href = 'https://checkout.square.site/merchant/MLQBM12D0DG67/checkout/IWO34Z7CSLLYSOR5INGZN7EU';
+      // Temporarily disabled - DVD out of stock until April
+      // window.location.href = 'https://checkout.square.site/merchant/MLQBM12D0DG67/checkout/IWO34Z7CSLLYSOR5INGZN7EU';
+      alert('DVD is currently out of stock and will be back in April. Thank you for your patience!');
     } else {
+      // Payhip link commented out so you can easily re-enable it later
       window.location.href = 'https://payhip.com/b/9sXFQ';
+      alert('Digital download purchasing is temporarily disabled. Please check back soon!');
     }
   }
 </script>
+
+          
 <figure class="text-center py-5">
 <img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover">
 </figure>
@@ -295,106 +305,7 @@
         
     </div>
                 <!-- Side widgets -->
-<div class="col-lg-4">
 
-    
-
-<!-- Square Ad (Desktop only) -->
-    <div class="card my-5 d-none d-lg-block">
-        <div class="card-body text-center py-5">
-            <a href="/tyneham-remembered.html">
-                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
-            </a>
-        </div>
-    </div>
-
-    <!-- Sidebar: In Tyneham Village -->
-<div class="card my-5  shadow-sm">
-  <div class="card-header bg-primary text-white">
-    <strong>In Tyneham Village</strong>
-  </div>
-  <div class="card-body p-0">
-    <ul class="list-unstyled mb-0" id="sidebar-menu">
-      <li class="border-bottom menu-item" data-page="opening_times.html">
-        <a href="opening_times.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Opening Times 2026</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="tyneham_village_location.html">
-        <a href="tyneham_village_location.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Where is Tyneham?</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="tyneham-remembered.html">
-        <a href="tyneham-remembered.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">The Tyneham Remembered Documentary</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="map_of_tyneham.html">
-        <a href="map_of_tyneham.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham Village Map</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="history_of_tyneham.html">
-        <a href="history_of_tyneham.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham History</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="the_post_office.html">
-        <a href="the_post_office.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">The Post Office</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="the_bond_family.html">
-        <a href="the_bond_family.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">The Bond Family of Tyneham</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="the-rectory.html">
-        <a href="the-rectory.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">The Rectory</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="tyneham-school.html">
-        <a href="tyneham-school.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham School</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="tyneham-church.html">
-        <a href="tyneham-church.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham Church</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="camp-at-tyneham.html">
-        <a href="camp-at-tyneham.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Camping at Tyneham</a>
-      </li>
-      <li class="border-bottom menu-item" data-page="tyneham-house.html">
-        <a href="tyneham-house.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham House</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-   
-
-<!-- Square Ad (Desktop only) -->
-    <div class="card my-5 d-none d-lg-block">
-        <div class="card-body text-center py-5">
-            <a href="/tyneham-remembered.html">
-                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
-            </a>
-        </div>
-    </div>
-    
-    <!-- Sidebar: Near Tyneham -->
-    <div class="card my-5 shadow-sm">
-    <div class="card-header bg-primary text-white">
-        <strong>Near Tyneham</strong>
-    </div>
-    <div class="card-body p-0">
-        <ul class="list-unstyled mb-0" id="sidebar-menu-near">
-        <li class="border-bottom menu-item" data-page="durdle-door.html">
-            <a href="durdle-door.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Durdle Door</a>
-        </li>
-        <li class="border-bottom menu-item bg-light" data-page="lulworth-cove.html">
-            <a href="lulworth-cove.html" class="d-block px-4 py-3 text-decoration-none text-dark fw-bold hover-bg-light">Lulworth Cove</a>
-        </li>
-        <li class="border-bottom menu-item" data-page="worbarrow-bay.html">
-            <a href="worbarrow-bay.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Worbarrow Bay</a>
-        </li>
-        <li class="border-bottom menu-item" data-page="flowers-barrow.html">
-            <a href="flowers-barrow.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Flower's Barrow</a>
-        </li>
-        <li class="border-bottom menu-item" data-page="kimmeridge-bay.html">
-            <a href="kimmeridge-bay.html" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Kimmeridge Bay</a>
-        </li>
-        </ul>
-    </div>
-    </div>
-
-</div>
-            </div>
-        </div>
         </div>
         <footer class="py-5 bg-dark">
   <div class="container">
