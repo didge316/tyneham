@@ -116,18 +116,14 @@
 
         <!-- Contact Form -->
         <section class="mb-5">
-          <form
-            action="https://formspree.io/f/mkogglkb"
-            method="POST"
-            class="needs-validation"
-            novalidate
-          >
 
-            <!-- Email -->
+          <div id="alert-error" class="alert alert-danger d-none" role="alert">
+            Sorry, something went wrong. Please try again.
+          </div>
+
+          <form id="contact-form" novalidate>
             <div class="mb-4">
-              <label for="email" class="form-label fw-bold">
-                Your email address
-              </label>
+              <label for="email" class="form-label fw-bold">Your email address</label>
               <input
                 type="email"
                 class="form-control form-control-lg"
@@ -138,11 +134,8 @@
               >
             </div>
 
-            <!-- Message -->
             <div class="mb-4">
-              <label for="message" class="form-label fw-bold">
-                Your message
-              </label>
+              <label for="message" class="form-label fw-bold">Your message</label>
               <textarea
                 class="form-control"
                 id="message"
@@ -153,20 +146,57 @@
               ></textarea>
             </div>
 
-            <!-- Honeypot (spam protection - hidden) -->
-            <input type="text" name="_gotcha" style="display:none">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
-            <!-- Submit -->
             <div class="d-grid">
-              <button
-                type="submit"
-                class="btn btn-dark btn-lg shadow-sm"
-              >
+              <button type="submit" id="submit-btn" class="btn btn-dark btn-lg shadow-sm">
                 Send Message
               </button>
             </div>
-
           </form>
+
+          <script>
+            document.getElementById("contact-form").addEventListener("submit", async function (e) {
+              e.preventDefault();
+
+              const email = document.getElementById("email").value.trim();
+              const message = document.getElementById("message").value.trim();
+
+              if (!email || !message) return;
+
+              const btn = document.getElementById("submit-btn");
+              btn.disabled = true;
+              btn.textContent = "Sending…";
+
+              try {
+                const res = await fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    access_key: "b750024a-b050-4eee-9b8e-569fac22d984",
+                    subject: "New Contact Form Message - Tyneham Village",
+                    replyto: email,
+                    email: email,
+                    message: message,
+                    botcheck: ""
+                  })
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                  window.location.href = "thank-you.html";
+                } else {
+                  throw new Error("failed");
+                }
+              } catch {
+                document.getElementById("alert-error").classList.remove("d-none");
+                btn.disabled = false;
+                btn.textContent = "Send Message";
+              }
+            });
+          </script>
+
         </section>
 
         <!-- Optional note -->
