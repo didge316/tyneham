@@ -66,6 +66,21 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://tynehamvillage.org/the-church-door-note.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tynehamvillage.org/after-the-evacuation.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://tynehamvillage.org/the-campaign-to-return.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://tynehamvillage.org/flowers-barrow.html</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
