@@ -1,0 +1,29 @@
+# Old WordPress top-level slug redirects
+/worbarrow-bay                  /worbarrow-bay.html                 301
+/worbarrow-bay/                 /worbarrow-bay.html                 301
+/a-brief-history-of-tyneham    /history_of_tyneham.html            301
+/a-brief-history-of-tyneham/   /history_of_tyneham.html            301
+/map-of-tyneham-village        /map_of_tyneham.html                301
+/map-of-tyneham-village/       /map_of_tyneham.html                301
+/where-is-tyneham-village      /tyneham_village_location.html      301
+/where-is-tyneham-village/     /tyneham_village_location.html      301
+/can-you-camp-at-tyneham       /camp-at-tyneham.html               301
+/can-you-camp-at-tyneham/      /camp-at-tyneham.html               301
+/tyneham-opening-times         /opening_times.html                 301
+/tyneham-opening-times/        /opening_times.html                 301
+/tyneham-hous                  /tyneham-house.html                 301
+/tyneham-hous/                 /tyneham-house.html                 301
+/the-bond-family               /the_bond_family.html               301
+/the-bond-family/              /the_bond_family.html               301
+/tyneham-village               /                                   301
+/tyneham-village/              /                                   301
+/tyneham-church                /tyneham-church.html                301
+/tyneham-church/               /tyneham-church.html                301
+
+# Nested paths — old WordPress slug still active when links were followed
+# These must come AFTER the specific rules above
+/tyneham-village/*             /:splat                             301
+/tyneham-hous/*                /:splat                             301
+/map-of-tyneham-village/*      /:splat                             301
+/can-you-camp-at-tyneham/*     /:splat                             301
+/a-brief-history-of-tyneham/*  /:splat                             301
