@@ -1,0 +1,14 @@
+source_url,target_url,status_code,preserve_query_string,include_subpaths
+https://tynehamvillage.org/a-brief-history-of-tyneham,https://tynehamvillage.org/history_of_tyneham,301,false,true
+https://tynehamvillage.org/map-of-tyneham-village,https://tynehamvillage.org/map_of_tyneham,301,false,true
+https://tynehamvillage.org/where-is-tyneham-village,https://tynehamvillage.org/tyneham_village_location,301,false,true
+https://tynehamvillage.org/can-you-camp-at-tyneham,https://tynehamvillage.org/camp-at-tyneham,301,false,true
+https://tynehamvillage.org/tyneham-opening-times,https://tynehamvillage.org/opening_times,301,false,true
+https://tynehamvillage.org/tyneham-hous,https://tynehamvillage.org/tyneham-house,301,false,true
+https://tynehamvillage.org/the-bond-family,https://tynehamvillage.org/the_bond_family,301,false,true
+https://tynehamvillage.org/tyneham-village,https://tynehamvillage.org/,301,false,false
+https://tynehamvillage.org/tyneham-dvd,https://tynehamvillage.org/tyneham-remembered,301,false,true
+https://tynehamvillage.org/the-post-office,https://tynehamvillage.org/the_post_office,301,false,true
+https://tynehamvillage.org/privacy-policy,https://tynehamvillage.org/privacy,301,false,true
+https://tynehamvillage.org/contact-tynehamvillage-org,https://tynehamvillage.org/contact,301,false,true
+https://tynehamvillage.org/sitemap,https://tynehamvillage.org/sitemap.xml,301,false,true

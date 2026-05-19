@@ -1,54 +1,30 @@
-# www → non-www (fixes duplicate content / canonical tag issue)
+# www → non-www
 https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 
-# Old WordPress slug redirects — exact matches (with and without trailing slash)
-/worbarrow-bay                  /worbarrow-bay.html                 301
-/worbarrow-bay/                 /worbarrow-bay.html                 301
-/a-brief-history-of-tyneham    /history_of_tyneham.html            301
-/a-brief-history-of-tyneham/   /history_of_tyneham.html            301
-/map-of-tyneham-village        /map_of_tyneham.html                301
-/map-of-tyneham-village/       /map_of_tyneham.html                301
-/where-is-tyneham-village      /tyneham_village_location.html      301
-/where-is-tyneham-village/     /tyneham_village_location.html      301
-/can-you-camp-at-tyneham       /camp-at-tyneham.html               301
-/can-you-camp-at-tyneham/      /camp-at-tyneham.html               301
-/tyneham-opening-times         /opening_times.html                 301
-/tyneham-opening-times/        /opening_times.html                 301
-/tyneham-hous                  /tyneham-house.html                 301
-/tyneham-hous/                 /tyneham-house.html                 301
-/the-bond-family               /the_bond_family.html               301
-/the-bond-family/              /the_bond_family.html               301
-/tyneham-village               /                                   301
-/tyneham-village/              /                                   301
-/tyneham-church                /tyneham-church.html                301
-/tyneham-church/               /tyneham-church.html                301
-/tyneham-school                /tyneham-school.html                301
-/tyneham-school/               /tyneham-school.html                301
-/tyneham-dvd                   /tyneham-remembered.html            301
-/tyneham-dvd/                  /tyneham-remembered.html            301
-/the-post-office               /the_post_office.html               301
-/the-post-office/              /the_post_office.html               301
-/the-rectory                   /the-rectory.html                   301
-/the-rectory/                  /the-rectory.html                   301
-/privacy-policy                /privacy.html                       301
-/privacy-policy/               /privacy.html                       301
-/contact-tynehamvillage-org    /contact.html                       301
-/contact-tynehamvillage-org/   /contact.html                       301
-/sitemap                       /sitemap.xml                        301
-/sitemap/                      /sitemap.xml                        301
-/flowers-barrow                /flowers-barrow.html                301
-/flowers-barrow/               /flowers-barrow.html                301
-/corfe-castle                  /corfe-castle.html                  301
-/corfe-castle/                 /corfe-castle.html                  301
-/smuggling                     /smuggling.html                     301
-/smuggling/                    /smuggling.html                     301
-
-# Nested paths — old WordPress slug still active when links were followed
-# These must come AFTER the specific rules above
-/tyneham-village/*             /:splat                             301
-/tyneham-hous/*                /:splat                             301
-/map-of-tyneham-village/*      /:splat                             301
-/can-you-camp-at-tyneham/*     /:splat                             301
-/a-brief-history-of-tyneham/*  /:splat                             301
-/tyneham-church/*              /:splat                             301
-/tyneham-school/*              /:splat                             301
+# Old WordPress slug redirects
+/a-brief-history-of-tyneham    /history_of_tyneham    301
+/a-brief-history-of-tyneham/   /history_of_tyneham    301
+/map-of-tyneham-village        /map_of_tyneham        301
+/map-of-tyneham-village/       /map_of_tyneham        301
+/where-is-tyneham-village      /tyneham_village_location  301
+/where-is-tyneham-village/     /tyneham_village_location  301
+/can-you-camp-at-tyneham       /camp-at-tyneham       301
+/can-you-camp-at-tyneham/      /camp-at-tyneham       301
+/tyneham-opening-times         /opening_times         301
+/tyneham-opening-times/        /opening_times         301
+/tyneham-hous                  /tyneham-house         301
+/tyneham-hous/                 /tyneham-house         301
+/the-bond-family               /the_bond_family       301
+/the-bond-family/              /the_bond_family       301
+/tyneham-village               /                      301
+/tyneham-village/              /                      301
+/tyneham-dvd                   /tyneham-remembered    301
+/tyneham-dvd/                  /tyneham-remembered    301
+/the-post-office               /the_post_office       301
+/the-post-office/              /the_post_office       301
+/privacy-policy                /privacy               301
+/privacy-policy/               /privacy               301
+/contact-tynehamvillage-org    /contact               301
+/contact-tynehamvillage-org/   /contact               301
+/sitemap                       /sitemap.xml           301
+/sitemap/                      /sitemap.xml           301
