@@ -38,6 +38,10 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /sitemap/                      /sitemap.xml                        301
 /flowers-barrow                /flowers-barrow.html                301
 /flowers-barrow/               /flowers-barrow.html                301
+/corfe-castle                  /corfe-castle.html                  301
+/corfe-castle/                 /corfe-castle.html                  301
+/smuggling                     /smuggling.html                     301
+/smuggling/                    /smuggling.html                     301
 
 # Nested paths — old WordPress slug still active when links were followed
 # These must come AFTER the specific rules above
