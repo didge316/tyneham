@@ -9,8 +9,8 @@
     <!-- SEO meta tags -->
     <title>Tyneham Village: Dorset's Ghost Village & Opening Times 2026</title>
     <meta name="description"
-        content="Discover Tyneham, Dorset's abandoned 'ghost village' evacuated in WWII. Explore ruins, history & Jurassic Coast views. Check 2026 opening times, directions & visitor info." />
-    <meta name="author" content="Tyneham Admin" />
+        content="Discover Tyneham, Dorset's ghost village evacuated in WWII. Explore ruins, history & Jurassic Coast views. 2026 opening times, directions & visitor info." />
+    <meta name="author" content="James Langton" />
     <meta name="keywords"
         content="tyneham village dorset, tyneham ghost village, tyneham opening times 2026, tyneham history, wwii evacuation tyneham, abandoned village dorset, jurassic coast tyneham, worbarrow bay, lulworth ranges" />
     <meta name="robots" content="index, follow" />
@@ -18,17 +18,17 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Tyneham Village - Dorset's Forgotten Village" />
     <meta property="og:description"
-        content="In 1943 the 225 residents of Tyneham were told to leave their homes for the war effort. They never returned. Discover Dorset's ghost village — free to visit on weekends and holidays." />
+        content="In 1943 the 252 residents of Tyneham were told to leave their homes for the war effort. They never returned. Discover Dorset's ghost village — free to visit on weekends and holidays." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tynehamvillage.org/" />
-    <meta property="og:image" content="/assets/tyneham-village-early-photo.webp" />
+    <meta property="og:image" content="https://tynehamvillage.org/assets/tyneham-village-early-photo.webp" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tyneham Village - Dorset's Forgotten Village" />
     <meta name="twitter:description"
-        content="In 1943 the 225 residents of Tyneham were told to leave their homes for the war effort. They never returned. Discover Dorset's ghost village — free to visit on weekends and holidays." />
-    <meta name="twitter:image" content="/assets/tyneham-village-early-photo.webp" />
+        content="In 1943 the 252 residents of Tyneham were told to leave their homes for the war effort. They never returned. Discover Dorset's ghost village — free to visit on weekends and holidays." />
+    <meta name="twitter:image" content="https://tynehamvillage.org/assets/tyneham-village-early-photo.webp" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://tynehamvillage.org/" />
@@ -115,6 +115,54 @@
     }
     </script>
 
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TynehamVillage.org",
+      "url": "https://tynehamvillage.org",
+      "description": "An independent guide to Tyneham, Dorset's abandoned ghost village, and the surrounding Jurassic Coast.",
+      "author": {
+        "@type": "Person",
+        "name": "James Langton",
+        "url": "https://tynehamvillage.org/about.html"
+      }
+    }
+    </script>
+
+    <!-- TouristAttraction Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristAttraction",
+      "name": "Tyneham Village",
+      "description": "Tyneham is an abandoned village in the Purbeck Hills of Dorset, evacuated in 1943 when 252 residents were asked to leave for the war effort. The church and school are preserved as museums.",
+      "url": "https://tynehamvillage.org/",
+      "image": "https://tynehamvillage.org/assets/tyneham-village-early-photo.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tyneham",
+        "addressRegion": "Dorset",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.6239,
+        "longitude": -2.1601
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "description": "Open most weekends and school holidays — check opening times page for current schedule",
+          "url": "https://tynehamvillage.org/opening_times.html"
+        }
+      ],
+      "isAccessibleForFree": true,
+      "touristType": "History enthusiasts, walkers, Jurassic Coast visitors"
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
 
@@ -130,7 +178,7 @@
     <!-- Responsive navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">TynehamVillage.org</a>
+      <a class="navbar-brand" href="/">TynehamVillage.org</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -189,6 +237,9 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class='nav-item ms-lg-2'>
@@ -213,7 +264,7 @@
                         <figure class="mb-4"><img class="img-fluid rounded" fetchpriority="high"
                                 src="/assets/tyneham_village_colour-768x512.webp" alt="Tyneham Village in the 1900s" />
                         </figure>
-                        <p class="fs-5 mb-4 pt-4">In November 1943, the 225 residents of Tyneham were given 28 days to leave their homes. The British Army needed the valley — along with 3,000 acres of surrounding farmland — as a live firing range in preparation for the D-Day landings. The villagers were told they could return once the war was over. They never did.</p>
+                        <p class="fs-5 mb-4 pt-4">In November 1943, the 252 residents of Tyneham were given 28 days to leave their homes. The British Army needed the valley — along with 3,000 acres of surrounding farmland — as a live firing range in preparation for the D-Day landings. The villagers were told they could return once the war was over. They never did.</p>
 
                         <!-- AdSense -->
                         <div class="my-2 text-center">
@@ -264,19 +315,19 @@
                             quaint church, a functional school, a peaceful rectory, numerous farms, and a collection of
                             charming cottages.</p>
                         <figure class="mb-4"><img class="img-fluid rounded" src="/assets/rectory_cottages_colour.webp"
-                                alt="Rectory Cottages" /></figure>
+                                alt="Rectory Cottages" loading="lazy" /></figure>
                         <p class="fs-5 pt-5">Dominating the village's architectural landscape was the imposing <a
                                 href="tyneham-house.html">Tyneham House</a>, also referred to as the Great House, an
                             emblem of elegance and stature.</p>
                         <figure class="mb-2 text-center"><img class="img-fluid rounded"
-                                src="/assets/the_great_house_colour.webp" alt="Tyneham House painting" /></figure>
+                                src="/assets/the_great_house_colour.webp" alt="Tyneham House painting" loading="lazy" /></figure>
                         <p class="fs-6 mb-4 text-center">North East View of Tyneham House 1943</p>
                         <h3 class="fw-bolder pt-3 mt-5">Tyneham Village Life</h3>
                         <p class="fs-5 mb-4">There was no electricity and no mains water, but Tyneham was far from cut off. The post office had a telephone — the only one in the village — installed during the First World War. The school kept detailed records of attendance at village entertainments, cricket matches and the annual harvest. Around 250 people called it home.</p>
 
                         <figure class="mb-2 text-center"><img class="img-fluid rounded"
                                 src="/assets/tyneham-village-early-photo.webp"
-                                alt="Tyneham Village Early Black and White" /></figure>
+                                alt="Tyneham Village Early Black and White" loading="lazy" /></figure>
                         <h3 class="fw-bolder pt-5 mt-5">The Tyneham Documentary</h3>
                         <p class="fs-5 mb-4">The most detailed account of life in Tyneham is from the <a
                                 href="tyneham-remembered.html">Tyneham Remembered Documentary</a>. It contains many
@@ -288,7 +339,7 @@
                         <p class="fs-5 mb-4 pt-2">By purchasing a copy of Tyneham Remembered, you help maintain the
                             upkeep of this website.</p>
                         <figure class="my-5"><a href="tyneham-remembered.html"><img class="img-fluid rounded"
-                                    src="/assets/tyneham-dvd.webp" alt="Tyneham Remembered documentary" /></a></figure>
+                                    src="/assets/tyneham-dvd.webp" alt="Tyneham Remembered documentary" loading="lazy" /></a></figure>
                         <h3 class="fw-bolder mt-5 pt-4">Why Did Tyneham's Inhabitants Leave?</h3>
                         <p class="fs-5 mb-4">The story behind the evacuation of Tyneham Village is a poignant chapter in
                             British history. In 1943, during the height of World War II, the British military
@@ -328,7 +379,7 @@
                             never be allowed to return to their homes. As they packed up their belongings and left, they
                             pinned a note to the door of the village church which read:</p>
                         <figure class="mb-2 text-center"><img class="img-fluid rounded"
-                                src="/assets/note-left-on-church-door.jpg" alt="Note left on Tyneham Church door" />
+                                src="/assets/note-left-on-church-door.jpg" alt="Note left on Tyneham Church door" loading="lazy" />
                         </figure>
                         <p class="fs-6 mb-4 text-center">The Note Left on The Church Door</p>
                         <h3 class="fw-bolder mt-5 pt-4">Did The Villagers Ever Return?</h3>
@@ -337,7 +388,7 @@
                         <p class="fs-5 mb-4">Tyneham is managed as a heritage site by the Ministry of Defence. It is not National Trust. Entry is free. Please check the <a href="opening_times.html">opening dates</a> before visiting.</p>
                         <figure class="my-5 py-3 text-center"><img class="img-fluid rounded"
                                 src="/assets/The-Post-Office.jpg"
-                                alt="Drawing of the post office at Tynehham village" /></figure>
+                                alt="Drawing of the post office at Tynehham village" loading="lazy" /></figure>
                         <div class="row justify-content-center">
                             <div class="col-lg-8 pb-5">
 
@@ -543,7 +594,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/ba52c656a9c0bec5a5efb32b83662e2ca14792439fa26cdf03ab71ac04a8e85b?s=50&d=mm&r=g"
-                                            alt="Tim" width="50" height="50">
+                                            alt="Tim" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Tim <small class="text-muted fw-normal">- March 16,
@@ -565,7 +616,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/36e8214aa3223b31f038664c6697e05dd4b9e85703b8c30650735ad5dd833e00?s=50&d=mm&r=g"
-                                            alt="Rachel Burnett" width="50" height="50">
+                                            alt="Rachel Burnett" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Rachel Burnett <small class="text-muted fw-normal">- April
@@ -579,7 +630,7 @@
                                             <div class="flex-shrink-0">
                                                 <img class="rounded-circle"
                                                     src="https://secure.gravatar.com/avatar/cee3cc33a182cfe5b2b0c2389277c48b1ad3e40270381ed07b0f9f68f2af7b08?s=50&d=mm&r=g"
-                                                    alt="Ernest E Hoole" width="50" height="50">
+                                                    alt="Ernest E Hoole" width="50" height="50" loading="lazy">
                                             </div>
                                             <div class="ms-3 flex-grow-1">
                                                 <div class="fw-bold">Ernest E Hoole <small
@@ -599,7 +650,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/c32ba7a1a484ca16c065ee3f8f9ae0512c82d5c7df7b09f6d002a57508f298fe?s=50&d=mm&r=g"
-                                            alt="Malcolm and Christine Barrington-Clark" width="50" height="50">
+                                            alt="Malcolm and Christine Barrington-Clark" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Malcolm and Christine Barrington-Clark <small
@@ -617,7 +668,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/bda2a85caaa61ff7b0f96fddeaa5d336f12d993b28519129d509ab64f266d40e?s=50&d=mm&r=g"
-                                            alt="Pamela Jackson" width="50" height="50">
+                                            alt="Pamela Jackson" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Pamela Jackson <small class="text-muted fw-normal">-
@@ -639,7 +690,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/5754243acd1ce29750dc582bf037a7696e445cc83ddc8bd098aeae23a8137c95?s=50&d=mm&r=g"
-                                            alt="Anna Taylor" width="50" height="50">
+                                            alt="Anna Taylor" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Anna Taylor <small class="text-muted fw-normal">- February
@@ -656,7 +707,7 @@
                                             <div class="flex-shrink-0">
                                                 <img class="rounded-circle"
                                                     src="https://secure.gravatar.com/avatar/fbdaf4564e70893b4669152a14f3b6443598cfa6eb5012c19938830f42e8ef77?s=50&d=mm&r=g"
-                                                    alt="Bruce Kerr" width="50" height="50">
+                                                    alt="Bruce Kerr" width="50" height="50" loading="lazy">
                                             </div>
                                             <div class="ms-3 flex-grow-1">
                                                 <div class="fw-bold">Bruce Kerr <small class="text-muted fw-normal">-
@@ -680,7 +731,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/f9d127bb8ad06c04ba3d36e4facb921b207f501c1393161183711eadb15a275d?s=50&d=mm&r=g"
-                                            alt="Jean Upshall" width="50" height="50">
+                                            alt="Jean Upshall" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Jean Upshall <small class="text-muted fw-normal">- February
@@ -697,7 +748,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/33f99c78e1724a6b69e030c8003ccf939f75268a1cae94c87456f72d5a900bdc?s=50&d=mm&r=g"
-                                            alt="Veronica Lord" width="50" height="50">
+                                            alt="Veronica Lord" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Veronica Lord <small class="text-muted fw-normal">- August
@@ -713,7 +764,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/c0ce04ebe4ff05b08a3d0087c5733a21307902f8fb47ab1802b118def1d334fe?s=50&d=mm&r=g"
-                                            alt="Richard Buckler" width="50" height="50">
+                                            alt="Richard Buckler" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Richard Buckler <small class="text-muted fw-normal">-
@@ -741,7 +792,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/272656ecf7eea8fe1fb87149ebd0682b6380142e3d505906360b72d284e27961?s=50&d=mm&r=g"
-                                            alt="M. R. Vantine" width="50" height="50">
+                                            alt="M. R. Vantine" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">M. R. Vantine <small class="text-muted fw-normal">- October
@@ -758,7 +809,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/33f99c78e1724a6b69e030c8003ccf939f75268a1cae94c87456f72d5a900bdc?s=50&d=mm&r=g"
-                                            alt="Veronica Lord" width="50" height="50">
+                                            alt="Veronica Lord" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Veronica Lord <small class="text-muted fw-normal">-
@@ -777,7 +828,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/12dc996be6627ed530ab2dd5790e1f3fef5c4f2918081b351f079dd93ee8b6bf?s=50&d=mm&r=g"
-                                            alt="Andrew Hoggan" width="50" height="50">
+                                            alt="Andrew Hoggan" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Andrew Hoggan <small class="text-muted fw-normal">-
@@ -793,7 +844,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/286c5213dc5c0f1d465620f7520e1f513c1256f5e6c6014250eaafc6944115a5?s=50&d=mm&r=g"
-                                            alt="Audrey Galpin" width="50" height="50">
+                                            alt="Audrey Galpin" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Audrey Galpin <small class="text-muted fw-normal">- April
@@ -817,7 +868,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/0fdfc6de90ab2c4d154ec882c33ee1b50b190b0406bc014068c18465cfd32dfb?s=50&d=mm&r=g"
-                                            alt="Robert Cooper" width="50" height="50">
+                                            alt="Robert Cooper" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Robert Cooper <small class="text-muted fw-normal">-
@@ -844,7 +895,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/8f62873523dae7eb0c2faf3a7e5d1af9d6ec92498cfd69b6c8c66d2a70e79dfa?s=50&d=mm&r=g"
-                                            alt="Les Beswick" width="50" height="50">
+                                            alt="Les Beswick" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Les Beswick <small class="text-muted fw-normal">- May 18,
@@ -860,7 +911,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/a649580caa0053b5df51125a102e915bbe11d719ba1ce9879ff14e65821e49d4?s=50&d=mm&r=g"
-                                            alt="Steve Vickers" width="50" height="50">
+                                            alt="Steve Vickers" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Steve Vickers <small class="text-muted fw-normal">- July 8,
@@ -876,7 +927,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/840a232880667f544ecb345e7e501a66a00e6e34e0b0d426f5dfac0c15746700?s=50&d=mm&r=g"
-                                            alt="Bryan Pritchard" width="50" height="50">
+                                            alt="Bryan Pritchard" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Bryan Pritchard <small class="text-muted fw-normal">-
@@ -892,7 +943,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/ff495cac2b5d9c5bc74a838b0f6f4c76d10fceb7436cd826a0e87a3103b4bcd2?s=50&d=mm&r=g"
-                                            alt="Mrs Angry" width="50" height="50">
+                                            alt="Mrs Angry" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Mrs Angry <small class="text-muted fw-normal">- October 3,
@@ -914,7 +965,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/3d868b23ad3d843e87da4e2159d2dbfd898945c13cfb2336d821a8d842916019?s=50&d=mm&r=g"
-                                            alt="Steve Walton" width="50" height="50">
+                                            alt="Steve Walton" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Steve Walton <small class="text-muted fw-normal">- January
@@ -929,7 +980,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/98f6c7e166d75b4d6f5d66c537e3e25bcd9b8e1b3d3c20584743c9855160c864?s=50&d=mm&r=g"
-                                            alt="Jason Edmunds" width="50" height="50">
+                                            alt="Jason Edmunds" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Jason Edmunds <small class="text-muted fw-normal">-
@@ -949,7 +1000,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/360dbd52e67d4118c8aeb223b4306ab872f8241ec6d7a835f65b875f928c3f26?s=50&d=mm&r=g"
-                                            alt="Pauline" width="50" height="50">
+                                            alt="Pauline" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Pauline <small class="text-muted fw-normal">- March 11,
@@ -965,7 +1016,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/ab0cbc6cfa5c745a350904e0459478159baf345361e42f03f8211bf9b474a624?s=50&d=mm&r=g"
-                                            alt="Tim Coates" width="50" height="50">
+                                            alt="Tim Coates" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Tim Coates <small class="text-muted fw-normal">- April 15,
@@ -983,7 +1034,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/07e5628f9be842e5a482e9e5cd08458154f09b79214efba0d783b3a1be693738?s=50&d=mm&r=g"
-                                            alt="Madeline Rodrigues" width="50" height="50">
+                                            alt="Madeline Rodrigues" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Madeline Rodrigues <small class="text-muted fw-normal">-
@@ -1010,7 +1061,7 @@
                                     <div class="flex-shrink-0">
                                         <img class="rounded-circle"
                                             src="https://secure.gravatar.com/avatar/88aa28ff59494b8fe63d8e701da2bbf3e60ed84d673459863fc3ef9a9102921d?s=50&d=mm&r=g"
-                                            alt="Claire" width="50" height="50">
+                                            alt="Claire" width="50" height="50" loading="lazy">
                                     </div>
                                     <div class="ms-3 flex-grow-1">
                                         <div class="fw-bold">Claire <small class="text-muted fw-normal">- May 16,
@@ -1050,7 +1101,7 @@
                 <div class="card my-5 d-none d-lg-block">
                     <div class="card-body text-center py-5">
                         <a href="/tyneham-remembered.html">
-                            <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
+                            <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered documentary DVD cover" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -1180,7 +1231,7 @@
                 <div class="card my-5 d-none d-lg-block">
                     <div class="card-body text-center py-5">
                         <a href="/tyneham-remembered.html">
-                            <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
+                            <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered documentary DVD cover" loading="lazy">
                         </a>
                     </div>
                 </div>
@@ -1201,7 +1252,7 @@
                                     class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Durdle
                                     Door</a>
                             </li>
-                            <li class="border-bottom menu-item bg-light" data-page="lulworth-cove.html">
+                            <li class="border-bottom menu-item" data-page="lulworth-cove.html">
                                 <a href="lulworth-cove.html"
                                     class="d-block px-4 py-3 text-decoration-none text-dark fw-bold hover-bg-light">Lulworth
                                     Cove</a>
@@ -1234,7 +1285,7 @@
             <p class="m-0 text-center">
                 <a href="contact.html" class="footer-link">Contact Us</a> |
                 <a href="privacy.html" class="footer-link">Privacy Policy</a> |
-                <a href="index.html" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
+                <a href="/" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
             </p>
         </div>
         <div class="container">

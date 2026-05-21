@@ -1,6 +1,9 @@
 # www → non-www
 https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 
+# index.html → canonical root
+/index.html  /  301
+
 # Old WordPress slug redirects
 /a-brief-history-of-tyneham    /history_of_tyneham    301
 /a-brief-history-of-tyneham/   /history_of_tyneham    301

@@ -7,8 +7,8 @@
 
     <!-- SEO meta tags -->
     <title>Tyneham Remembered: Village Documentary DVD & Download</title>
-    <meta name="description" content="Tyneham Remembered features rare interviews with the last Tyneham villagers — including Arthur Grant, Peter Wellman and Doug Churchill — filmed before they passed away. Available on DVD (£15.49) or HD digital download (£10.99)." />
-    <meta name="author" content="Tyneham Admin" />
+    <meta name="description" content="Tyneham Remembered features rare interviews with the last villagers, filmed before they passed away. Available on DVD (£15.49) or HD download (£10.99)." />
+    <meta name="author" content="James Langton" />
     <meta name="keywords" content="Tyneham Remembered documentary, Tyneham DVD, Tyneham digital download, Tyneham village film, Arthur Grant Tyneham, Doug Churchill Tyneham, Peter Wellman Tyneham, Tyneham 1943 evacuation, Tyneham ghost village, Dorset history documentary, Tyneham villager interviews, buy Tyneham documentary" />
     <meta name="robots" content="index, follow" />
 
@@ -17,16 +17,48 @@
     <meta property="og:description" content="Tyneham Remembered features rare interviews with the last Tyneham villagers — including Arthur Grant, Peter Wellman and Doug Churchill — filmed before they passed away. Available on DVD (£15.49) or HD digital download (£10.99)." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tynehamvillage.org/tyneham-remembered.html" />
-    <meta property="og:image" content="/assets/tyneham-village-early-photo.webp" />
+    <meta property="og:image" content="https://tynehamvillage.org/assets/tyneham-village-early-photo.webp" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tyneham Remembered: Village Documentary DVD & Download" />
     <meta name="twitter:description" content="Tyneham Remembered features rare interviews with the last Tyneham villagers — including Arthur Grant, Peter Wellman and Doug Churchill — filmed before they passed away. Available on DVD (£15.49) or HD digital download (£10.99)." />
-    <meta name="twitter:image" content="/assets/tyneham-village-early-photo.webp" />
+    <meta name="twitter:image" content="https://tynehamvillage.org/assets/tyneham-village-early-photo.webp" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://tynehamvillage.org/tyneham-remembered.html" />
+
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Tyneham Remembered Documentary",
+      "description": "Tyneham Remembered features rare interviews with the last Tyneham villagers — including Arthur Grant, Peter Wellman and Doug Churchill — filmed before they passed away.",
+      "url": "https://tynehamvillage.org/tyneham-remembered.html",
+      "image": "https://tynehamvillage.org/assets/tyneham-dvd-cover.webp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tyneham Village"
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "DVD",
+          "price": "15.49",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "HD Digital Download",
+          "price": "10.99",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
@@ -41,7 +73,7 @@
         <!-- Responsive navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">TynehamVillage.org</a>
+      <a class="navbar-brand" href="/">TynehamVillage.org</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +132,9 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class='nav-item ms-lg-2'>
@@ -118,7 +153,7 @@
                         <div class="container pt-5 pb-4 text-center">
   <div class="row justify-content-center">
     <div class="">
-      <img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover">
+      <img class="img-fluid" src="/assets/tyneham-dvd-cover.webp" alt="Tyneham Remembered DVD and Digital Download cover" loading="lazy">
       <h1 class="display-4 fw-bold text-secondary mt-4 mb-3">
         The Real Story of Tyneham<br>Told by the Villagers Themselves
       </h1>
@@ -325,7 +360,7 @@
     <div class="card my-5 d-none d-lg-block">
         <div class="card-body text-center py-5">
             <a href="/tyneham-remembered.html">
-                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
+                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered documentary DVD cover" loading="lazy">
             </a>
         </div>
     </div>
@@ -395,7 +430,7 @@
     <div class="card my-5 d-none d-lg-block">
         <div class="card-body text-center py-5">
             <a href="/tyneham-remembered.html">
-                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
+                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered documentary DVD cover" loading="lazy">
             </a>
         </div>
     </div>
@@ -438,7 +473,7 @@
     <p class="m-0 text-center">
       <a href="contact.html" class="footer-link">Contact Us</a> | 
       <a href="privacy.html" class="footer-link">Privacy Policy</a> | 
-      <a href="index.html" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
+      <a href="/" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
     </p>
   </div>
   <div class="container">

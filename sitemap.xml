@@ -139,9 +139,9 @@
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://tynehamvillage.org/privacy.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <priority>0.3</priority>
+    <loc>https://tynehamvillage.org/about.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
 </urlset>

@@ -7,8 +7,8 @@
 
     <!-- SEO meta tags -->
     <title>Corfe Castle, Dorset — History, Visiting &amp; Getting to Tyneham</title>
-    <meta name="description" content="Corfe Castle is one of Dorset's most iconic landmarks — a ruined Norman castle perched dramatically above the village. Most visitors combine it with a trip to Tyneham, just 9 miles away." />
-    <meta name="author" content="Tyneham Admin" />
+    <meta name="description" content="Corfe Castle is one of Dorset's most iconic landmarks — a ruined Norman castle above the village. Most visitors combine it with Tyneham, just 9 miles away." />
+    <meta name="author" content="James Langton" />
     <meta name="keywords" content="Corfe Castle, Corfe Castle Dorset, Corfe Castle history, Corfe Castle village, visiting Corfe Castle, Corfe Castle and Tyneham, Corfe Castle to Tyneham, Corfe Castle National Trust, Corfe Castle ruins, Purbeck Dorset, Swanage Railway, Lady Bankes, Bond family Dorset, Jurassic Coast" />
     <meta name="robots" content="index, follow" />
 
@@ -17,16 +17,40 @@
     <meta property="og:description" content="Corfe Castle is one of Dorset's most iconic landmarks — a ruined Norman castle perched dramatically above the village. Most visitors combine it with a trip to Tyneham, just 9 miles away." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tynehamvillage.org/corfe-castle.html" />
-    <meta property="og:image" content="/assets/corfe-castle.jpg" />
+    <meta property="og:image" content="https://tynehamvillage.org/assets/corfe-castle.jpg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Corfe Castle, Dorset — History, Visiting &amp; Getting to Tyneham" />
     <meta name="twitter:description" content="Corfe Castle is one of Dorset's most iconic landmarks — a ruined Norman castle perched dramatically above the village. Most visitors combine it with a trip to Tyneham, just 9 miles away." />
-    <meta name="twitter:image" content="/assets/corfe-castle.jpg" />
+    <meta name="twitter:image" content="https://tynehamvillage.org/assets/corfe-castle.jpg" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://tynehamvillage.org/corfe-castle.html" />
+
+    <!-- LandmarksOrHistoricalBuildings Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LandmarksOrHistoricalBuildings",
+      "name": "Corfe Castle",
+      "description": "Corfe Castle is a ruined Norman castle in the Purbeck Hills of Dorset, dramatically perched above the village of Corfe Castle. Managed by the National Trust.",
+      "url": "https://tynehamvillage.org/corfe-castle.html",
+      "image": "https://tynehamvillage.org/assets/corfe-castle.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Corfe Castle",
+        "addressRegion": "Dorset",
+        "postalCode": "BH20 5EZ",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.6393,
+        "longitude": -2.0568
+      }
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
@@ -41,7 +65,7 @@
         <!-- Responsive navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">TynehamVillage.org</a>
+      <a class="navbar-brand" href="/">TynehamVillage.org</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +124,9 @@
           </li>
 
           <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class='nav-item ms-lg-2'>
@@ -130,7 +157,7 @@
             Corfe Castle is one of the most dramatic ruins in England. Perched on a natural hill in a gap in the Purbeck Hills, the castle's broken towers are visible for miles across the Isle of Purbeck — a skyline that has barely changed since Parliamentarian forces blew it apart in 1646.
           </p>
           <p class="fs-5 mb-4">
-            The village that grew up beneath it shares the same name, and together they make one of the most visited spots on the Dorset coast. For many people, a trip to Corfe Castle and a trip to <a href="index.html">Tyneham Village</a> go hand in hand — the two sit just 9 miles apart, and the road from Corfe Castle to Tyneham passes through some of the finest countryside in Purbeck.
+            The village that grew up beneath it shares the same name, and together they make one of the most visited spots on the Dorset coast. For many people, a trip to Corfe Castle and a trip to <a href="/">Tyneham Village</a> go hand in hand — the two sit just 9 miles apart, and the road from Corfe Castle to Tyneham passes through some of the finest countryside in Purbeck.
           </p>
         </section>
 
@@ -258,7 +285,7 @@
     <div class="card my-5 d-none d-lg-block">
         <div class="card-body text-center py-5">
             <a href="/tyneham-remembered.html">
-                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Advertisement">
+                <img src="/assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered documentary DVD cover" loading="lazy">
             </a>
         </div>
     </div>
@@ -373,7 +400,7 @@
     <p class="m-0 text-center">
       <a href="contact.html" class="footer-link">Contact Us</a> |
       <a href="privacy.html" class="footer-link">Privacy Policy</a> |
-      <a href="index.html" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
+      <a href="/" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
     </p>
   </div>
   <div class="container">
