@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO meta tags -->
   <title>After the Evacuation | What Happened to Tyneham</title>
@@ -16,7 +17,7 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="After the Evacuation – What Happened to the People of Tyneham" />
   <meta property="og:description" content="When 252 people were forced to leave Tyneham in December 1943 they scattered across Dorset, never to return. This is what happened to the families of Tyneham after the evacuation." />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tynehamvillage.org/after-the-evacuation.html" />
   <meta property="og:image" content="https://tynehamvillage.org/assets/tyneham-village-early-photo.jpg" />
 
@@ -35,6 +36,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "After the Evacuation – What Happened to the People of Tyneham",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/after-the-evacuation.html"},
     "description": "When 252 people were forced to leave Tyneham in December 1943 they scattered across Dorset, never to return.",
     "url": "https://tynehamvillage.org/after-the-evacuation.html",
     "image": "https://tynehamvillage.org/assets/tyneham-village-early-photo.jpg",
@@ -48,13 +50,19 @@
     "publisher": {
       "@type": "Organization",
       "name": "TynehamVillage.org",
-      "url": "https://tynehamvillage.org"
+      "url": "https://tynehamvillage.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynehamvillage.org/assets/favicon.png",
+        "width": 32,
+        "height": 32
+      }
     }
   }
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
@@ -175,7 +183,7 @@
           <section class="mb-5">
             <img class="img-fluid rounded shadow-lg mb-4 w-100"
               src="assets/tyneham-village-early-photo.jpg"
-              alt="Tyneham village before the evacuation" loading="lazy" / width="1000" height="534">
+              alt="Tyneham village before the evacuation" fetchpriority="high" / width="1000" height="534">
 
             <p class="fs-5 mb-4 pt-2">
               On 19 December 1943, 252 men, women and children walked out of Tyneham for the last time. They left behind

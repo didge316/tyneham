@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO meta tags -->
     <title>Camping near Tyneham Village | Best Campsites Nearby</title>
@@ -15,7 +16,7 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Can You Camp at Tyneham?" />
     <meta property="og:description" content="Camping inside Tyneham Village is not permitted, but there are excellent campsites within easy reach of this remarkable abandoned Dorset village. Find the best options here." />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:url" content="https://tynehamvillage.org/camp-at-tyneham.html" />
     <meta property="og:image" content="https://tynehamvillage.org/assets/camping_near_tyneham.png" />
 
@@ -34,6 +35,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Can You Camp at Tyneham?",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/camp-at-tyneham.html"},
       "description": "Camping inside Tyneham Village is not permitted. Here are the best campsites within easy reach of Tyneham in Dorset.",
       "url": "https://tynehamvillage.org/camp-at-tyneham.html",
       "image": "https://tynehamvillage.org/assets/camping_near_tyneham.png",
@@ -47,13 +49,19 @@
       "publisher": {
         "@type": "Organization",
         "name": "TynehamVillage.org",
-        "url": "https://tynehamvillage.org"
+        "url": "https://tynehamvillage.org",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tynehamvillage.org/assets/favicon.png",
+          "width": 32,
+          "height": 32
+        }
       }
     }
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
     <!-- CSS -->
     <link href="css/styles.css" rel="stylesheet" />
@@ -185,7 +193,7 @@
               <img class="img-fluid rounded shadow-lg" 
                    src="/assets/tyneham-village.jpg" 
                    alt="Tyneham village from the hills" 
-                   loading="lazy" width="553" height="341">
+                   fetchpriority="high" width="553" height="341">
             </a>
           </figure>
 

@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO meta tags -->
   <title>The Note on the Church Door – Tyneham Village</title>
@@ -16,7 +17,7 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="The Note on the Church Door – Tyneham Village" />
   <meta property="og:description" content="When the villagers of Tyneham were forced to leave in 1943, they pinned a handwritten note to the church door. It remains one of the most moving documents of the Second World War home front." />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tynehamvillage.org/the-church-door-note.html" />
   <meta property="og:image" content="https://tynehamvillage.org/assets/note-left-on-church-door.jpg" />
 
@@ -35,6 +36,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "The Note on the Church Door – Tyneham Village",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/the-church-door-note.html"},
     "description": "When the villagers of Tyneham were forced to leave in 1943, they pinned a handwritten note to the church door. It remains one of the most moving documents of the Second World War home front.",
     "url": "https://tynehamvillage.org/the-church-door-note.html",
     "image": "https://tynehamvillage.org/assets/note-left-on-church-door.jpg",
@@ -48,13 +50,61 @@
     "publisher": {
       "@type": "Organization",
       "name": "TynehamVillage.org",
-      "url": "https://tynehamvillage.org"
+      "url": "https://tynehamvillage.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynehamvillage.org/assets/favicon.png",
+        "width": 32,
+        "height": 32
+      }
     }
   }
   </script>
 
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What did the Tyneham church door note say?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The note read: \"Please treat the church and houses with care; we have given up our homes where many of us lived for generations to help win the war to keep men free. We shall return one day and thank you for treating the village kindly. W.H. BOND, on behalf of the families of Tyneham village.\" It was pinned to the door of St Mary's Church on 19 December 1943 as the villagers left."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who wrote the Tyneham church door note?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The note was signed by W.H. Bond on behalf of the families of Tyneham village. It is widely believed to have been written by the women and children of Tyneham as they prepared to leave their homes for the last time in December 1943."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the original Tyneham church door note still there?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A reproduction of the note is displayed inside St Mary's Church, Tyneham, and can be seen by visitors during public opening times. The original text is preserved in historical records held at the Dorset History Centre and reproduced in Lilian Bond's book Tyneham: A Lost Heritage (1956)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Did the Tyneham villagers ever return?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Despite the promise in the note that they would return, the Ministry of Defence retained the land after the war ended. A 1974 government White Paper confirmed the area would remain under military control permanently. The villagers and their descendants never returned to live in Tyneham."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
@@ -174,7 +224,7 @@
           <section class="mb-5">
             <img class="img-fluid rounded shadow-lg mb-4 w-100"
               src="assets/note-left-on-church-door.jpg"
-              alt="The handwritten note left on the door of St Mary's Church, Tyneham, December 1943" loading="lazy" / width="600" height="404">
+              alt="The handwritten note left on the door of St Mary's Church, Tyneham, December 1943" fetchpriority="high" / width="600" height="404">
 
             <p class="fs-5 mb-4 pt-2">
               In December 1943, as the last families of Tyneham locked their doors and walked away from the village for

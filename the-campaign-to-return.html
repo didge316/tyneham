@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO meta tags -->
   <title>Campaign to Return | The Fight to Reclaim Tyneham</title>
@@ -16,7 +17,7 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="The Campaign to Return Tyneham – The Fight to Reclaim a Lost Village" />
   <meta property="og:description" content="After the Second World War, former residents, MPs and campaigners fought for decades to reclaim Tyneham from the military. This is the story of the campaign to return — and why it ultimately failed." />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tynehamvillage.org/the-campaign-to-return.html" />
   <meta property="og:image" content="https://tynehamvillage.org/assets/tyneham-house.jpg" />
 
@@ -35,6 +36,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "The Campaign to Return Tyneham – The Fight to Reclaim a Lost Village",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/the-campaign-to-return.html"},
     "description": "After the Second World War, former residents, MPs and campaigners fought for decades to reclaim Tyneham from the military.",
     "url": "https://tynehamvillage.org/the-campaign-to-return.html",
     "image": "https://tynehamvillage.org/assets/tyneham-house.jpg",
@@ -48,13 +50,19 @@
     "publisher": {
       "@type": "Organization",
       "name": "TynehamVillage.org",
-      "url": "https://tynehamvillage.org"
+      "url": "https://tynehamvillage.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynehamvillage.org/assets/favicon.png",
+        "width": 32,
+        "height": 32
+      }
     }
   }
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
@@ -175,7 +183,7 @@
           <section class="mb-5">
             <img class="img-fluid rounded shadow-lg mb-4 w-100"
               src="assets/tyneham-house.jpg"
-              alt="Tyneham House, requisitioned by the military in 1943 and later demolished" loading="lazy" / width="400" height="258">
+              alt="Tyneham House, requisitioned by the military in 1943 and later demolished" fetchpriority="high" / width="400" height="258">
 
             <p class="fs-5 mb-4 pt-2">
               When the war ended in 1945, the people of Tyneham waited to go home. The promise had been clear: the

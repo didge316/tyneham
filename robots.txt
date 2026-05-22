@@ -14,10 +14,13 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-# Block training-only scrapers
-User-agent: Google-Extended
-Disallow: /
+User-agent: ClaudeBot
+Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+# Block bulk training scrapers
 User-agent: CCBot
 Disallow: /
 

@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <!-- Required meta tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO meta tags -->
   <title>The Bond Family of Tyneham in Dorset</title>
@@ -19,7 +20,7 @@
   <meta property="og:title" content="The Bond Family of Tyneham in Dorset" />
   <meta property="og:description"
     content="The Bond family owned Tyneham for nearly 250 years. Prominent in Dorset politics and law, it was the Bonds who shaped the village's final two centuries before the wartime evacuation ended their tenure in 1943." />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://tynehamvillage.org/the_bond_family.html" />
   <meta property="og:image" content="https://tynehamvillage.org/assets/john-bond.jpg" />
 
@@ -39,6 +40,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "The Bond Family of Tyneham in Dorset",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/the_bond_family.html"},
     "description": "The Bond family owned Tyneham for nearly 250 years, shaping every aspect of village life from 1683 to the forced evacuation of 1943.",
     "url": "https://tynehamvillage.org/the_bond_family.html",
     "image": "https://tynehamvillage.org/assets/john-bond.jpg",
@@ -52,13 +54,19 @@
     "publisher": {
       "@type": "Organization",
       "name": "TynehamVillage.org",
-      "url": "https://tynehamvillage.org"
+      "url": "https://tynehamvillage.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynehamvillage.org/assets/favicon.png",
+        "width": 32,
+        "height": 32
+      }
     }
   }
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
@@ -181,7 +189,7 @@
             <div class="float-end pt-5 m-2">
               <a href="/assets/reverend-nathanial-bond.jpg">
                 <img class="img-fluid rounded shadow" src="/assets/reverend-nathanial-bond.jpg"
-                  alt="Reverend Nathaniel Bond of the Bond family" style="max-width: 250px;" loading="lazy" width="200" height="267">
+                  alt="Reverend Nathaniel Bond of the Bond family" style="max-width: 250px;" fetchpriority="high" width="200" height="267">
               </a>
             </div>
 
