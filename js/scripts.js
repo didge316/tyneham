@@ -1,21 +1,20 @@
 // Highlight the current page in the sidebar menu
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the current filename (e.g., "map_of_tyneham.html" or "index.html")
   let currentPage = window.location.pathname.split("/").pop();
-  if (currentPage === "" || currentPage === "/") {
-    currentPage = "index.html";
-  }
+  if (!currentPage || currentPage === "/") currentPage = "index.html";
+  // Cloudflare Pages serves pages at /slug (no .html); normalise for comparison
+  if (!currentPage.includes(".")) currentPage += ".html";
 
-  // Find all sidebar menu items
-  const menuItems = document.querySelectorAll("#sidebar-menu .menu-item");
+  // Check both the village sidebar and the Near Tyneham sidebar
+  const menuItems = document.querySelectorAll(
+    "#sidebar-menu .menu-item, #sidebar-menu-near .menu-item"
+  );
 
   menuItems.forEach(function (item) {
     if (item.getAttribute("data-page") === currentPage) {
-      item.classList.add("bg-light");                    // Light background
+      item.classList.add("bg-light");
       const link = item.querySelector("a");
-      if (link) {
-        link.classList.add("fw-bold");                  // Bold text
-      }
+      if (link) link.classList.add("fw-bold");
     }
   });
 });
