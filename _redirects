@@ -13,8 +13,8 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /where-is-tyneham-village/     /tyneham_village_location.html  301
 /can-you-camp-at-tyneham       /camp-at-tyneham.html       301
 /can-you-camp-at-tyneham/      /camp-at-tyneham.html       301
-/tyneham-opening-times         /opening_times.html         301
-/tyneham-opening-times/        /opening_times.html         301
+/tyneham-opening-times         /opening_times              301
+/tyneham-opening-times/        /opening_times              301
 /tyneham-hous                  /tyneham-house.html         301
 /tyneham-hous/                 /tyneham-house.html         301
 /the-bond-family               /the_bond_family.html       301
@@ -31,3 +31,7 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /contact-tynehamvillage-org/   /contact.html               301
 /sitemap                       /sitemap.xml                301
 /sitemap/                      /sitemap.xml                301
+
+# .html → clean URL (consolidate duplicate indexed URLs)
+/opening_times.html            /opening_times              301
+/worbarrow-bay.html            /worbarrow-bay              301
