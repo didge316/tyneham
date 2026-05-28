@@ -5,26 +5,24 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /index.html  /  301
 
 # Old WordPress slug redirects
-/a-brief-history-of-tyneham    /history_of_tyneham.html    301
-/a-brief-history-of-tyneham/   /history_of_tyneham.html    301
-/map-of-tyneham-village        /map_of_tyneham.html        301
-/map-of-tyneham-village/       /map_of_tyneham.html        301
-/where-is-tyneham-village      /tyneham_village_location.html  301
-/where-is-tyneham-village/     /tyneham_village_location.html  301
+/a-brief-history-of-tyneham    /history-of-tyneham.html    301
+/a-brief-history-of-tyneham/   /history-of-tyneham.html    301
+/map-of-tyneham-village        /map-of-tyneham.html        301
+/map-of-tyneham-village/       /map-of-tyneham.html        301
+/where-is-tyneham-village      /tyneham-village-location.html  301
+/where-is-tyneham-village/     /tyneham-village-location.html  301
 /can-you-camp-at-tyneham       /camp-at-tyneham.html       301
 /can-you-camp-at-tyneham/      /camp-at-tyneham.html       301
-/tyneham-opening-times         /opening_times              301
-/tyneham-opening-times/        /opening_times              301
+/tyneham-opening-times         /opening-times              301
+/tyneham-opening-times/        /opening-times              301
 /tyneham-hous                  /tyneham-house.html         301
 /tyneham-hous/                 /tyneham-house.html         301
-/the-bond-family               /the_bond_family.html       301
-/the-bond-family/              /the_bond_family.html       301
+/the-bond-family/              /the-bond-family.html       301
 /tyneham-village               /                           301
 /tyneham-village/              /                           301
 /tyneham-dvd                   /tyneham-remembered.html    301
 /tyneham-dvd/                  /tyneham-remembered.html    301
-/the-post-office               /the_post_office.html       301
-/the-post-office/              /the_post_office.html       301
+/the-post-office/              /the-post-office.html       301
 /privacy-policy                /privacy.html               301
 /privacy-policy/               /privacy.html               301
 /contact-tynehamvillage-org    /contact.html               301
@@ -33,5 +31,25 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /sitemap/                      /sitemap.xml                301
 
 # .html → clean URL (consolidate duplicate indexed URLs)
-/opening_times.html            /opening_times              301
+/opening-times.html            /opening-times              301
 /worbarrow-bay.html            /worbarrow-bay              301
+
+# Underscore → hyphen URL redirects (SEO cleanup 2026-05)
+/history_of_tyneham    /history-of-tyneham    301
+/history_of_tyneham/   /history-of-tyneham    301
+/history_of_tyneham.html   /history-of-tyneham    301
+/map_of_tyneham    /map-of-tyneham    301
+/map_of_tyneham/   /map-of-tyneham    301
+/map_of_tyneham.html   /map-of-tyneham    301
+/opening_times    /opening-times    301
+/opening_times/   /opening-times    301
+/opening_times.html   /opening-times    301
+/the_bond_family    /the-bond-family    301
+/the_bond_family/   /the-bond-family    301
+/the_bond_family.html   /the-bond-family    301
+/the_post_office    /the-post-office    301
+/the_post_office/   /the-post-office    301
+/the_post_office.html   /the-post-office    301
+/tyneham_village_location    /tyneham-village-location    301
+/tyneham_village_location/   /tyneham-village-location    301
+/tyneham_village_location.html   /tyneham-village-location    301
