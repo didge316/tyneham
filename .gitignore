@@ -1,1 +1,17 @@
-TODO.md
+# Large/temporary files
+simply-static*.zip
+content/documentary-assets/
+*.png
+corfe_imgs/
+unnamed.*
+tyneham-village-colour.jpg
+fossil-forest-dorset.*
+fossils*.jpg
+fossils*.png
+
+# Claude internals
+.claude/
+
+# Python
+__pycache__/
+*.pyc
