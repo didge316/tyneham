@@ -1,28 +1,37 @@
-// Highlight the current page in the sidebar menu
-document.addEventListener("DOMContentLoaded", function () {
+// Highlight the current page in the sidebar menu.
+// Deferred to idle time — it's cosmetic and not on the critical path.
+function highlightSidebar() {
   let currentPage = window.location.pathname.split("/").pop();
   if (!currentPage || currentPage === "/") currentPage = "index.html";
-  // Cloudflare Pages serves pages at /slug (no .html); normalise for comparison
   if (!currentPage.includes(".")) currentPage += ".html";
 
-  // Check both the village sidebar and the Near Tyneham sidebar
   const menuItems = document.querySelectorAll(
     "#sidebar-menu .menu-item, #sidebar-menu-near .menu-item"
   );
 
+  // Read all links first, then batch the writes (avoids forced reflow).
+  const toHighlight = [];
   menuItems.forEach(function (item) {
     if (item.getAttribute("data-page") === currentPage) {
-      item.classList.add("bg-light");
-      const link = item.querySelector("a");
-      if (link) link.classList.add("fw-bold");
+      toHighlight.push({ item, link: item.querySelector("a") });
     }
   });
-});
+  toHighlight.forEach(function ({ item, link }) {
+    item.classList.add("bg-light");
+    if (link) link.classList.add("fw-bold");
+  });
+}
+
+if (typeof requestIdleCallback !== "undefined") {
+  requestIdleCallback(highlightSidebar);
+} else {
+  setTimeout(highlightSidebar, 0);
+}
 
 
-(function() {
-  'use strict';
-  
+(function () {
+  "use strict";
+
   // 2026 Tyneham open periods [month, startDate, endDate]
   const openPeriods2026 = [
     // Jan
@@ -48,74 +57,66 @@ document.addEventListener("DOMContentLoaded", function () {
     // Nov
     [10, 1, 1], [10, 7, 8], [10, 21, 22], [10, 28, 29],
     // Dec
-    [11, 5, 6], [11, 12, 13], [11, 19, 31]
+    [11, 5, 6], [11, 12, 13], [11, 19, 31],
   ];
 
   function isTynehamOpen(date) {
     if (date.getFullYear() !== 2026) return false;
-    
     const month = date.getMonth();
     const day = date.getDate();
-    
-    return openPeriods2026.some(([m, start, end]) => 
-      month === m && day >= start && day <= end
-    );
+    return openPeriods2026.some(([m, start, end]) => month === m && day >= start && day <= end);
   }
 
   function getNextOpenDate(today) {
     let next = new Date(today);
-    for (let i = 1; i <= 30; i++) { // Look ahead 1 month max
+    for (let i = 1; i <= 30; i++) {
       next.setDate(today.getDate() + i);
-      if (isTynehamOpen(next)) {
-        return next;
-      }
+      if (isTynehamOpen(next)) return next;
     }
     return null;
   }
 
-  // Initialize on load
-document.addEventListener('DOMContentLoaded', function() {
-  // List of all status elements by ID
-  const statusIds = ['tynehamStatus', 'tynehamStatusSidebar'];
+  function updateStatus(statusEl) {
+    const spinner = statusEl.querySelector(".spinner-border");
+    const content = statusEl.querySelector("#statusContent, .statusContent");
+    if (!spinner || !content) return;
 
-  statusIds.forEach(id => {
-    const statusEl = document.getElementById(id);
-    if (!statusEl) return; // skip if element not found
+    const today = new Date();
+    const openToday = isTynehamOpen(today);
+    const nextOpen = getNextOpenDate(today);
 
-    const spinner = statusEl.querySelector('.spinner-border');
-    const content = statusEl.querySelector('#statusContent, .statusContent');
+    // Hide spinner and update immediately — no artificial delay.
+    spinner.classList.add("d-none");
 
-    // Show spinner
-    spinner.classList.remove('d-none');
+    if (openToday) {
+      statusEl.className =
+        "alert alert-success fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4";
+      content.innerHTML =
+        "<strong>✅ Tyneham is OPEN TODAY!</strong><br>" +
+        '<small class="text-success-emphasis">9am to dusk (exhibitions 10am-4pm)</small>';
+    } else {
+      statusEl.className =
+        "alert alert-danger fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4";
+      const nextStr = nextOpen
+        ? nextOpen.toLocaleDateString("en-GB", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          })
+        : null;
+      content.innerHTML =
+        "<strong>❌ Tyneham is CLOSED TODAY</strong><br>" +
+        '<small class="text-danger-emphasis">' +
+        (nextStr ? "Next open: " + nextStr : "Check calendar for next open date") +
+        "</small>";
+    }
+  }
 
-    setTimeout(() => { // Simulate quick check
-      spinner.classList.add('d-none');
-      const today = new Date();
-      const openToday = isTynehamOpen(today);
-      const nextOpen = getNextOpenDate(today);
-
-      if (openToday) {
-        statusEl.className = 'alert alert-success fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4';
-        content.innerHTML = `
-          <i class="bi bi-check-circle-fill me-3" style="font-size: 3rem;"></i>
-          <strong>✅ Tyneham is OPEN TODAY!</strong><br>
-          <small class="text-success-emphasis">9am to dusk (exhibitions 10am-4pm)</small>
-        `;
-      } else {
-        statusEl.className = 'alert alert-danger fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4';
-        content.innerHTML = `
-          <i class="bi bi-x-circle-fill me-3" style="font-size: 3rem;"></i>
-          <strong>❌ Tyneham is CLOSED TODAY</strong><br>
-          ${nextOpen ? `<small class="text-danger-emphasis">Next open: ${nextOpen.toLocaleDateString('en-GB', {
-            weekday: 'long',
-            day: 'numeric',
-            month: 'long',
-            year: 'numeric'
-          })}</small>` : '<small class="text-danger-emphasis">Check calendar for next open date</small>'}
-        `;
-      }
-    }, 800);
+  document.addEventListener("DOMContentLoaded", function () {
+    ["tynehamStatus", "tynehamStatusSidebar"].forEach(function (id) {
+      const el = document.getElementById(id);
+      if (el) updateStatus(el);
+    });
   });
-});
-
 })();
