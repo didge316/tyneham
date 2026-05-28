@@ -10862,3 +10862,22 @@ textarea.form-control-lg {
     min-height: 280px; /* Falls back to horizontal on mobile */
   }
 }
+
+/* Bootstrap 5.2.x .text-muted (#6c757d) has 4.28:1 contrast on white — fails WCAG AA.
+   Bootstrap 5.3 uses rgba(33,37,41,0.75) which gives ~6:1 on white. */
+.text-muted {
+  color: rgba(33, 37, 41, 0.75) !important;
+}
+
+/* Ensure button-based nav-link dropdown toggles match link styling */
+button.nav-link {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+button.nav-link:hover,
+button.nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
