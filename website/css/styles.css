@@ -11024,3 +11024,15 @@ button.nav-link:focus {
 [data-theme="dark"] .blockquote-footer {
   color: rgba(222, 226, 230, 0.75);
 }
+
+/* Mobile navbar: dropdown items inherit dark navbar bg so need light text */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-collapse .dropdown-item {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-dark .navbar-collapse .dropdown-item:hover,
+  .navbar-dark .navbar-collapse .dropdown-item:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+}
