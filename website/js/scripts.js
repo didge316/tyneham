@@ -1,32 +1,3 @@
-// Dark mode: apply stored/OS preference before first paint, toggle on button click.
-// Two .dark-mode-btn buttons exist per page: one outside the collapse (mobile),
-// one inside the nav list (desktop). Both stay in sync.
-(function () {
-  var stored = localStorage.getItem('theme');
-  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  var theme = stored || (prefersDark ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', theme);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var btns = document.querySelectorAll('.dark-mode-btn');
-    if (!btns.length) return;
-    function syncBtns(t) {
-      btns.forEach(function (b) {
-        b.textContent = t === 'dark' ? '☀️' : '🌙';
-        b.title = t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
-      });
-    }
-    syncBtns(theme);
-    btns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        syncBtns(next);
-      });
-    });
-  });
-})();
 
 // Highlight the current page in the sidebar menu.
 // Deferred to idle time — it's cosmetic and not on the critical path.
