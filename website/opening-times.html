@@ -41,13 +41,16 @@
     "@type": "TouristAttraction",
     "name": "Tyneham Village",
     "url": "https://tynehamvillage.org/opening-times",
-    "description": "Tyneham is an abandoned Dorset village open to visitors on most weekends and during school holidays throughout the year.",
+    "description": "Tyneham is an abandoned Dorset village in Dorset, evacuated during WWII and preserved as a heritage site. Open to visitors free of charge on most weekends and school holidays throughout the year.",
     "isAccessibleForFree": true,
+    "telephone": "+441929404714",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "description": "Open most weekends (Saturday and Sunday) and during UK school holidays. Closed when the military ranges are in active use.",
-        "url": "https://tynehamvillage.org/opening-times"
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "20:00",
+        "description": "Village gate open 9am to dusk on non-firing weekends. Exhibitions in the School and Church open 10am–4pm."
       }
     ],
     "image": "https://tynehamvillage.org/assets/tyneham-village-early-photo.webp",
@@ -58,10 +61,72 @@
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Tyneham",
+      "streetAddress": "Tyneham",
+      "addressLocality": "Wareham",
+      "postalCode": "BH20 5QH",
       "addressRegion": "Dorset",
       "addressCountry": "GB"
-    }
+    },
+    "tourBookingPage": "https://tynehamvillage.org/opening-times",
+    "publicAccess": true
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When is Tyneham open in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tyneham is open on most weekends (Saturday and Sunday) and during UK school holidays throughout 2026, including the full month of August. It closes when the Lulworth military ranges are in active use. The full 2026 schedule is published at tynehamvillage.org/opening-times."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What time does Tyneham open?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The vehicle gate to Tyneham village opens at 9am on non-firing days and closes at dusk. The exhibitions inside Tyneham School and Tyneham Church are open from 10am to 4pm on the same days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Tyneham free to visit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, entry to Tyneham village is completely free. There are no admission charges for the village, the church, the schoolroom exhibition, or any of the ruined buildings. The car park operates on a voluntary donation basis — £4 per car is suggested via an honesty box at the entrance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much is parking at Tyneham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parking at Tyneham is on a voluntary donation basis. £4 per car is requested via an honesty box at the car park entrance. There is no pay-and-display machine. Coaches are not permitted as the approach road is too narrow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are dogs allowed at Tyneham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, dogs are welcome at Tyneham village and on the Lulworth Range walks, but they must be kept on leads at all times."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Tyneham open today?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check the live opening status widget at tynehamvillage.org/opening-times, which shows whether Tyneham is open today based on the current MOD Lulworth Range schedule."
+        }
+      }
+    ]
   }
   </script>
 
@@ -69,7 +134,7 @@
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 
   <!-- CSS -->
-  <link href="css/styles.css?v=2" rel="stylesheet" />
+  <link href="css/styles.css?v=3" rel="stylesheet" />
   <!-- Adense -->
   <script async data-cfasync="false" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866"
     crossorigin="anonymous"></script>

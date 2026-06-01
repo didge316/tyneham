@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 /*!
 * Start Bootstrap - Blog Post v5.0.9 (https://startbootstrap.com/template/blog-post)
 * Copyright 2013-2023 Start Bootstrap
@@ -11054,4 +11055,71 @@ button.nav-link:focus {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.12);
   }
+}
+
+/* ===== TYNEHAM HERITAGE THEME ===== */
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+:root {
+  --ty-walnut:      #3d3529;
+  --ty-walnut-rgb:  61, 53, 41;
+  --ty-green:       #5c7a3e;
+  --ty-green-hover: #4a6232;
+  --ty-stone:       #8b6f47;
+  --ty-amber:       #c4862b;
+  --ty-amber-hover: #a8711f;
+
+  --bs-body-bg:          #faf8f4;
+  --bs-body-bg-rgb:      250, 248, 244;
+  --bs-link-color:       var(--ty-green);
+  --bs-link-hover-color: var(--ty-green-hover);
+  --bs-primary:          var(--ty-stone);
+  --bs-primary-rgb:      139, 111, 71;
+  --bs-dark:             var(--ty-walnut);
+  --bs-dark-rgb:         var(--ty-walnut-rgb);
+}
+
+/* Navbar & footer */
+.bg-dark {
+  background-color: var(--ty-walnut) !important;
+}
+
+/* Mobile dropdown: darker shade of walnut */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-collapse .dropdown-menu {
+    background-color: #2e2820;
+  }
+}
+
+/* Sidebar card headers */
+.card-header.bg-primary {
+  background-color: var(--ty-stone) !important;
+}
+
+/* Donate CTA — amber with white text */
+.btn-warning,
+.btn-warning.text-dark {
+  --bs-btn-bg:                  var(--ty-amber);
+  --bs-btn-border-color:        var(--ty-amber);
+  --bs-btn-color:               #fff;
+  --bs-btn-hover-bg:            var(--ty-amber-hover);
+  --bs-btn-hover-border-color:  var(--ty-amber-hover);
+  --bs-btn-hover-color:         #fff;
+  --bs-btn-active-bg:           var(--ty-amber-hover);
+  --bs-btn-active-border-color: var(--ty-amber-hover);
+  --bs-btn-active-color:        #fff;
+  color: #fff !important;
+}
+
+/* Navbar & footer: deeper shade in dark mode */
+[data-theme="dark"] .bg-dark {
+  background-color: #1e1a14 !important;
+}
+
+/* Dark mode: keep sidebar headers blue (stone is too low contrast on dark bg) */
+[data-theme="dark"] .card-header.bg-primary {
+  background-color: #0d6efd !important;
 }
