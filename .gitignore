@@ -15,3 +15,17 @@ fossils*.png
 # Python
 __pycache__/
 *.pyc
+
+# Underscore-named legacy HTML files (covered by _redirects rules)
+website/history_of_tyneham.html
+website/map_of_tyneham.html
+website/opening_times.html
+website/the_bond_family.html
+website/the_post_office.html
+website/tyneham_village_location.html
+
+# Local-only files
+PLAN.md
+gsc/
+tyneham_youtube_urls.txt
+youtube_transcripts/
