@@ -43,12 +43,12 @@ Generated from AUDIT-2026-06-03.md · Score: 70/100 → target 82/100
 ## LOW
 
 - [x] **L1** Fix generic anchor "click on this link" → "open Tyneham in Google Maps" on tyneham-village-location.html — *done 2026-06-03*
-- [ ] **L2** Add Quotation schema to church door note blockquote
-- [ ] **L3** Add sameAs to about.html Person schema
-- [ ] **L4** Enable Cloudflare Auto Minify for CSS (Dashboard → Speed → Optimization)
-- [ ] **L5** Expand lulworth-cove.html (+400 words geology/history)
-- [ ] **L6** Expand tyneham-church.html (+300 words tower/bells/restoration)
-- [ ] **L7** Fix worrbarrow-bay-today.webp filename typo (functional but misspelled)
+- [x] **L2** Add Quotation schema to church door note blockquote — *done 2026-06-03*
+- [ ] **L3** Add sameAs to about.html Person schema — *needs external URL for James Langton*
+- [ ] **L4** Enable Cloudflare Auto Minify for CSS (Dashboard → Speed → Optimization) — *dashboard only*
+- [x] **L5** Expand lulworth-cove.html — added ~450 words: cove formation, three rock bands, Lulworth Crumple, Fossil Forest — *done 2026-06-03*
+- [x] **L6** Expand tyneham-church.html — added architecture section: Norman origins, alterations timeline, bells to Steeple, Bible inscription, churchyard still in use — *done 2026-06-03*
+- [x] **L7** Renamed worrbarrow-bay-today assets to worbarrow-bay-today, updated all HTML references — *done 2026-06-03*
 
 ---
 
