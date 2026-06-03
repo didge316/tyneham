@@ -20,6 +20,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 # Block bulk training scrapers
 User-agent: CCBot
 Disallow: /
