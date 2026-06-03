@@ -31,3 +31,4 @@ User-agent: Bytespider
 Disallow: /
 
 Sitemap: https://tynehamvillage.org/sitemap.xml
+IndexNow-key: 161bc7d976b7711698469b26dee1ad13
