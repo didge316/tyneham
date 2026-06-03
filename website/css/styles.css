@@ -10862,3 +10862,34 @@ textarea.form-control-lg {
     min-height: 280px; /* Falls back to horizontal on mobile */
   }
 }
+/* Ensure button-based nav-link dropdown toggles match link styling */
+button.nav-link {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+button.nav-link:hover,
+button.nav-link:focus {
+  color: #fff !important;
+  background: none !important;
+}
+
+/* Mobile: keep dropdown items clearly readable on the dark navbar */
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-collapse .dropdown-menu {
+    background-color: #2e2820;
+    border: none;
+  }
+  .navbar-dark .navbar-collapse .dropdown-item {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .navbar-dark .navbar-collapse .dropdown-item:hover,
+  .navbar-dark .navbar-collapse .dropdown-item:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+}
