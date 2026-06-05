@@ -58,6 +58,12 @@ Deploys automatically on push to the connected Git branch. The `website/` direct
 - `_headers` controls cache (assets/css/js are immutable, 1-year TTL)
 - `_redirects` handles the www redirect and all old WordPress URLs
 
+## ⚠️ NEVER ADD A Content-Security-Policy HEADER
+
+**DO NOT add a `Content-Security-Policy` header to `_headers` under any circumstances.**
+
+AdSense Auto Ads is critical revenue for this site. A CSP `connect-src` restriction blocks the dynamic Google subdomains AdSense needs to fetch ad creatives. Google's ad stack uses too many unpredictable subdomains to whitelist reliably — every attempt has broken AdSense (this has happened twice: commits c65e261 and 86ed74f). The site already has strong security via HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy. A CSP is not worth the trade-off.
+
 ## Contact Form
 
 `contact.html` posts to Web3Forms (`https://api.web3forms.com/submit`). The access key is embedded in the form. On success, redirects to `thank-you.html` (noindex). Spam protection via a hidden `botcheck` honeypot field.
