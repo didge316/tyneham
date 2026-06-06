@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO meta tags -->
+  <title>{{TITLE}} | {{TITLE_SUFFIX}}</title>
+  <meta name="description" content="{{DESCRIPTION}}" />
+  <meta name="author" content="James Langton" />
+{{KEYWORDS_META}}  <meta name="robots" content="{{ROBOTS}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{OG_TITLE}}" />
+  <meta property="og:description" content="{{OG_DESCRIPTION}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://tynehamvillage.org/{{SLUG}}" />
+  <meta property="og:image" content="https://tynehamvillage.org/assets/{{HERO_IMAGE}}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{OG_TITLE}}" />
+  <meta name="twitter:description" content="{{OG_DESCRIPTION}}" />
+  <meta name="twitter:image" content="https://tynehamvillage.org/assets/{{HERO_IMAGE}}" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tynehamvillage.org/{{SLUG}}" />
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{HEADLINE}}",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tynehamvillage.org/{{SLUG}}"},
+    "description": "{{DESCRIPTION}}",
+    "url": "https://tynehamvillage.org/{{SLUG}}",
+    "image": "https://tynehamvillage.org/assets/{{HERO_IMAGE}}",
+    "datePublished": "{{DATE_PUBLISHED}}",
+    "dateModified": "{{DATE_MODIFIED}}",
+    "author": {
+      "@type": "Person",
+      "name": "James Langton",
+      "url": "https://tynehamvillage.org/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TynehamVillage.org",
+      "url": "https://tynehamvillage.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tynehamvillage.org/assets/logo-publisher.png",
+        "width": 600,
+        "height": 60
+      }
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tynehamvillage.org/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{BREADCRUMB_NAME}}",
+        "item": "https://tynehamvillage.org/{{SLUG}}"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="css/styles.css?v=3" rel="stylesheet" />
+  <script async data-cfasync="false" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!-- menu injected by render_menus.py --></nav>
+
+<!-- Page content -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <article>
+        <header class="mb-4">
+          <h1 class="fw-bolder">{{HEADLINE}}</h1>
+          <p class="lead text-muted">{{LEAD}}</p>
+        </header>
+
+        <section class="mb-5">
+          <picture><source srcset="/assets/{{HERO_IMAGE}}" type="image/webp"><img class="img-fluid rounded shadow-lg mb-4 w-100"
+               src="/assets/{{HERO_IMAGE}}"
+               alt="{{HERO_ALT}}"
+               fetchpriority="high" width="800" height="534"></picture>
+
+          <!-- TODO: opening paragraph — what is this place/topic, and why does it matter? -->
+          <p class="fs-5 mb-4">TODO: Write the introduction.</p>
+
+          <h2 class="fw-bolder mt-5">TODO: Section heading</h2>
+          <!-- TODO: body paragraphs. Link related pages, e.g. <a href="opening-times">opening times</a>. -->
+          <p class="fs-5 mb-4">TODO: Write this section.</p>
+
+          <h2 class="fw-bolder mt-5">TODO: Section heading</h2>
+          <p class="fs-5 mb-4">TODO: Write this section.</p>
+
+        </section>
+
+        <!-- Sources & Further Reading (optional — delete if not used) -->
+        <section class="mb-5">
+          <h2 class="fw-bolder">Sources &amp; Further Reading</h2>
+          <ul class="fs-5">
+            <li>TODO: source / reference</li>
+          </ul>
+        </section>
+
+      </article>
+    </div>
+
+    <!-- Side widgets -->
+    <div class="col-lg-4">
+
+      <!-- Square Ad (Desktop only) -->
+      <div class="card my-5 d-none d-lg-block">
+        <div class="card-body text-center py-5">
+          <a href="tyneham-remembered">
+            <img src="assets/tyneham-dvd-cover.webp" class="img-fluid rounded" alt="Tyneham Remembered Documentary" loading="lazy" width="300" height="288">
+          </a>
+        </div>
+      </div>
+
+      <!-- Tyneham Open or Closed -->
+      <div class="container my-5 pt-4 text-center mb-5">
+        <div id="tynehamStatusSidebar" class="alert fs-3 fw-bold py-5 shadow-lg border-0 rounded-4 mb-4" role="alert"
+          style="min-height: 120px;">
+          <div class="spinner-border spinner-border-lg text-primary mb-3 d-none" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div id="statusContent">
+            Checking if Tyneham is open today...
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p class="fs-5 text-muted mb-4">
+              <strong>Tyneham Village opening times powered by official MOD 2026 schedule</strong><br>
+              Hours: Typically 9am to dusk (exhibitions 10am-4pm). <a
+                href="https://www.gov.uk/government/publications/lulworth-access-times" target="_blank"
+                rel="noopener">Always confirm via GOV.UK</a> or call <a href="tel:+441929404714">01929 404714</a>.
+            </p>
+            <div class="text-center">
+              <a href="opening-times" class="btn btn-warning btn-lg">View Full 2026 Calendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar: In Tyneham Village -->
+      <div class="card my-5 shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <strong>In Tyneham Village</strong>
+        </div>
+        <div class="card-body p-0">
+          <ul class="list-unstyled mb-0" id="sidebar-menu"></ul>
+        </div>
+      </div>
+
+      <!-- Sidebar: Near Tyneham -->
+      <div class="card my-5 shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <strong>Near Tyneham</strong>
+        </div>
+        <div class="card-body p-0">
+          <ul class="list-unstyled mb-0" id="sidebar-menu-near"></ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center">
+      <a href="contact" class="footer-link">Contact Us</a> |
+      <a href="privacy" class="footer-link">Privacy Policy</a> |
+      <a href="/" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
+    </p>
+  </div>
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Tyneham Village 2026</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="js/scripts.js?v=6" defer></script>
+
+<div class='modal fade' id='donateModal' tabindex='-1' aria-labelledby='donateModalLabel' aria-hidden='true'>
+  <div class='modal-dialog modal-dialog-centered'>
+    <div class='modal-content'>
+      <div class='modal-header bg-dark text-white'>
+        <h5 class='modal-title' id='donateModalLabel'>&#9829; Support Tyneham Village</h5>
+        <button type='button' class='btn-close btn-close-white' data-bs-dismiss='modal' aria-label='Close'></button>
+      </div>
+      <div class='modal-body text-center py-4'>
+        <p class='lead mb-1'>Help us keep Tyneham&rsquo;s story alive.</p>
+        <p class='text-muted mb-4'>This website is run by volunteers. Your donation helps cover hosting costs and keeps this piece of Dorset history accessible to everyone.</p>
+        <form action='https://www.paypal.com/donate' method='post' target='_blank'>
+          <input type='hidden' name='business' value='mattg4@gmail.com' />
+          <input type='hidden' name='item_name' value='Tyneham Village Website' />
+          <input type='hidden' name='currency_code' value='GBP' />
+          <button type='submit' class='btn btn-warning btn-lg px-5 fw-semibold'>Donate via PayPal</button>
+        </form>
+        <p class='text-muted mt-3 small'>You can choose any amount. Thank you!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

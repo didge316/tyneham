@@ -19,9 +19,82 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container px-5 d-flex justify-content-between align-items-center">
-      <a class="navbar-brand fw-bold" href="index">TynehamVillage.org</a>
-      <button id="darkModeToggle" class="btn btn-sm btn-outline-light px-2" type="button" aria-label="Toggle dark mode">🌙</button>
+    <div class="container">
+      <a class="navbar-brand" href="/">TynehamVillage.org</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- The Village dropdown -->
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              The Village
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="opening-times">Opening Times 2026</a></li>
+              <li><a class="dropdown-item" href="visiting-tyneham">Visiting Tyneham</a></li>
+              <li><a class="dropdown-item" href="tyneham-village-location">Where is Tyneham?</a></li>
+              <li><a class="dropdown-item" href="tyneham-remembered">The Tyneham Remembered Documentary</a></li>
+              <li><a class="dropdown-item" href="map-of-tyneham">Tyneham Village Map</a></li>
+              <li><a class="dropdown-item" href="the-post-office">The Post Office</a></li>
+              <li><a class="dropdown-item" href="the-rectory">The Rectory</a></li>
+              <li><a class="dropdown-item" href="tyneham-school">Tyneham School</a></li>
+              <li><a class="dropdown-item" href="tyneham-church">Tyneham Church</a></li>
+              <li><a class="dropdown-item" href="tyneham-house">Tyneham House</a></li>
+              <li><a class="dropdown-item" href="camp-at-tyneham">Camping at Tyneham</a></li>
+              <li><a class="dropdown-item" href="tyneham-photos">Tyneham Village Photos</a></li>
+              <li><a class="dropdown-item" href="wildlife-at-tyneham">Wildlife at Tyneham</a></li>
+            </ul>
+          </li>
+
+          <!-- History dropdown -->
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              History
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="history-of-tyneham">Tyneham History</a></li>
+              <li><a class="dropdown-item" href="the-bond-family">The Bond Family</a></li>
+              <li><a class="dropdown-item" href="the-church-door-note">The Church Door Note</a></li>
+              <li><a class="dropdown-item" href="after-the-evacuation">After the Evacuation</a></li>
+              <li><a class="dropdown-item" href="the-campaign-to-return">The Campaign to Return</a></li>
+              <li><a class="dropdown-item" href="ghost-village">Dorset's Ghost Village</a></li>
+            </ul>
+          </li>
+
+          <!-- Near Tyneham dropdown -->
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Near Tyneham
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="corfe-castle">Corfe Castle</a></li>
+              <li><a class="dropdown-item" href="durdle-door">Durdle Door</a></li>
+              <li><a class="dropdown-item" href="lulworth-cove">Lulworth Cove</a></li>
+              <li><a class="dropdown-item" href="worbarrow-bay">Worbarrow Bay</a></li>
+              <li><a class="dropdown-item" href="flowers-barrow">Flower's Barrow</a></li>
+              <li><a class="dropdown-item" href="kimmeridge-bay">Kimmeridge Bay</a></li>
+              <li><a class="dropdown-item" href="lulworth-range-walks">Lulworth Range Walks</a></li>
+              <li><a class="dropdown-item" href="gad-cliff">Gad Cliff</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          <li class='nav-item ms-lg-2'>
+            <a class='nav-link btn btn-warning btn-sm px-3 text-dark fw-semibold' href='#' data-bs-toggle='modal' data-bs-target='#donateModal'>&#9829; Donate</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
