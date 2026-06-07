@@ -1,74 +1,92 @@
 {
   "date_range": {
-    "start": "2026-02-25",
-    "end": "2026-05-25"
+    "start": "2026-03-07",
+    "end": "2026-06-04"
   },
   "pages": [
     {
       "url": "https://tynehamvillage.org/",
-      "clicks": 184,
-      "impressions": 8788,
-      "avg_position": 9.2
+      "clicks": 237,
+      "impressions": 11679,
+      "avg_position": 9.1
     },
     {
       "url": "https://tynehamvillage.org/durdle-door",
-      "clicks": 0,
-      "impressions": 1231,
-      "avg_position": 24.6
-    },
-    {
-      "url": "https://tynehamvillage.org/opening_times.html",
-      "clicks": 47,
-      "impressions": 1147,
-      "avg_position": 7.7
+      "clicks": 3,
+      "impressions": 2333,
+      "avg_position": 20.7
     },
     {
       "url": "https://tynehamvillage.org/opening_times",
-      "clicks": 61,
-      "impressions": 892,
-      "avg_position": 7.3
+      "clicks": 129,
+      "impressions": 1930,
+      "avg_position": 6.7
+    },
+    {
+      "url": "https://tynehamvillage.org/opening_times.html",
+      "clicks": 66,
+      "impressions": 1450,
+      "avg_position": 7.4
     },
     {
       "url": "https://tynehamvillage.org/worbarrow-bay",
-      "clicks": 4,
-      "impressions": 567,
-      "avg_position": 10.2
+      "clicks": 6,
+      "impressions": 950,
+      "avg_position": 10.4
     },
     {
       "url": "https://tynehamvillage.org/kimmeridge-bay",
-      "clicks": 0,
-      "impressions": 427,
-      "avg_position": 19.9
+      "clicks": 2,
+      "impressions": 660,
+      "avg_position": 17.8
     },
     {
       "url": "https://tynehamvillage.org/tyneham-house",
-      "clicks": 15,
-      "impressions": 361,
-      "avg_position": 10.6
-    },
-    {
-      "url": "https://tynehamvillage.org/history_of_tyneham.html",
-      "clicks": 2,
-      "impressions": 195,
-      "avg_position": 13.7
+      "clicks": 23,
+      "impressions": 531,
+      "avg_position": 10.0
     },
     {
       "url": "https://tynehamvillage.org/lulworth-cove",
       "clicks": 0,
-      "impressions": 183,
-      "avg_position": 39.3
+      "impressions": 262,
+      "avg_position": 41.5
+    },
+    {
+      "url": "https://tynehamvillage.org/history_of_tyneham.html",
+      "clicks": 2,
+      "impressions": 221,
+      "avg_position": 13.3
+    },
+    {
+      "url": "https://tynehamvillage.org/tyneham_village_location",
+      "clicks": 4,
+      "impressions": 217,
+      "avg_position": 15.6
     },
     {
       "url": "https://tynehamvillage.org/tyneham_village_location.html",
       "clicks": 1,
-      "impressions": 182,
-      "avg_position": 21.6
+      "impressions": 213,
+      "avg_position": 19.8
     },
     {
       "url": "https://tynehamvillage.org/contact.html",
       "clicks": 0,
-      "impressions": 182,
-      "avg_position": 8.8
+      "impressions": 209,
+      "avg_position": 9.0
+    },
+    {
+      "url": "https://tynehamvillage.org/map_of_tyneham",
+      "clicks": 18,
+      "impressions": 191,
+      "avg_position": 16.5
+    },
+    {
+      "url": "https://tynehamvillage.org/the_bond_family",
+      "clicks": 12,
+      "impressions": 183,
+      "avg_position": 7.7
     },
     {
       "url": "https://tynehamvillage.org/durdle-door.html",
@@ -83,10 +101,16 @@
       "avg_position": 10.6
     },
     {
-      "url": "https://tynehamvillage.org/the_bond_family",
-      "clicks": 8,
-      "impressions": 115,
-      "avg_position": 9.2
+      "url": "https://tynehamvillage.org/camp-at-tyneham",
+      "clicks": 3,
+      "impressions": 103,
+      "avg_position": 14.7
+    },
+    {
+      "url": "https://tynehamvillage.org/tyneham-school",
+      "clicks": 6,
+      "impressions": 102,
+      "avg_position": 7.4
     },
     {
       "url": "https://tynehamvillage.org/after-the-evacuation.html",
@@ -95,22 +119,46 @@
       "avg_position": 2.2
     },
     {
-      "url": "https://tynehamvillage.org/tyneham-school",
-      "clicks": 6,
-      "impressions": 87,
-      "avg_position": 7.8
+      "url": "https://tynehamvillage.org/opening-times",
+      "clicks": 3,
+      "impressions": 96,
+      "avg_position": 6.6
     },
     {
-      "url": "https://tynehamvillage.org/map_of_tyneham",
-      "clicks": 9,
+      "url": "https://tynehamvillage.org/corfe-castle.html",
+      "clicks": 0,
+      "impressions": 79,
+      "avg_position": 9.8
+    },
+    {
+      "url": "https://tynehamvillage.org/flowers-barrow",
+      "clicks": 1,
+      "impressions": 75,
+      "avg_position": 16.4
+    },
+    {
+      "url": "https://tynehamvillage.org/history_of_tyneham",
+      "clicks": 0,
+      "impressions": 75,
+      "avg_position": 44.3
+    },
+    {
+      "url": "https://tynehamvillage.org/tyneham-church",
+      "clicks": 1,
       "impressions": 74,
-      "avg_position": 13.9
+      "avg_position": 7.4
     },
     {
-      "url": "https://tynehamvillage.org/camp-at-tyneham",
+      "url": "https://tynehamvillage.org/about.html",
+      "clicks": 0,
+      "impressions": 72,
+      "avg_position": 10.1
+    },
+    {
+      "url": "https://tynehamvillage.org/after-the-evacuation",
       "clicks": 2,
-      "impressions": 68,
-      "avg_position": 17.2
+      "impressions": 59,
+      "avg_position": 7.4
     },
     {
       "url": "https://tynehamvillage.org/map_of_tyneham.html",
@@ -125,70 +173,70 @@
       "avg_position": 5.3
     },
     {
-      "url": "https://tynehamvillage.org/tyneham_village_location",
-      "clicks": 2,
-      "impressions": 47,
-      "avg_position": 17.2
-    },
-    {
-      "url": "https://tynehamvillage.org/history_of_tyneham",
-      "clicks": 0,
-      "impressions": 47,
-      "avg_position": 47.9
-    },
-    {
-      "url": "https://tynehamvillage.org/tyneham-church",
-      "clicks": 1,
-      "impressions": 41,
-      "avg_position": 7.8
-    },
-    {
-      "url": "https://tynehamvillage.org/flowers-barrow",
-      "clicks": 0,
-      "impressions": 38,
-      "avg_position": 15.8
-    },
-    {
       "url": "https://tynehamvillage.org/tyneham-school/",
-      "clicks": 1,
-      "impressions": 30,
-      "avg_position": 5.8
-    },
-    {
-      "url": "https://tynehamvillage.org/after-the-evacuation",
-      "clicks": 1,
-      "impressions": 28,
-      "avg_position": 8.4
-    },
-    {
-      "url": "https://tynehamvillage.org/corfe-castle.html",
-      "clicks": 0,
-      "impressions": 27,
-      "avg_position": 9.1
+      "clicks": 2,
+      "impressions": 41,
+      "avg_position": 5.6
     },
     {
       "url": "https://tynehamvillage.org/tyneham-remembered",
-      "clicks": 3,
-      "impressions": 26,
+      "clicks": 4,
+      "impressions": 40,
       "avg_position": 6.0
     },
     {
       "url": "https://tynehamvillage.org/the-campaign-to-return.html",
       "clicks": 3,
-      "impressions": 25,
-      "avg_position": 18.7
+      "impressions": 30,
+      "avg_position": 17
     },
     {
-      "url": "https://tynehamvillage.org/about.html",
+      "url": "https://tynehamvillage.org/history-of-tyneham.html",
       "clicks": 0,
-      "impressions": 20,
-      "avg_position": 9.7
+      "impressions": 28,
+      "avg_position": 9.4
+    },
+    {
+      "url": "https://tynehamvillage.org/opening-times.html",
+      "clicks": 0,
+      "impressions": 28,
+      "avg_position": 9.4
+    },
+    {
+      "url": "https://tynehamvillage.org/map-of-tyneham",
+      "clicks": 1,
+      "impressions": 27,
+      "avg_position": 10
+    },
+    {
+      "url": "https://tynehamvillage.org/the-bond-family",
+      "clicks": 2,
+      "impressions": 21,
+      "avg_position": 5.2
     },
     {
       "url": "https://tynehamvillage.org/the-rectory",
+      "clicks": 2,
+      "impressions": 21,
+      "avg_position": 9.1
+    },
+    {
+      "url": "https://tynehamvillage.org/history-of-tyneham",
+      "clicks": 0,
+      "impressions": 21,
+      "avg_position": 18.3
+    },
+    {
+      "url": "https://tynehamvillage.org/tyneham-village-location",
+      "clicks": 0,
+      "impressions": 16,
+      "avg_position": 14.9
+    },
+    {
+      "url": "https://tynehamvillage.org/the-church-door-note",
       "clicks": 1,
-      "impressions": 17,
-      "avg_position": 7.1
+      "impressions": 12,
+      "avg_position": 6
     },
     {
       "url": "https://tynehamvillage.org/flowers-barrow.html",
@@ -197,10 +245,16 @@
       "avg_position": 10.8
     },
     {
-      "url": "https://tynehamvillage.org/the-church-door-note",
-      "clicks": 1,
-      "impressions": 8,
-      "avg_position": 7.4
+      "url": "https://tynehamvillage.org/the-campaign-to-return",
+      "clicks": 0,
+      "impressions": 10,
+      "avg_position": 5.1
+    },
+    {
+      "url": "https://tynehamvillage.org/contact",
+      "clicks": 0,
+      "impressions": 6,
+      "avg_position": 9.2
     },
     {
       "url": "https://tynehamvillage.org/the-church-door-note.html",
@@ -215,105 +269,111 @@
       "avg_position": 4
     },
     {
-      "url": "https://tynehamvillage.org/contact",
-      "clicks": 0,
-      "impressions": 3,
-      "avg_position": 4.7
-    },
-    {
       "url": "https://tynehamvillage.org/kimmeridge-bay.html",
       "clicks": 0,
       "impressions": 2,
       "avg_position": 9.5
+    },
+    {
+      "url": "https://tynehamvillage.org/about",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 12
+    },
+    {
+      "url": "https://tynehamvillage.org/corfe-castle",
+      "clicks": 0,
+      "impressions": 1,
+      "avg_position": 12
     }
   ],
   "top_page_queries": {
     "https://tynehamvillage.org/": [
       {
         "query": "tyneham village",
-        "clicks": 50,
-        "impressions": 2705,
-        "avg_position": 8.8
+        "clicks": 60,
+        "impressions": 3268,
+        "avg_position": 8.9
       },
       {
         "query": "tyneham",
-        "clicks": 28,
-        "impressions": 1419,
-        "avg_position": 10.6
+        "clicks": 35,
+        "impressions": 2006,
+        "avg_position": 10.7
       },
       {
         "query": "tyneham village dorset",
-        "clicks": 13,
-        "impressions": 414,
-        "avg_position": 9.1
+        "clicks": 17,
+        "impressions": 562,
+        "avg_position": 9.2
       }
     ],
     "https://tynehamvillage.org/durdle-door": [
       {
+        "query": "durdle door",
+        "clicks": 1,
+        "impressions": 330,
+        "avg_position": 19.0
+      },
+      {
         "query": "attractions near durdle door",
         "clicks": 0,
-        "impressions": 5,
-        "avg_position": 17
+        "impressions": 6,
+        "avg_position": 19.5
       },
       {
         "query": "beach durdle door",
         "clicks": 0,
-        "impressions": 5,
-        "avg_position": 37
-      },
-      {
-        "query": "best places to visit near durdle door",
-        "clicks": 0,
-        "impressions": 3,
-        "avg_position": 41.7
-      }
-    ],
-    "https://tynehamvillage.org/opening_times.html": [
-      {
-        "query": "tyneham opening times",
-        "clicks": 8,
-        "impressions": 32,
-        "avg_position": 4.1
-      },
-      {
-        "query": "tyneham opening times 2026",
-        "clicks": 6,
-        "impressions": 25,
-        "avg_position": 3.0
-      },
-      {
-        "query": "tyneham village opening times 2026",
-        "clicks": 6,
-        "impressions": 64,
-        "avg_position": 4.8
+        "impressions": 6,
+        "avg_position": 35.7
       }
     ],
     "https://tynehamvillage.org/opening_times": [
       {
         "query": "tyneham village opening times 2026",
-        "clicks": 14,
-        "impressions": 97,
-        "avg_position": 3.5
+        "clicks": 27,
+        "impressions": 205,
+        "avg_position": 3.6
       },
       {
         "query": "tyneham opening times",
-        "clicks": 5,
-        "impressions": 45,
-        "avg_position": 4.3
+        "clicks": 19,
+        "impressions": 110,
+        "avg_position": 3.8
       },
       {
         "query": "tyneham opening times 2026",
-        "clicks": 5,
-        "impressions": 28,
+        "clicks": 9,
+        "impressions": 60,
         "avg_position": 3.1
+      }
+    ],
+    "https://tynehamvillage.org/opening_times.html": [
+      {
+        "query": "tyneham opening times",
+        "clicks": 11,
+        "impressions": 38,
+        "avg_position": 3.8
+      },
+      {
+        "query": "tyneham opening times 2026",
+        "clicks": 7,
+        "impressions": 30,
+        "avg_position": 3.0
+      },
+      {
+        "query": "tyneham village opening times 2026",
+        "clicks": 7,
+        "impressions": 70,
+        "avg_position": 4.7
       }
     ],
     "https://tynehamvillage.org/worbarrow-bay": [
       {
         "query": "tyneham beach",
         "clicks": 2,
-        "impressions": 81,
-        "avg_position": 10.0
+        "impressions": 141,
+        "avg_position": 9.4
       },
       {
         "query": "bulbarrow dorset",
@@ -330,6 +390,12 @@
     ],
     "https://tynehamvillage.org/kimmeridge-bay": [
       {
+        "query": "bermondsey beach",
+        "clicks": 0,
+        "impressions": 1,
+        "avg_position": 1
+      },
+      {
         "query": "camping near kimmeridge bay",
         "clicks": 0,
         "impressions": 1,
@@ -340,32 +406,46 @@
         "clicks": 0,
         "impressions": 1,
         "avg_position": 20
-      },
-      {
-        "query": "clavell tower kimmeridge",
-        "clicks": 0,
-        "impressions": 1,
-        "avg_position": 66
       }
     ],
     "https://tynehamvillage.org/tyneham-house": [
       {
         "query": "tyneham house",
-        "clicks": 4,
-        "impressions": 72,
-        "avg_position": 3.6
+        "clicks": 5,
+        "impressions": 104,
+        "avg_position": 3.5
+      },
+      {
+        "query": "tyneham manor house",
+        "clicks": 2,
+        "impressions": 24,
+        "avg_position": 4.4
       },
       {
         "query": "anderson manor dorset",
         "clicks": 0,
         "impressions": 1,
         "avg_position": 87
-      },
+      }
+    ],
+    "https://tynehamvillage.org/lulworth-cove": [
       {
-        "query": "bisham manor",
+        "query": "bh20 5rq",
         "clicks": 0,
         "impressions": 1,
-        "avg_position": 73
+        "avg_position": 85
+      },
+      {
+        "query": "cove in dorset",
+        "clicks": 0,
+        "impressions": 1,
+        "avg_position": 47
+      },
+      {
+        "query": "dorset cove",
+        "clicks": 0,
+        "impressions": 1,
+        "avg_position": 64
       }
     ],
     "https://tynehamvillage.org/history_of_tyneham.html": [
@@ -384,28 +464,28 @@
       {
         "query": "tyneham",
         "clicks": 0,
-        "impressions": 40,
-        "avg_position": 13.7
+        "impressions": 50,
+        "avg_position": 13.1
       }
     ],
-    "https://tynehamvillage.org/lulworth-cove": [
+    "https://tynehamvillage.org/tyneham_village_location": [
       {
-        "query": "cove in dorset",
-        "clicks": 0,
-        "impressions": 1,
-        "avg_position": 47
+        "query": "how to get to tyneham village",
+        "clicks": 1,
+        "impressions": 5,
+        "avg_position": 4.8
       },
       {
-        "query": "dorset lulworth cove",
+        "query": "dorset tyneham",
         "clicks": 0,
         "impressions": 1,
-        "avg_position": 59
+        "avg_position": 100
       },
       {
-        "query": "ludlow cove",
+        "query": "twineham village",
         "clicks": 0,
-        "impressions": 4,
-        "avg_position": 39.5
+        "impressions": 1,
+        "avg_position": 62
       }
     ],
     "https://tynehamvillage.org/tyneham_village_location.html": [
@@ -438,14 +518,54 @@
       {
         "query": "tyneham",
         "clicks": 0,
-        "impressions": 56,
-        "avg_position": 9.3
+        "impressions": 75,
+        "avg_position": 9.5
       },
       {
         "query": "tyneham dorset",
         "clicks": 0,
         "impressions": 13,
         "avg_position": 9.2
+      }
+    ],
+    "https://tynehamvillage.org/map_of_tyneham": [
+      {
+        "query": "tyneham village map",
+        "clicks": 3,
+        "impressions": 31,
+        "avg_position": 3.2
+      },
+      {
+        "query": "dorset tyneham",
+        "clicks": 0,
+        "impressions": 1,
+        "avg_position": 80
+      },
+      {
+        "query": "how to get to tyneham village",
+        "clicks": 0,
+        "impressions": 1,
+        "avg_position": 83
+      }
+    ],
+    "https://tynehamvillage.org/the_bond_family": [
+      {
+        "query": "nathaniel bond",
+        "clicks": 1,
+        "impressions": 1,
+        "avg_position": 25
+      },
+      {
+        "query": "the bond family",
+        "clicks": 1,
+        "impressions": 7,
+        "avg_position": 4
+      },
+      {
+        "query": "bond family",
+        "clicks": 0,
+        "impressions": 14,
+        "avg_position": 11
       }
     ],
     "https://tynehamvillage.org/durdle-door.html": [
@@ -466,66 +586,6 @@
         "clicks": 0,
         "impressions": 2,
         "avg_position": 9
-      }
-    ],
-    "https://tynehamvillage.org/worbarrow-bay.html": [
-      {
-        "query": "flowers barrow dorset",
-        "clicks": 0,
-        "impressions": 1,
-        "avg_position": 43
-      },
-      {
-        "query": "tyneham beach",
-        "clicks": 0,
-        "impressions": 15,
-        "avg_position": 8
-      },
-      {
-        "query": "tyneham opening times",
-        "clicks": 0,
-        "impressions": 1,
-        "avg_position": 66
-      }
-    ],
-    "https://tynehamvillage.org/the_bond_family": [
-      {
-        "query": "nathaniel bond",
-        "clicks": 1,
-        "impressions": 1,
-        "avg_position": 25
-      },
-      {
-        "query": "bond family",
-        "clicks": 0,
-        "impressions": 12,
-        "avg_position": 11.5
-      },
-      {
-        "query": "bond family history",
-        "clicks": 0,
-        "impressions": 2,
-        "avg_position": 6.5
-      }
-    ],
-    "https://tynehamvillage.org/after-the-evacuation.html": [
-      {
-        "query": "tyneham village photos",
-        "clicks": 6,
-        "impressions": 26,
-        "avg_position": 1.2
-      },
-      {
-        "query": "tyneham england",
-        "clicks": 2,
-        "impressions": 2,
-        "avg_position": 4
-      },
-      {
-        "query": "the village that died for england",
-        "clicks": 0,
-        "impressions": 1,
-        "avg_position": 1
       }
     ]
   }

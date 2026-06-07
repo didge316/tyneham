@@ -25,8 +25,16 @@ CREDENTIALS_FILE = SCRIPT_DIR / "credentials.json"
 TOKEN_FILE = SCRIPT_DIR / "token.json"
 
 TARGET_PAGES = [
+    "https://tynehamvillage.org/",
     "https://tynehamvillage.org/ghost-village",
     "https://tynehamvillage.org/history-of-tyneham",
+    "https://tynehamvillage.org/worbarrow-bay",
+    "https://tynehamvillage.org/durdle-door",
+    "https://tynehamvillage.org/kimmeridge-bay",
+    "https://tynehamvillage.org/opening-times",
+    "https://tynehamvillage.org/wildlife-at-tyneham",
+    "https://tynehamvillage.org/lulworth-cove",
+    "https://tynehamvillage.org/lulworth-range-walks",
 ]
 
 
