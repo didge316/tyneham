@@ -50,12 +50,16 @@ NEAR = [
     ("worbarrow-bay", "Worbarrow Bay"),
     ("flowers-barrow", "Flower's Barrow"),
     ("kimmeridge-bay", "Kimmeridge Bay"),
-    ("lulworth-range-walks", "Lulworth Range Walks"),
     ("gad-cliff", "Gad Cliff"),
 ]
 
+# "Walks" navbar dropdown
+WALKS = [
+    ("lulworth-range-walks", "Lulworth Range Walks"),
+]
+
 # Deliberately NOT in any menu yet (served but unlisted drafts):
-#   corfe-castle-walk, kimmeridge-tyneham-walk, tyneham-in-wartime
+#   corfe-castle-walk, kimmeridge-tyneham-walk, tyneham-walk, tyneham-in-wartime
 # Add them to the appropriate list above (via publish_page.py) when ready.
 
 # Maps the category key used by new_page.py / publish_page.py to its list name.
@@ -63,9 +67,10 @@ CATEGORY_TO_LIST = {
     "village": "VILLAGE",
     "history": "HISTORY",
     "near": "NEAR",
+    "walks": "WALKS",
 }
 
 
 def all_menu_slugs():
     """Every slug currently linked in the navbar/sidebar."""
-    return {slug for slug, _ in VILLAGE + HISTORY + NEAR}
+    return {slug for slug, _ in VILLAGE + HISTORY + NEAR + WALKS}

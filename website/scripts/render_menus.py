@@ -76,6 +76,16 @@ def build_navbar():
             </ul>
           </li>
 
+          <!-- Walks dropdown -->
+          <li class="nav-item dropdown">
+            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Walks
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+{_dropdown_items(mc.WALKS)}
+            </ul>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="about">About</a>
           </li>
@@ -119,6 +129,7 @@ def build_sidebar(ul_id, items):
 NAV_RE = re.compile(r'<nav class="navbar[^>]*>.*?</nav>', re.DOTALL)
 SIDEBAR_VILLAGE_RE = re.compile(r'<ul[^>]*id="sidebar-menu">.*?</ul>', re.DOTALL)
 SIDEBAR_NEAR_RE = re.compile(r'<ul[^>]*id="sidebar-menu-near">.*?</ul>', re.DOTALL)
+SIDEBAR_WALKS_RE = re.compile(r'<ul[^>]*id="sidebar-menu-walks">.*?</ul>', re.DOTALL)
 BODY_RE = re.compile(r'(<body[^>]*>)')
 
 
@@ -149,6 +160,13 @@ def render_page(html):
         new_html = SIDEBAR_NEAR_RE.sub(lambda m: near, html, count=1)
         if new_html != html:
             changed.append("sidebar-near")
+        html = new_html
+
+    walks = build_sidebar("sidebar-menu-walks", mc.WALKS)
+    if SIDEBAR_WALKS_RE.search(html):
+        new_html = SIDEBAR_WALKS_RE.sub(lambda m: walks, html, count=1)
+        if new_html != html:
+            changed.append("sidebar-walks")
         html = new_html
 
     return html, changed

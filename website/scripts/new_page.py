@@ -125,7 +125,7 @@ def main():
         sys.exit(f"ERROR: {dest.name} already exists — refusing to overwrite.")
     dest.write_text(html, encoding="utf-8")
 
-    cat = args.category or "<village|history|near>"
+    cat = args.category or "<village|history|near|walks>"
     label = args.title
     print(f"\n✓ Created draft: website/{args.slug}.html  (robots: noindex, nofollow)")
     print("\nNext steps:")
