@@ -56,6 +56,7 @@ NEAR = [
 # "Walks" navbar dropdown
 WALKS = [
     ("lulworth-range-walks", "Lulworth Range Walks"),
+    ("tyneham-walk", "Tyneham Circular Walk"),
 ]
 
 # Deliberately NOT in any menu yet (served but unlisted drafts):
