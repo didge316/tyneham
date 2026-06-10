@@ -86,7 +86,7 @@ def build_navbar():
             </ul>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ms-lg-3">
             <a class="nav-link" href="about">About</a>
           </li>
           <li class="nav-item">
