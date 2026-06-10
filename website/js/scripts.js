@@ -162,19 +162,20 @@ if (typeof requestIdleCallback !== "undefined") {
     if (!menuUl) return;
     var menuCard = menuUl.closest(".card");
     if (!menuCard) return;
+    var col = menuCard.parentNode;
 
     var weatherCard = document.createElement("div");
-    weatherCard.className = "card my-5 shadow-sm";
+    weatherCard.className = "card mt-3 mb-4 shadow-sm";
     weatherCard.id = "sidebar-weather";
     weatherCard.innerHTML =
       '<div class="card-header bg-primary text-white">' +
         "<strong>Tyneham Weather</strong>" +
       "</div>" +
       '<div class="card-body p-3" id="sw-body">' +
-        '<div class="text-center text-muted small py-2">Loading…</div>' +
+        '<div class="text-center text-muted py-2">Loading…</div>' +
       "</div>";
 
-    menuCard.parentNode.insertBefore(weatherCard, menuCard);
+    col.insertBefore(weatherCard, col.firstElementChild);
 
     var url =
       "https://api.open-meteo.com/v1/forecast" +
@@ -212,20 +213,20 @@ if (typeof requestIdleCallback !== "undefined") {
       var hi = Math.round(daily.temperature_2m_max[i]);
       var lo = Math.round(daily.temperature_2m_min[i]);
       forecastHtml +=
-        '<div class="d-flex justify-content-between align-items-center border-top pt-2 mt-1">' +
-          '<span class="small text-muted" style="width:2.5rem">' + DAYS[d.getDay()] + "</span>" +
-          '<span style="font-size:1.1rem">' + fw[0] + "</span>" +
-          '<span class="small">' + hi + "\xb0" +
+        '<div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">' +
+          '<span class="text-muted" style="width:2.8rem;font-size:1rem">' + DAYS[d.getDay()] + "</span>" +
+          '<span style="font-size:1.5rem">' + fw[0] + "</span>" +
+          '<span style="font-size:1rem">' + hi + "\xb0" +
             '<span class="text-muted">/' + lo + "\xb0</span></span>" +
         "</div>";
     }
 
     body.innerHTML =
       '<div class="text-center mb-3">' +
-        '<div style="font-size:2.2rem;line-height:1.2">' + w[0] + "</div>" +
-        '<div class="fw-bold" style="font-size:1.5rem">' + temp + "\xb0C</div>" +
-        '<div class="text-muted small">' + w[1] + "</div>" +
-        '<div class="text-muted small">Wind: ' + wind + " km/h</div>" +
+        '<div style="font-size:3rem;line-height:1.2">' + w[0] + "</div>" +
+        '<div class="fw-bold" style="font-size:2rem">' + temp + "\xb0C</div>" +
+        '<div class="text-muted" style="font-size:1.1rem">' + w[1] + "</div>" +
+        '<div class="text-muted" style="font-size:1rem">Wind: ' + wind + " km/h</div>" +
       "</div>" +
       forecastHtml +
       '<div class="text-end mt-2" style="font-size:0.65rem;color:#aaa">' +
