@@ -213,11 +213,11 @@ if (typeof requestIdleCallback !== "undefined") {
       var hi = Math.round(daily.temperature_2m_max[i]);
       var lo = Math.round(daily.temperature_2m_min[i]);
       forecastHtml +=
-        '<div class="d-flex justify-content-between align-items-center border-top pt-2 mt-2">' +
-          '<span class="text-muted" style="width:2.8rem;font-size:1rem">' + DAYS[d.getDay()] + "</span>" +
-          '<span style="font-size:1.5rem">' + fw[0] + "</span>" +
-          '<span style="font-size:1rem">' + hi + "\xb0" +
-            '<span class="text-muted">/' + lo + "\xb0</span></span>" +
+        '<div class="d-flex justify-content-between align-items-center border-top pt-3 mt-2">' +
+          '<span class="fw-bold" style="width:3rem;font-size:1.2rem">' + DAYS[d.getDay()] + "</span>" +
+          '<span style="font-size:1.6rem">' + fw[0] + "</span>" +
+          '<span class="fw-bold" style="font-size:1.2rem">' + hi + "\xb0" +
+            '<span class="text-muted fw-normal">/' + lo + "\xb0</span></span>" +
         "</div>";
     }
 
