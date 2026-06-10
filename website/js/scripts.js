@@ -121,3 +121,116 @@ if (typeof requestIdleCallback !== "undefined") {
     });
   });
 })();
+
+
+// Live weather widget — fetches current conditions + 3-day forecast for Tyneham
+// from Open-Meteo (free, no API key) and injects a card above the sidebar menus.
+(function () {
+  "use strict";
+
+  // WMO weather code → [emoji, short description]
+  var WMO = {
+    0:  ["☀️",  "Clear sky"],
+    1:  ["🌤️", "Mainly clear"],
+    2:  ["⛅",  "Partly cloudy"],
+    3:  ["☁️",  "Overcast"],
+    45: ["🌫️", "Fog"],
+    48: ["🌫️", "Freezing fog"],
+    51: ["🌦️", "Light drizzle"],
+    53: ["🌦️", "Drizzle"],
+    55: ["🌧️", "Heavy drizzle"],
+    61: ["🌧️", "Light rain"],
+    63: ["🌧️", "Rain"],
+    65: ["🌧️", "Heavy rain"],
+    71: ["🌨️", "Light snow"],
+    73: ["🌨️", "Snow"],
+    75: ["❄️",  "Heavy snow"],
+    80: ["🌦️", "Rain showers"],
+    81: ["🌧️", "Heavy showers"],
+    82: ["⛈️",  "Violent showers"],
+    95: ["⛈️",  "Thunderstorm"],
+    96: ["⛈️",  "Thunderstorm"],
+    99: ["⛈️",  "Thunderstorm"]
+  };
+
+  function wmo(code) {
+    return WMO[code] || ["🌡️", "Unknown"];
+  }
+
+  function initWeather() {
+    var menuUl = document.getElementById("sidebar-menu");
+    if (!menuUl) return;
+    var menuCard = menuUl.closest(".card");
+    if (!menuCard) return;
+
+    var weatherCard = document.createElement("div");
+    weatherCard.className = "card my-5 shadow-sm";
+    weatherCard.id = "sidebar-weather";
+    weatherCard.innerHTML =
+      '<div class="card-header bg-primary text-white">' +
+        "<strong>Tyneham Weather</strong>" +
+      "</div>" +
+      '<div class="card-body p-3" id="sw-body">' +
+        '<div class="text-center text-muted small py-2">Loading…</div>' +
+      "</div>";
+
+    menuCard.parentNode.insertBefore(weatherCard, menuCard);
+
+    var url =
+      "https://api.open-meteo.com/v1/forecast" +
+      "?latitude=50.6239&longitude=-2.1601" +
+      "&current=temperature_2m,weathercode,windspeed_10m" +
+      "&daily=weathercode,temperature_2m_max,temperature_2m_min" +
+      "&timezone=Europe%2FLondon&forecast_days=4";
+
+    fetch(url)
+      .then(function (r) { return r.json(); })
+      .then(renderWeather)
+      .catch(function () {
+        var b = document.getElementById("sw-body");
+        if (b) b.innerHTML =
+          '<div class="text-center text-muted small py-2">Weather unavailable</div>';
+      });
+  }
+
+  function renderWeather(data) {
+    var body = document.getElementById("sw-body");
+    if (!body) return;
+
+    var cur = data.current;
+    var daily = data.daily;
+    var w = wmo(cur.weathercode);
+    var temp = Math.round(cur.temperature_2m);
+    var wind = Math.round(cur.windspeed_10m);
+
+    var DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var forecastHtml = "";
+    for (var i = 1; i <= 3; i++) {
+      if (!daily.time[i]) break;
+      var d = new Date(daily.time[i] + "T12:00:00");
+      var fw = wmo(daily.weathercode[i]);
+      var hi = Math.round(daily.temperature_2m_max[i]);
+      var lo = Math.round(daily.temperature_2m_min[i]);
+      forecastHtml +=
+        '<div class="d-flex justify-content-between align-items-center border-top pt-2 mt-1">' +
+          '<span class="small text-muted" style="width:2.5rem">' + DAYS[d.getDay()] + "</span>" +
+          '<span style="font-size:1.1rem">' + fw[0] + "</span>" +
+          '<span class="small">' + hi + "\xb0" +
+            '<span class="text-muted">/' + lo + "\xb0</span></span>" +
+        "</div>";
+    }
+
+    body.innerHTML =
+      '<div class="text-center mb-3">' +
+        '<div style="font-size:2.2rem;line-height:1.2">' + w[0] + "</div>" +
+        '<div class="fw-bold" style="font-size:1.5rem">' + temp + "\xb0C</div>" +
+        '<div class="text-muted small">' + w[1] + "</div>" +
+        '<div class="text-muted small">Wind: ' + wind + " km/h</div>" +
+      "</div>" +
+      forecastHtml +
+      '<div class="text-end mt-2" style="font-size:0.65rem;color:#aaa">' +
+        "Near Tyneham \xb7 Open-Meteo</div>";
+  }
+
+  document.addEventListener("DOMContentLoaded", initWeather);
+}());
