@@ -123,6 +123,23 @@ if (typeof requestIdleCallback !== "undefined") {
 })();
 
 
+// Back to top button
+(function () {
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}());
+
+
 // Live weather widget — fetches current conditions + 3-day forecast for Tyneham
 // from Open-Meteo (free, no API key) and injects a card above the sidebar menus.
 (function () {
