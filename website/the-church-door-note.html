@@ -11,7 +11,6 @@
   <title>The Note on the Church Door – Tyneham Village</title>
   <meta name="description" content="When Tyneham's villagers left in 1943, they pinned a note to the church door — one of the most moving documents of the Second World War home front." />
   <meta name="author" content="James Langton" />
-  <meta name="keywords" content="Tyneham church door note, Tyneham evacuation note, note left on church door Tyneham, Tyneham 1943 evacuation, Tyneham village Dorset, Tyneham St Marys Church, we have given up our homes, Tyneham ghost village, Dorset wartime evacuation, Purbeck history, Tyneham promise to return, abandoned village Dorset, World War Two home front Dorset" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph / Social Media -->
@@ -75,10 +74,28 @@
     "about": {
       "@type": "Event",
       "name": "Evacuation of Tyneham village",
+      "description": "On 19 December 1943 the residents of Tyneham, Dorset, left their homes after the War Office requisitioned the village and surrounding heathland for D-Day military training. A handwritten note pinned to the door of St Mary's Church asked the soldiers to treat the village kindly. The villagers were never allowed to return.",
       "startDate": "1943-12-19",
+      "endDate": "1943-12-19",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "image": "https://tynehamvillage.org/assets/note-left-on-church-door.jpg",
+      "organizer": {
+        "@type": "Organization",
+        "name": "The War Office",
+        "description": "The British government department that requisitioned Tyneham in 1943."
+      },
       "location": {
         "@type": "Place",
-        "name": "St Mary's Church, Tyneham, Dorset"
+        "name": "St Mary's Church, Tyneham",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Tyneham",
+          "addressLocality": "Wareham",
+          "addressRegion": "Dorset",
+          "postalCode": "BH20 5DE",
+          "addressCountry": "GB"
+        }
       }
     },
     "isPartOf": {
@@ -133,8 +150,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-  <!-- CSS -->
-  <link href="css/styles.min.css?v=7" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/styles.min.css?v=8" rel="stylesheet" />
 
   <script async data-cfasync="false" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866"
     crossorigin="anonymous"></script>
@@ -208,6 +231,7 @@
               <li><a class="dropdown-item" href="the-bond-family">The Bond Family</a></li>
               <li><a class="dropdown-item" href="the-church-door-note">The Church Door Note</a></li>
               <li><a class="dropdown-item" href="after-the-evacuation">After the Evacuation</a></li>
+              <li><a class="dropdown-item" href="tyneham-in-wartime">Tyneham in Wartime</a></li>
               <li><a class="dropdown-item" href="the-campaign-to-return">The Campaign to Return</a></li>
               <li><a class="dropdown-item" href="ghost-village">Dorset's Ghost Village</a></li>
             </ul>
@@ -237,6 +261,8 @@
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="lulworth-range-walks">Lulworth Range Walks</a></li>
               <li><a class="dropdown-item" href="tyneham-walk">Tyneham Circular Walk</a></li>
+              <li><a class="dropdown-item" href="corfe-castle-walk">Corfe Castle Circular Walk</a></li>
+              <li><a class="dropdown-item" href="kimmeridge-tyneham-walk">Kimmeridge to Tyneham Walk</a></li>
             </ul>
           </li>
 
@@ -258,6 +284,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-8">
+        <main>
         <article>
           <header class="mb-4">
             <h1 class="fw-bolder mb-1">The Note on the Church Door</h1>
@@ -288,12 +315,12 @@
 
             <p class="fs-5 mb-4">
               In a few plain sentences it captured everything: the sacrifice made willingly, the trust placed in those
-              who would follow, and the absolute certainty that they would come back. That last sentence —
-              <em>we shall return one day</em> — has become the most poignant line in Tyneham's story, because they
+              who would follow, and the absolute certainty that they would come back. That last sentence,
+              <em>we shall return one day</em>, has become the most poignant line in Tyneham's story, because they
               never did.
             </p>
 
-            <h2 class="fw-bolder mt-5 mb-3">The Day They Left</h2>
+            <h2 class="fw-bolder mt-5 mb-3">The day they left</h2>
 
             <p class="fs-5 mb-4">
               The War Office had given the villagers just weeks to pack up lives that in many cases stretched back
@@ -303,33 +330,33 @@
             </p>
 
             <p class="fs-5 mb-4">
-              They departed on 19 December 1943 — just days before Christmas. The church bells that had rung for
+              They departed on 19 December 1943, just days before Christmas. The church bells that had rung for
               baptisms, weddings and funerals across the centuries were removed shortly afterwards and rehomed at Steeple
               church, a few miles away. The fine Jacobean pulpit went to Lulworth Camp. The village that had stood since
               the time of the Norman Conquest fell silent.
             </p>
 
-            <h2 class="fw-bolder mt-5 mb-3">The Woman Who Pinned the Note</h2>
+            <h2 class="fw-bolder mt-5 mb-3">The woman who pinned the note</h2>
 
             <p class="fs-5 mb-4">
               By tradition, the person who fixed the note to the church door was <strong>Helen Beatrice Taylor</strong>,
-              the last villager to leave. Helen was born in 1901 in the Laundry Cottages — the only homes in Tyneham
-              with running water — where her family ran the village laundry, washing for Tyneham House and
+              the last villager to leave. Helen was born in 1901 in the Laundry Cottages (the only homes in Tyneham
+              with running water), where her family ran the village laundry, washing for Tyneham House and
               <a href="the-rectory">the Rectory</a> arriving by cart in wicker hampers every Monday morning. Her mother
-              Emily lost all three of her sons — William, Arthur and Bert — in the First World War, and died in 1917
+              Emily lost all three of her sons (William, Arthur and Bert) in the First World War, and died in 1917
               aged 52, worn out, as the village remembered it, with work, worry and grief. Helen, just sixteen, took
               over the laundry and ran it for the next twenty-six years, until the evacuation ended village life
               altogether.
             </p>
 
             <p class="fs-5 mb-4">
-              Helen lived to 1998 — fifty-five years after she closed the door on her home. Like every villager, she
+              Helen lived to 1998, fifty-five years after she closed the door on her home. Like every villager, she
               was never able to return to live in Tyneham. The only way back, as visitors to the churchyard will
               notice from the handful of recent gravestones, was burial: former residents and their families retained
               the right to be laid to rest beside the church.
             </p>
 
-            <h2 class="fw-bolder mt-5 mb-3">What the Note Means</h2>
+            <h2 class="fw-bolder mt-5 mb-3">What the note means</h2>
 
             <p class="fs-5 mb-4">
               The note has been reproduced in books, documentaries and newspaper articles ever since it was found. It
@@ -342,10 +369,10 @@
               That faith was not rewarded. After the war ended the Army stayed, and after a public inquiry and years of
               campaigning, the government confirmed in 1974 that the land would remain under military control
               permanently. The note on the church door became a symbol not only of wartime sacrifice but of a promise
-              broken — one chapter in the <a href="history-of-tyneham">wider history of Tyneham village</a>.
+              broken: one chapter in the <a href="history-of-tyneham">wider history of Tyneham village</a>.
             </p>
 
-            <h2 class="fw-bolder mt-5 mb-3">The Note Today</h2>
+            <h2 class="fw-bolder mt-5 mb-3">The note today</h2>
 
             <figure class="text-center my-4">
               <picture><source srcset="assets/tyneham-church-today.webp" type="image/webp"><img class="img-fluid rounded shadow-lg"
@@ -361,8 +388,8 @@
             </p>
 
             <p class="fs-5 mb-4">
-              The original note itself — a modest piece of paper carrying one of the most quietly powerful statements of
-              the Second World War home front — is preserved as part of the historical record of Tyneham village.
+              The original note itself, a modest piece of paper carrying one of the most quietly powerful statements of
+              the Second World War home front, is preserved as part of the historical record of Tyneham village.
             </p>
 
             <div class="mt-5 p-4 bg-light rounded">
@@ -372,7 +399,7 @@
                 <li><a href="after-the-evacuation">What happened to the villagers after they left</a></li>
                 <li><a href="the-campaign-to-return">The campaign to return Tyneham to its people</a></li>
                 <li><a href="tyneham-church">St Mary's Church today</a></li>
-                <li><a href="visiting-tyneham">Plan your visit — free entry, parking, directions</a></li>
+                <li><a href="visiting-tyneham">Plan your visit: free entry, parking, directions</a></li>
               </ul>
             </div>
 
@@ -380,15 +407,16 @@
         </article>
 
         <section class="mb-5">
-          <h2 class="fw-bolder">Sources &amp; Further Reading</h2>
+          <h2 class="fw-bolder">Sources &amp; further reading</h2>
           <ul class="fs-5">
-            <li>The original church door note is preserved at St Mary's Church, Tyneham — visitors can view a reproduction during public opening times.</li>
-            <li>Lilian Bond, <em>Tyneham: A Lost Heritage</em> (Dorset Publishing, 1956) — reproduces the note in full and provides context on who wrote it.</li>
+            <li>The original church door note is preserved at St Mary's Church, Tyneham; visitors can view a reproduction during public opening times.</li>
+            <li>Lilian Bond, <em>Tyneham: A Lost Heritage</em> (Dorset Publishing, 1956): reproduces the note in full and provides context on who wrote it.</li>
             <li>Rodney Legg, <em>Tyneham: Dorset's Ghost Village</em> (Dorset Publishing, 1998)</li>
-            <li>The Keep Military Museum, Dorchester — holds records related to the wartime requisition notice served on Tyneham residents.</li>
+            <li>The Keep Military Museum, Dorchester: holds records related to the wartime requisition notice served on Tyneham residents.</li>
           </ul>
         </section>
-      </div>
+      
+        </main></div>
 
       <!-- Side widgets -->
       <div class="col-lg-4">
@@ -486,6 +514,9 @@
               <li class="border-bottom menu-item" data-page="after-the-evacuation.html">
                 <a href="after-the-evacuation" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">After the Evacuation</a>
               </li>
+              <li class="border-bottom menu-item" data-page="tyneham-in-wartime.html">
+                <a href="tyneham-in-wartime" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham in Wartime</a>
+              </li>
               <li class="border-bottom menu-item" data-page="the-campaign-to-return.html">
                 <a href="the-campaign-to-return" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">The Campaign to Return</a>
               </li>
@@ -541,6 +572,12 @@
               <li class="border-bottom menu-item" data-page="tyneham-walk.html">
                 <a href="tyneham-walk" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Tyneham Circular Walk</a>
               </li>
+              <li class="border-bottom menu-item" data-page="corfe-castle-walk.html">
+                <a href="corfe-castle-walk" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Corfe Castle Circular Walk</a>
+              </li>
+              <li class="border-bottom menu-item" data-page="kimmeridge-tyneham-walk.html">
+                <a href="kimmeridge-tyneham-walk" class="d-block px-4 py-3 text-decoration-none text-dark hover-bg-light">Kimmeridge to Tyneham Walk</a>
+              </li>
             </ul>
             </div>
         </div>
@@ -550,20 +587,59 @@
     </div>
   </div>
 
-  <footer class="py-5 bg-dark">
+    <footer class="site-footer py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center">
-        <a href="contact" class="footer-link">Contact Us</a> |
-        <a href="privacy" class="footer-link">Privacy Policy</a> |
-        <a href="/" class="footer-link">Home</a> &nbsp;<a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
-      </p>
-    </div>
-    <div class="container">
-      <p class="m-0 text-center text-white">
-        Copyright &copy; Tyneham Village 2026
-      </p>
+      <div class="row g-4 mb-2">
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">Tyneham Village</h6>
+          <p class="footer-description">An independent guide to Dorset's ghost village, evacuated in 1943 and never returned.</p>
+          <a href="#" class="btn btn-warning btn-sm px-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#donateModal">&#9829; Donate</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">The Village</h6>
+          <ul>
+            <li><a href="opening-times">Opening Times 2026</a></li>
+            <li><a href="visiting-tyneham">Visiting Tyneham</a></li>
+            <li><a href="tyneham-village-location">Getting Here</a></li>
+            <li><a href="tyneham-church">Tyneham Church</a></li>
+            <li><a href="tyneham-school">Tyneham School</a></li>
+            <li><a href="the-post-office">The Post Office</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">History</h6>
+          <ul>
+            <li><a href="history-of-tyneham">Tyneham History</a></li>
+            <li><a href="the-bond-family">The Bond Family</a></li>
+            <li><a href="the-church-door-note">The Church Door Note</a></li>
+            <li><a href="after-the-evacuation">After the Evacuation</a></li>
+            <li><a href="the-campaign-to-return">The Campaign to Return</a></li>
+            <li><a href="tyneham-remembered">Documentary</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">Nearby</h6>
+          <ul>
+            <li><a href="worbarrow-bay">Worbarrow Bay</a></li>
+            <li><a href="lulworth-cove">Lulworth Cove</a></li>
+            <li><a href="corfe-castle">Corfe Castle</a></li>
+            <li><a href="durdle-door">Durdle Door</a></li>
+            <li><a href="kimmeridge-bay">Kimmeridge Bay</a></li>
+            <li><a href="tyneham-walk">Circular Walk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
+        <div>
+          <a href="contact" class="footer-link me-3">Contact</a>
+          <a href="privacy" class="footer-link me-3">Privacy Policy</a>
+          <a href="/" class="footer-link">Home</a>
+        </div>
+        <span>&copy; Tyneham Village 2026</span>
+      </div>
     </div>
   </footer>
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <!-- Core theme JS-->
