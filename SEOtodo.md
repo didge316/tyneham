@@ -10,8 +10,8 @@ Updated with 8-agent audit findings (2026-06-03)
 - [x] **C1** Fix population figure 225 → 252 on all pages (index.html ×3, history-of-tyneham.html, after-the-evacuation.html, ghost-village.html ×3) and llms.txt — *done 2026-06-03*
 - [ ] **C2** Verify and fix parking cost contradiction: visiting-tyneham.html says £2, opening-times.html FAQ schema says £4 — *schema fixed to £2; verify actual MOD figure is £2*
 - [x] **C3** Fix 6 underscore legacy pages: canonical href and og:url now point to hyphen URLs — *done 2026-06-03*
-- [ ] **C4** Delete the 6 underscore .html files from the repo — `history_of_tyneham.html`, `map_of_tyneham.html`, `opening_times.html`, `the_bond_family.html`, `the_post_office.html`, `tyneham_village_location.html`. Cloudflare serves physical files before `_redirects`, so they are currently live and self-canonical to the wrong URL.
-- [ ] **C5** Remove Cloudflare Bulk Redirects (dashboard task) — the 13 entries in `website/cloudflare-bulk-redirects.csv` point old WordPress slugs to underscore URLs, creating two-hop chains (WP slug → underscore → hyphen). Delete all 13 from Cloudflare Dashboard → Bulk Redirects.
+- [x] **C4** Delete the 6 underscore .html files from the repo — *done 2026-07-13* — `history_of_tyneham.html`, `map_of_tyneham.html`, `opening_times.html`, `the_bond_family.html`, `the_post_office.html`, `tyneham_village_location.html`. Cloudflare serves physical files before `_redirects`, so they are currently live and self-canonical to the wrong URL.
+- [x] **C5** Remove Cloudflare Bulk Redirects (dashboard task) — *done 2026-07-13* — the 13 entries in `website/cloudflare-bulk-redirects.csv` point old WordPress slugs to underscore URLs, creating two-hop chains (WP slug → underscore → hyphen). Delete all 13 from Cloudflare Dashboard → Bulk Redirects.
 
 ---
 

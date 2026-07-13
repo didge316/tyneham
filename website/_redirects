@@ -17,6 +17,7 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /tyneham-opening-times/        /opening-times              301
 /tyneham-hous                  /tyneham-house         301
 /tyneham-hous/                 /tyneham-house         301
+/tyneham-hous/*                /tyneham-house         301
 /the-bond-family/              /the-bond-family       301
 /tyneham-village               /                      301
 /tyneham-village/              /                      301
