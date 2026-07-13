@@ -9,9 +9,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Running Locally
 
 ```bash
+# From the project root:
 python3 -m http.server 8766 --directory website
-# Then open http://localhost:8766
+# Then open http://localhost:8766/the-rectory/  (with trailing slash)
 ```
+
+Each page lives in its own directory as `index.html` (e.g. `website/the-rectory/index.html`). Both `python3 -m http.server` and VS Code Live Preview serve `index.html` from directories automatically — just include the trailing slash in the URL.
 
 ## Repository Layout
 

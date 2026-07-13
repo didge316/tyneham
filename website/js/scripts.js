@@ -2,7 +2,7 @@
 // Highlight the current page in the sidebar menu.
 // Deferred to idle time — it's cosmetic and not on the critical path.
 function highlightSidebar() {
-  let currentPage = window.location.pathname.split("/").pop();
+  let currentPage = window.location.pathname.split("/").filter(Boolean).pop();
   if (!currentPage || currentPage === "/") currentPage = "index.html";
   if (!currentPage.includes(".")) currentPage += ".html";
 
