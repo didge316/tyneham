@@ -46,6 +46,8 @@ Every HTML page follows the same structure:
 
 When adding a new page, copy an existing page and update: `<title>`, all meta tags (description, OG, Twitter, canonical), the sidebar `data-page` highlight target, and add the page to `sitemap.xml`.
 
+⚠️ **Every new page also needs its no-trailing-slash 301 added to `website/_redirects`** (under the "No trailing slash → trailing slash" section). Cloudflare Pages serves a directory's `index.html` at both `/page` and `/page/`, and without this redirect Google indexes both and splits the ranking signal. Example: for `website/new-page/index.html`, add `/new-page    /new-page/    301`.
+
 ## Bulk Edits
 
 `website/scripts/bulk_seo_fixes.py` is the pattern for sitewide HTML edits. When a change must be applied across all 26+ pages (e.g. adding a nav link, fixing a typo), write a script in this style rather than editing files one by one.
