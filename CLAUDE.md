@@ -46,7 +46,7 @@ Every HTML page follows the same structure:
 
 When adding a new page, copy an existing page and update: `<title>`, all meta tags (description, OG, Twitter, canonical), the sidebar `data-page` highlight target, and add the page to `sitemap.xml`.
 
-⚠️ **Every new page also needs its no-trailing-slash 301 added to `website/_redirects`** (under the "No trailing slash → trailing slash" section). Cloudflare Pages serves a directory's `index.html` at both `/page` and `/page/`, and without this redirect Google indexes both and splits the ranking signal. Example: for `website/new-page/index.html`, add `/new-page    /new-page/    301`.
+Cloudflare Pages **natively 308-redirects** a directory's `/page` (no trailing slash) → `/page/`, so a separate explicit redirect is **not required**. However, `website/_redirects` already lists explicit no-trailing-slash → trailing-slash 301s for every page as harmless hardening (keeps canonicalization explicit and matches the sitemap/canonical tags). When adding a new page, it's a nice-to-have to add its no-slash 301 there too — e.g. for `website/new-page/index.html`: `/new-page    /new-page/    301`. The native redirect already covers it either way.
 
 ## Bulk Edits
 
