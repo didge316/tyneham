@@ -9,6 +9,7 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /a-brief-history-of-tyneham/   /history-of-tyneham/    301
 /map-of-tyneham-village        /map-of-tyneham/        301
 /map-of-tyneham-village/       /map-of-tyneham/        301
+/map-of-tyneham-village/*      /map-of-tyneham/        301
 /where-is-tyneham-village      /tyneham-village-location/  301
 /where-is-tyneham-village/     /tyneham-village-location/  301
 /can-you-camp-at-tyneham       /camp-at-tyneham/       301
@@ -18,12 +19,10 @@ https://www.tynehamvillage.org/*  https://tynehamvillage.org/:splat  301
 /tyneham-hous                  /tyneham-house/         301
 /tyneham-hous/                 /tyneham-house/         301
 /tyneham-hous/*                /tyneham-house/         301
-/the-bond-family/              /the-bond-family/       301
 /tyneham-village               /                      301
 /tyneham-village/              /                      301
 /tyneham-dvd                   /tyneham-remembered/    301
 /tyneham-dvd/                  /tyneham-remembered/    301
-/the-post-office/              /the-post-office/       301
 /privacy-policy                /privacy/               301
 /privacy-policy/               /privacy/               301
 /contact-tynehamvillage-org    /contact/               301
