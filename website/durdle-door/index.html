@@ -52,7 +52,7 @@
     "https://en.wikipedia.org/wiki/Durdle_Door",
     "https://www.wikidata.org/wiki/Q1267296"
   ],
-      "isAccessibleForFree": false,
+      "isAccessibleForFree": true,
       "touristType": "Walkers, photographers, beach visitors, geology enthusiasts"
     }
     </script>
@@ -63,14 +63,97 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"></noscript>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="/css/styles.min.css?v=8" rel="stylesheet" />
+    <link href="/css/styles.min.css?v=9" rel="stylesheet" />
     <!-- Adense -->
-    <script async data-cfasync="false" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866"
-     crossorigin="anonymous"></script>
+    <script>
+    window.addEventListener("load", function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.setAttribute("data-cfasync", "false");
+      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866";
+      s.crossOrigin = "anonymous";
+      document.head.appendChild(s);
+    });
+  </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How was Durdle Door formed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Durdle Door was formed over millions of years by coastal erosion. The arch is made from hard Portland limestone, which resisted erosion longer than the surrounding softer rock. Over time, waves exploited natural cracks and weaknesses, eventually carving out the arch we see today."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there an entrance fee to visit Durdle Door?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no entrance fee to access Durdle Door or the beach itself. Parking charges do apply at the nearby Durdle Door Holiday Park, which provides the main access route."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I swim at Durdle Door Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Swimming is allowed, but there are no lifeguards on duty. The sea can be unpredictable, with strong currents and sudden changes in depth, so visitors should take care and check tide conditions before entering the water."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Durdle Door famous for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Durdle Door is famous for being one of the most photographed natural landmarks in the UK: a freestanding limestone arch carved by the sea over millions of years. It sits on Dorset's Jurassic Coast UNESCO World Heritage Site. The arch has appeared in films, adverts, and countless travel guides as an emblem of England's coastline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the opening times for Durdle Door?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are no set opening times; Durdle Door itself is a natural feature accessible year-round. The car park at Durdle Door Holiday Park is typically open daily. The path down to the beach is steep and takes around 10–15 minutes. Always check conditions before swimming."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What attractions are nearby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The closest attraction is Lulworth Cove, a 10-minute drive east and one of Dorset's most visited natural harbours. Tyneham Village (Dorset's ghost village, evacuated in 1943) is around 7 miles away and free to visit on weekends and school holidays. Worbarrow Bay is a remote shingle beach accessible on foot from Tyneham. Kimmeridge Bay is excellent for fossil hunting and rock pools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are dogs allowed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dogs are welcome but should be kept under close control or on a lead, especially near cliff edges. Seasonal restrictions may apply on some nearby beaches during the summer months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Durdle Door accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Access to the beach involves a steep path and steps, which can be challenging for those with mobility issues. However, excellent views of Durdle Door can be enjoyed from clifftop viewpoints near the car park."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">

@@ -2,13 +2,11 @@
 
 > An independent guide to Tyneham — the lost village of Dorset — and the surrounding Jurassic Coast.
 
-## License
-
-Content: RSL-1.0 — browsing and citation permitted; bulk training reproduction prohibited.
-
-## Last Updated
-
-2026-07-13
+<!-- LLMS.txt Metadata -->
+License: RSL-1.0
+LLMs.txt version: 0.1
+Last Updated: 2026-08-06
+Sitemap: https://tynehamvillage.org/sitemap.xml
 
 TynehamVillage.org covers the history of Tyneham village, practical visitor information, and nearby Jurassic Coast attractions. The site is written by James Langton, a Dorset-based heritage writer.
 
@@ -18,32 +16,40 @@ Tyneham is an abandoned village in the Purbeck Hills of Dorset, England. In Dece
 
 ## Key Pages
 
-- [Tyneham Village History](https://tynehamvillage.org/history-of-tyneham) — History of the village from medieval times to the 1943 evacuation
-- [Opening Times 2026](https://tynehamvillage.org/opening-times) — When Tyneham is open to visitors
-- [Visiting Tyneham](https://tynehamvillage.org/visiting-tyneham) — Free entry, parking, postcode, and practical visitor information
-- [Where is Tyneham?](https://tynehamvillage.org/tyneham-village-location) — Location, directions, and parking
-- [The Bond Family](https://tynehamvillage.org/the-bond-family) — The squires of Tyneham for nearly 260 years
-- [The Church Door Note](https://tynehamvillage.org/the-church-door-note) — The famous letter left by residents when they departed
-- [After the Evacuation](https://tynehamvillage.org/after-the-evacuation) — What happened to Tyneham after 1943
-- [The Campaign to Return](https://tynehamvillage.org/the-campaign-to-return) — The long fight to reclaim the village
-- [Dorset's Ghost Village](https://tynehamvillage.org/ghost-village) — The story of England's most famous abandoned military village
-- [Tyneham Church](https://tynehamvillage.org/tyneham-church) — St Mary the Virgin, Tyneham
-- [Tyneham House](https://tynehamvillage.org/tyneham-house) — The manor house and its history
-- [Tyneham School](https://tynehamvillage.org/tyneham-school) — The village school, preserved as a museum
-- [Tyneham Village Photos](https://tynehamvillage.org/tyneham-photos) — Historic and present-day images of the village
-- [Tyneham Remembered Documentary](https://tynehamvillage.org/tyneham-remembered) — The only filmed record of first-hand accounts from the last residents
-- [Worbarrow Bay](https://tynehamvillage.org/worbarrow-bay) — The bay accessible from Tyneham
-- [Flowers Barrow](https://tynehamvillage.org/flowers-barrow) — Iron Age hillfort above Worbarrow Bay
-- [Lulworth Range Walks](https://tynehamvillage.org/lulworth-range-walks) — Walking routes from Tyneham across the Lulworth Ranges
-- [Gad Cliff](https://tynehamvillage.org/gad-cliff) — Dramatic headland above Tyneham on the Jurassic Coast
-- [Wildlife at Tyneham](https://tynehamvillage.org/wildlife-at-tyneham) — The valley's accidental nature reserve: deer, reptiles, and rare heathland birds
-- [Lulworth Cove](https://tynehamvillage.org/lulworth-cove) — The famous Jurassic Coast cove
-- [Corfe Castle](https://tynehamvillage.org/corfe-castle) — Norman castle ruins in the Purbeck Hills
-- [Durdle Door](https://tynehamvillage.org/durdle-door) — Natural limestone arch on the Jurassic Coast
-- [Kimmeridge Bay](https://tynehamvillage.org/kimmeridge-bay) — Fossil-rich bay on the Jurassic Coast
-- [Tyneham Circular Walk](https://tynehamvillage.org/tyneham-walk) — Circular walk from Tyneham village to Worbarrow Bay and Flower's Barrow Iron Age hillfort, 4.5 miles
-- [About James Langton](https://tynehamvillage.org/about) — About the author
-- [Contact](https://tynehamvillage.org/contact) — Get in touch
+- [TynehamVillage.org Home](https://tynehamvillage.org/) — Visitor guide to Dorset's ghost village, evacuated in 1943
+- [Opening Times 2026](https://tynehamvillage.org/opening-times/) — When Tyneham is open to visitors
+- [Visiting Tyneham](https://tynehamvillage.org/visiting-tyneham/) — Free entry, parking, postcode, and practical visitor information
+- [Where is Tyneham?](https://tynehamvillage.org/tyneham-village-location/) — Location, directions, and parking
+- [Tyneham Village Map](https://tynehamvillage.org/map-of-tyneham/) — Interactive map of the village and its buildings
+- [Camping at Tyneham](https://tynehamvillage.org/camp-at-tyneham/) — Camping is not permitted in the village; the best nearby campsites
+- [Tyneham Village History](https://tynehamvillage.org/history-of-tyneham/) — History of the village from medieval times to the 1943 evacuation
+- [The Bond Family](https://tynehamvillage.org/the-bond-family/) — The squires of Tyneham for nearly 260 years
+- [The Church Door Note](https://tynehamvillage.org/the-church-door-note/) — The famous letter left by residents when they departed
+- [After the Evacuation](https://tynehamvillage.org/after-the-evacuation/) — What happened to Tyneham after 1943
+- [Tyneham in Wartime](https://tynehamvillage.org/tyneham-in-wartime/) — The WAAF radar operators, Tyneham House, and the 1941–43 occupation
+- [The Campaign to Return](https://tynehamvillage.org/the-campaign-to-return/) — The long fight to reclaim the village
+- [Dorset's Ghost Village](https://tynehamvillage.org/ghost-village/) — The story of England's most famous abandoned military village
+- [Tyneham Church](https://tynehamvillage.org/tyneham-church/) — St Mary the Virgin, Tyneham
+- [Tyneham House](https://tynehamvillage.org/tyneham-house/) — The manor house and its history
+- [Tyneham School](https://tynehamvillage.org/tyneham-school/) — The village school, preserved as a museum
+- [Tyneham Post Office](https://tynehamvillage.org/the-post-office/) — The post office and Post Office Row before the evacuation
+- [Tyneham Rectory](https://tynehamvillage.org/the-rectory/) — The 1853 rectory, now a roofless ruin near the church
+- [Tyneham Village Photos](https://tynehamvillage.org/tyneham-photos/) — Historic and present-day images of the village
+- [Tyneham Remembered Documentary](https://tynehamvillage.org/tyneham-remembered/) — The only filmed record of first-hand accounts from the last residents
+- [Worbarrow Bay](https://tynehamvillage.org/worbarrow-bay/) — The bay accessible from Tyneham
+- [Flowers Barrow](https://tynehamvillage.org/flowers-barrow/) — Iron Age hillfort above Worbarrow Bay
+- [Lulworth Range Walks](https://tynehamvillage.org/lulworth-range-walks/) — Walking routes from Tyneham across the Lulworth Ranges
+- [Gad Cliff](https://tynehamvillage.org/gad-cliff/) — Dramatic headland above Tyneham on the Jurassic Coast
+- [Wildlife at Tyneham](https://tynehamvillage.org/wildlife-at-tyneham/) — The valley's accidental nature reserve: deer, reptiles, and rare heathland birds
+- [Lulworth Cove](https://tynehamvillage.org/lulworth-cove/) — The famous Jurassic Coast cove
+- [Corfe Castle](https://tynehamvillage.org/corfe-castle/) — Norman castle ruins in the Purbeck Hills
+- [Durdle Door](https://tynehamvillage.org/durdle-door/) — Natural limestone arch on the Jurassic Coast
+- [Kimmeridge Bay](https://tynehamvillage.org/kimmeridge-bay/) — Fossil-rich bay on the Jurassic Coast
+- [Tyneham Circular Walk](https://tynehamvillage.org/tyneham-walk/) — Circular walk from Tyneham village to Worbarrow Bay and Flower's Barrow Iron Age hillfort, 4.5 miles
+- [Corfe Castle Circular Walk](https://tynehamvillage.org/corfe-castle-walk/) — 7–8 mile circular walk crossing the Purbeck ridge
+- [Kimmeridge to Tyneham Walk](https://tynehamvillage.org/kimmeridge-tyneham-walk/) — 7.5 mile South West Coast Path walk through the Lulworth Ranges
+- [About James Langton](https://tynehamvillage.org/about/) — About the author
+- [Contact](https://tynehamvillage.org/contact/) — Get in touch
 
 ## Key Facts
 

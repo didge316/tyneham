@@ -153,14 +153,23 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"></noscript>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="/css/styles.min.css?v=8" rel="stylesheet" />
+    <link href="/css/styles.min.css?v=9" rel="stylesheet" />
 
-  <script async data-cfasync="false" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866"
-    crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener("load", function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.setAttribute("data-cfasync", "false");
+      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3540254334873866";
+      s.crossOrigin = "anonymous";
+      document.head.appendChild(s);
+    });
+  </script>
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -310,7 +319,7 @@
                 generations to help win the war to keep men free. We shall return one day and thank you for treating
                 the village kindly."
               </p>
-              <footer class="blockquote-footer mt-2">The Women and Children of Tyneham, December 1943</footer>
+              <footer class="blockquote-footer mt-2">W.H. Bond, on behalf of the families of Tyneham village, 19 December 1943</footer>
             </blockquote>
 
             <p class="fs-5 mb-4">

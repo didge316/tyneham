@@ -11001,3 +11001,33 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 [data-theme="dark"] .card-header.bg-primary {
   background-color: #0d6efd !important;
 }
+
+/* ===== CLS prevention ===== */
+
+/* Reserve the scrollbar gutter so pages don't shift horizontally when
+   content grows and a scrollbar appears (Core Web Vitals CLS). */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Reserve the final height of the "Is Tyneham open today?" status widgets so
+   the JS open/closed swap (and the static server-rendered answer) doesn't push
+   the page content down and cause layout shift. */
+#tynehamStatusSidebar {
+  min-height: 15rem !important;
+}
+#tynehamStatus {
+  min-height: 18rem !important;
+}
+
+/* Constrain AdSense Auto Ads WITHOUT a Content-Security-Policy (which would
+   break ad delivery): keep injected units block-level, inside the content
+   column, and centred so an oversized creative can't overflow or widen the
+   layout. Ad height is left untouched to preserve revenue. */
+ins.adsbygoogle {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
