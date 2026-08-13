@@ -29,3 +29,7 @@ PLAN.md
 gsc/
 tyneham_youtube_urls.txt
 youtube_transcripts/
+
+# Playwright test artifacts
+.playwright-cli/
+website/.playwright-cli/
