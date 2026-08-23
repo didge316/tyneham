@@ -1,0 +1,22 @@
+/* Lora web fonts — self-hosted from Google Fonts (v37, OFL license) */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Lora-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("Lora-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Lora-Italic.woff2") format("woff2");
+}
