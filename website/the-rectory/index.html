@@ -292,6 +292,13 @@
 </section>
 
 <link rel="stylesheet" href="https://comments.tynehamvillage.org/css/isso.css">
+<style>
+  /* Hide the website input field and its label */
+  #isso-postbox-website,
+  label[for="isso-postbox-website"] { display: none !important; }
+  /* Remove "(optional)" from all labels */
+  .isso-auth-section label::after { content: none !important; }
+</style>
 <script src="https://comments.tynehamvillage.org/js/embed.min.js" data-isso-id="/the-rectory/" data-isso-css="true" data-reply-to-self="false" data-require-author="true" data-require-email="true" data-moderation="true"></script>
 <script>
   Isso.init({
