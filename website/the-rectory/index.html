@@ -298,6 +298,11 @@
     section: '/the-rectory/',
     site: 'https://comments.tynehamvillage.org'
   });
+  setTimeout(function() {
+    document.querySelectorAll('.isso-auth-section label').forEach(function(label) {
+      label.textContent = label.textContent.replace(/\s*\(optional\)/gi, '');
+    });
+  }, 1500);
 </script>
         
     
