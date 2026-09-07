@@ -439,6 +439,33 @@
     <a class="btn btn-primary btn-lg fw-bold" href="#order" role="button">Select Your Version</a>
   </div>
         </article>
+<!-- Comments section (Isso) -->
+<section class="mb-5" id="comments">
+    <div class="container">
+        <h3 class="display-6 fw-bold text-center mb-5">Comments on "The Tyneham Remembered Documentary"</h3>
+        <div id="isso-thread" data-isso-id="/tyneham-remembered/"></div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://comments.tynehamvillage.org/css/isso.css">
+<style>
+  #isso-postbox-website,
+  label[for="isso-postbox-website"] { display: none !important; }
+</style>
+<script src="https://comments.tynehamvillage.org/js/embed.min.js" data-isso-css="true" data-reply-to-self="false" data-require-author="true" data-require-email="true" data-moderation="true"></script>
+<script>
+  Isso.init({
+    section: '/tyneham-remembered/',
+    site: 'https://comments.tynehamvillage.org'
+  });
+  setTimeout(function() {
+    document.querySelectorAll('.isso-auth-section label').forEach(function(label) {
+      label.textContent = label.textContent.replace(/\s*\(optional\)/gi, '');
+    });
+  }, 1500);
+</script>
+
+
         <!-- Comments section-->
         
     
