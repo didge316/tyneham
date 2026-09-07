@@ -296,6 +296,8 @@
   /* Hide the website input field and its label */
   #isso-postbox-website,
   label[for="isso-postbox-website"] { display: none !important; }
+  /* Remove "(optional)" from all labels */
+  .isso-auth-section label::after { content: none !important; }
 </style>
 <script src="https://comments.tynehamvillage.org/js/embed.min.js" data-isso-id="/the-rectory/" data-isso-css="true" data-reply-to-self="false" data-require-author="true" data-require-email="true" data-moderation="true"></script>
 <script>
@@ -303,14 +305,6 @@
     section: '/the-rectory/',
     site: 'https://comments.tynehamvillage.org'
   });
-  // Strip "(optional)" from labels after Isso renders
-  const stripOptional = () => {
-    document.querySelectorAll('.isso-auth-section label').forEach(label => {
-      label.textContent = label.textContent.replace(/\s*\(optional\)/gi, '');
-    });
-  };
-  new MutationObserver(stripOptional).observe(document.getElementById('isso-thread'), { childList: true, subtree: true });
-  stripOptional();
 </script>
         
     
