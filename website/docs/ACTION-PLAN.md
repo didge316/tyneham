@@ -22,22 +22,20 @@ Per-building annotations with links (church, school, post office, rectory, house
 ### H2. Real publish dates (5 pages hardcode 2024-01-01)
 after-the-evacuation, ghost-village, the-bond-family, the-campaign-to-return, the-church-door-note all set `datePublished: 2024-01-01` in Article schema. Replace with actual publication dates.
 
-### H3. Flower's Barrow title
-`Flowers Barrow: A Timeless Beacon of Dorset's History` → natural query ("Flower's Barrow | Iron Age Hillfort above Worbarrow Bay").
+### H3. Flower's Barrow title ✅ Done 22 Sep 2026
+`Flower's Barrow | Iron Age Hillfort above Worbarrow Bay` (title, OG, Twitter).
 
-### H4. Homepage church-door-note text
-Image-only. Add the note's text beside it (most-cited sentence in Tyneham's story — AI citability).
+### H4. Homepage church-door-note text ✅ Done 22 Sep 2026
+Blockquote of the note added beneath the figure on the homepage, with a link to /the-church-door-note/.
 
-### H5. llms.txt
-Missing `/privacy/` (only page absent). "Last Updated 2026-08-06" is stale — bump to today.
+### H5. llms.txt ✅ Done 22 Sep 2026
+Added `/privacy/`; bumped "Last Updated" to 2026-09-22.
 
 ### H6. Expand the-post-office (~573 words)
 Rich story (1880–1942 shopkeeper timeline, K1 kiosk, *Comrades* film) deserves ~800–900 words.
 
-### H7. Alt text polish
-- opening-times hero `alt="Worbarrow Bay"` (generic, on the highest-intent page)
-- history-of-tyneham: `alt="Tyneham House"` and `alt="Tyneham today"` (label-only)
-- index.html:410 `alt="...Tynehham village"` typo (missing "h")
+### H7. Alt text polish ✅ Done 22 Sep 2026
+Opening-times hero "Worbarrow Bay beach from Tyneham"; history-of-tyneham "Tyneham House ruins" + "Tyneham village today, looking down the lane"; fixed "Tynehham" typo on index.
 
 ---
 
@@ -77,6 +75,10 @@ Refresh "2026" in opening-times title/meta, lulworth-range-walks H1, kimmeridge-
 
 - [x] C1: homepage ↔ /ghost-village/ cannibalization resolved (homepage meta refocused on visitor-guide intent; featured callout added linking to the subpage)
 - [x] C2: opening-times static fallback made date-neutral (noscript + pre-JS default no longer claim a stale "open today"/August 2026)
+- [x] H3: Flower's Barrow title → natural query (title/OG/Twitter)
+- [x] H4: homepage church-door-note text added (blockquote + link to /the-church-door-note/)
+- [x] H5: llms.txt updated (added /privacy/, fresh date)
+- [x] H7: alt-text polish (opening-times hero, history-of-tyneham ×2, Tynehham typo)
 
 - [x] C1: relative `js/scripts.js` path → absolute `/js/scripts.js?v=11` sitewide (no 404s)
 - [x] C2: `assets/logo-publisher.png` now exists (Article rich results unblocked)

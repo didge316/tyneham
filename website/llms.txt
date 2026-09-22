@@ -5,7 +5,7 @@
 <!-- LLMS.txt Metadata -->
 License: RSL-1.0
 LLMs.txt version: 0.1
-Last Updated: 2026-08-06
+Last Updated: 2026-09-22
 Sitemap: https://tynehamvillage.org/sitemap.xml
 
 TynehamVillage.org covers the history of Tyneham village, practical visitor information, and nearby Jurassic Coast attractions. The site is written by James Langton, a Dorset-based heritage writer.
@@ -50,6 +50,7 @@ Tyneham is an abandoned village in the Purbeck Hills of Dorset, England. In Dece
 - [Kimmeridge to Tyneham Walk](https://tynehamvillage.org/kimmeridge-tyneham-walk/) — 7.5 mile South West Coast Path walk through the Lulworth Ranges
 - [About James Langton](https://tynehamvillage.org/about/) — About the author
 - [Contact](https://tynehamvillage.org/contact/) — Get in touch
+- [Privacy Policy](https://tynehamvillage.org/privacy/) — How visitor data is handled
 
 ## Key Facts
 
