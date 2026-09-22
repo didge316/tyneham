@@ -19,8 +19,8 @@ Noscript + pre-JS default made date-neutral (no stale August 2026 claim); live J
 ### H1. Map-of-tyneham expand (113 → 300–400 words)
 Per-building annotations with links (church, school, post office, rectory, house), distances and walking times (car park → village → Worbarrow Bay).
 
-### H2. Real publish dates (5 pages hardcode 2024-01-01)
-after-the-evacuation, ghost-village, the-bond-family, the-campaign-to-return, the-church-door-note all set `datePublished: 2024-01-01` in Article schema. Replace with actual publication dates.
+### H2. Real publish dates (5 pages hardcode 2024-01-01) ✅ Done 22 Sep 2026
+the-bond-family → 2013-01-09 (WP-era, per Wayback); after-the-evacuation, the-church-door-note, the-campaign-to-return → 2026-05-10; ghost-village → 2026-05-25 (git addition dates).
 
 ### H3. Flower's Barrow title ✅ Done 22 Sep 2026
 `Flower's Barrow | Iron Age Hillfort above Worbarrow Bay` (title, OG, Twitter).
@@ -79,6 +79,7 @@ Refresh "2026" in opening-times title/meta, lulworth-range-walks H1, kimmeridge-
 - [x] H4: homepage church-door-note text added (blockquote + link to /the-church-door-note/)
 - [x] H5: llms.txt updated (added /privacy/, fresh date)
 - [x] H7: alt-text polish (opening-times hero, history-of-tyneham ×2, Tynehham typo)
+- [x] H2: real publish dates in Article schema (bond-family 2013-01-09 per Wayback; four new pages use git add dates)
 
 - [x] C1: relative `js/scripts.js` path → absolute `/js/scripts.js?v=11` sitewide (no 404s)
 - [x] C2: `assets/logo-publisher.png` now exists (Article rich results unblocked)
