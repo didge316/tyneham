@@ -16,8 +16,8 @@ Noscript + pre-JS default made date-neutral (no stale August 2026 claim); live J
 
 ## HIGH — Fix Within 2 Weeks
 
-### H1. Map-of-tyneham expand (113 → 300–400 words)
-Per-building annotations with links (church, school, post office, rectory, house), distances and walking times (car park → village → Worbarrow Bay).
+### H1. Map-of-tyneham expand (113 → 300–400 words) ✅ Done 22 Sep 2026
+Expanded to ~466 words: per-building descriptions + links for all 10 keyed buildings, map-referencing prose, and walking distances (car park → village ~5 min; village → Worbarrow Bay 1 mile/~15 min).
 
 ### H2. Real publish dates (5 pages hardcode 2024-01-01) ✅ Done 22 Sep 2026
 the-bond-family → 2013-01-09 (WP-era, per Wayback); after-the-evacuation, the-church-door-note, the-campaign-to-return → 2026-05-10; ghost-village → 2026-05-25 (git addition dates).
@@ -80,6 +80,7 @@ Refresh "2026" in opening-times title/meta, lulworth-range-walks H1, kimmeridge-
 - [x] H5: llms.txt updated (added /privacy/, fresh date)
 - [x] H7: alt-text polish (opening-times hero, history-of-tyneham ×2, Tynehham typo)
 - [x] H2: real publish dates in Article schema (bond-family 2013-01-09 per Wayback; four new pages use git add dates)
+- [x] H1: map-of-tyneham expanded to ~466 words (per-building descriptions + links, walking distances, map-referencing prose)
 
 - [x] C1: relative `js/scripts.js` path → absolute `/js/scripts.js?v=11` sitewide (no 404s)
 - [x] C2: `assets/logo-publisher.png` now exists (Article rich results unblocked)
