@@ -9,8 +9,8 @@
 ### C1. Homepage ↔ ghost-village cannibalization (previously M5) ✅ Done 22 Sep 2026
 Homepage meta/OG/Twitter refocused on visitor-guide intent (single "ghost village" mention); featured callout added linking to /ghost-village/ with descriptive anchor.
 
-### C2. Static "Is it open today?" server-rendered line
-The calendar widget answer is JS-rendered. The noscript fallback exists but is a hardcoded August 2026 date that will go stale. Consider a server-side current/next-open line (or an explicitly dated table) beside the widget so no-JS crawlers/AIs always see accurate dates.
+### C2. Static "Is it open today?" server-rendered line ✅ Done 22 Sep 2026
+Noscript + pre-JS default made date-neutral (no stale August 2026 claim); live JS widget still renders open/closed for visitors.
 
 ---
 
@@ -76,6 +76,7 @@ Refresh "2026" in opening-times title/meta, lulworth-range-walks H1, kimmeridge-
 ## Completed Since the 06-Aug Audit (verified 22 Sep 2026)
 
 - [x] C1: homepage ↔ /ghost-village/ cannibalization resolved (homepage meta refocused on visitor-guide intent; featured callout added linking to the subpage)
+- [x] C2: opening-times static fallback made date-neutral (noscript + pre-JS default no longer claim a stale "open today"/August 2026)
 
 - [x] C1: relative `js/scripts.js` path → absolute `/js/scripts.js?v=11` sitewide (no 404s)
 - [x] C2: `assets/logo-publisher.png` now exists (Article rich results unblocked)
