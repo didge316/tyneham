@@ -27,25 +27,29 @@ These queries already perform well; do not disturb them.
 
 These are queries the site *should* own — the pages exist and cover the topic — but rank 40–55 because the title/H1/meta don't name the query.
 
-### G1. `tyneham beach` — 379 i @ pos 54.9 (5+0 clicks)
+### G1. `tyneham beach` — 379 i @ pos 54.9 (5+0 clicks) ✅ Done 2026-09-23
 Worbarrow Bay **is** Tyneham's beach. Page title is "Worbarrow Bay | Secluded Dorset Beach near Tyneham Village" — contains "Dorset Beach" but not the queried "Tyneham beach".
 - Add "Tyneham beach" to `worbarrow-bay` `<title>`, H1, meta description (e.g. "Worbarrow Bay — the Tyneham beach, 1 mile on foot…").
 - Target: pos 54 → top 5. Largest owned-intent gap.
+- **Done (bc9991f):** title → "Worbarrow Bay | Tyneham Beach, Secluded Dorset Cove"; H1 → "Worbarrow Bay — Tyneham's Beach"; meta now opens "Worbarrow Bay is Tyneham's beach…".
 
-### G2. `tyneham village postcode` / `tyneham postcode` — 398 i @ pos 40 / 29.9
+### G2. `tyneham village postcode` / `tyneham postcode` — 398 i @ pos 40 / 29.9 ✅ Done 2026-09-23
 Page body says "Use postcode BH20 5QH for sat-nav" but `<title>` is "Where is Tyneham? Location, Directions & Parking" — no "postcode".
 - Add "postcode BH20 5QH" to `tyneham-village-location` `<title>` + meta.
 - Target: top 3.
+- **Done (bc9991f):** title → "Where is Tyneham? Postcode BH20 5QH, Directions & Parking"; meta opens with the postcode; OG/Twitter updated.
 
-### G3. `is tyneham village open today` / `open tomorrow` / `when is tyneham open` — ~1,330 i @ pos 40–51 (49 clicks)
+### G3. `is tyneham village open today` / `open tomorrow` / `when is tyneham open` — ~1,330 i @ pos 40–51 (49 clicks) ✅ Done 2026-09-23
 The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5). Page has the live open/closed widget.
 - Reframe `opening-times` `<title>`/meta to include the "open today?" intent alongside "Opening Times 2026" (e.g. "…| Is Tyneham Village Open Today?").
 - Target: pos 40–51 → top 5. This cluster converts (49 clicks already at pos ~45).
+- **Done (bc9991f):** title → "Tyneham Opening Times 2026 | Is the Village Open Today?"; meta opens "Is Tyneham open today?"; OG/Twitter updated.
 
-### G4. `tyneham car park` / `tyneham village car park` — ~370 i @ pos 42–50 (16 clicks)
+### G4. `tyneham car park` / `tyneham village car park` — ~370 i @ pos 42–50 (16 clicks) ✅ Done 2026-09-23
 `visiting-tyneham` title has "Parking" but not "car park"; the parking section exists.
 - Add "car park" phrasing to `visiting-tyneham` `<title>`/meta.
 - Target: top 5.
+- **Done (bc9991f):** title → "Visiting Tyneham | Car Park, Free Entry & Getting There"; meta "£2 car park donation"; OG/Twitter updated.
 
 ---
 
@@ -93,11 +97,11 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 
 ## Suggested Sequence
 
-1. **G1 + G2** (15 min) — the two biggest owned-intent gaps.
-2. **G3 + G4** (15 min) — opening-times and car park intent.
-3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task).
+1. **G1 + G2** (15 min) — the two biggest owned-intent gaps. ✅ Done 2026-09-23
+2. **G3 + G4** (15 min) — opening-times and car park intent. ✅ Done 2026-09-23
+3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task). ← next
 4. **G5** (30 min) — tide-times section on kimmeridge-bay.
 5. **G7** optional (30 min) — durdle-door snippet pass.
 6. **G8–G12** as time allows.
 
-**Re-measure:** re-export GSC (`gsc/gsc_export.py --current`) after 4–6 weeks; check positions for the G1–G6 target queries.
+**Re-measure:** re-export GSC (`gsc/gsc_export.py --current`) after 4–6 weeks (from 2026-09-23); check positions for the G1–G6 target queries.
