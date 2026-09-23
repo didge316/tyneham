@@ -70,10 +70,10 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 
 ## TIER 3 — Biggest Volume, Peripheral Topic
 
-### G7. Durdle Door sub-queries — 4,797 i, only 10 clicks (0.2% CTR)
+### G7. Durdle Door sub-queries — 4,797 i, only 10 clicks (0.2% CTR) ✅ Done 2026-09-23
 - `durdle door` 2,306 i @ 10.1 · `durdle door postcode` 616 i @ 9.2 · `opening times` 97 i · `closing time` 51 i · `beach postcode` 92 i · `car park postcode` 89 i · `facts`/`how old`/`how tall`/`entry fee`/`free to visit` ~130 i — **all 0 clicks**.
 - Page ranks page-1 bottom but never wins the snippet; title "Durdle Door – Dorset's Most Famous Attraction" doesn't answer sub-intents.
-- **Optional / low priority** (peripheral "Near Tyneham" page, competitive SERP dominated by the National Trust + Durdle Door Holiday Park). If pursued: put postcode BH20 5PU + opening + "free entry" in `<title>`/meta so the snippet answers the sub-queries.
+- **Done (2026-09-23):** title/OG/Twitter → "Durdle Door | Postcode BH20 5PU, Parking & Visitor Guide". **Corrected parking figures** (page said £4–£7/day; official Lulworth Estate 2026 tariffs are £15/£25/£35) in quick-facts + FAQ. Added: name origin (Old English "thirl", 1,000+ yrs, 1811 "Dirdale Door"), arch dimensions (~30m wide / ~20m high), Weld-family/Lulworth Estate ownership, offshore stacks (Bull/Blind Cow/Cow/Calf + Man O'War Rocks) and eventual collapse, a "Durdle Door on screen" section (Project Hail Mary, Doctor Who, Nanny McPhee, Wilde, Far From the Madding Crowd, music videos), winter free parking, no overnight camping, busiest-coast-path stat (200k+/yr), and "beach shelves steeply" swimming warning. FAQPage schema answers re-aligned to visible text. Byline → Sep 2026.
 
 ---
 
@@ -102,7 +102,7 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 2. **G3 + G4** (15 min) — opening-times and car park intent. ✅ Done 2026-09-23
 3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task). ✅ Done 2026-09-23
 4. **G5** (30 min) — tide-times section on kimmeridge-bay. ✅ Done 2026-09-23
-5. **G7** optional (30 min) — durdle-door snippet pass. ← next
-6. **G8–G12** as time allows.
+5. **G7** optional (30 min) — durdle-door snippet pass. ✅ Done 2026-09-23
+6. **G8–G12** as time allows. ← next (G8: `tyneham ghost village` title/meta)
 
 **Re-measure:** re-export GSC (`gsc/gsc_export.py --current`) after 4–6 weeks (from 2026-09-23); check positions for the G1–G6 target queries.
