@@ -60,9 +60,10 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 - Add a **tide times** section to `kimmeridge-bay` (link to an authoritative live tide table for Kimmeridge Bay + a quick "check tides before rock-pooling" note).
 - Target: hold pos ~9 but lift CTR to ~5%+.
 
-### G6. `worbarrow bay` head term + `worbarrow bay opening times` — 2,267 i @ pos 28 / 35.9
+### G6. `worbarrow bay` head term + `worbarrow bay opening times` — 2,267 i @ pos 28 / 35.9 ✅ Done 2026-09-23
 `worbarrow bay` 1,337 i @ pos **28** — the page under-ranks for its own name. `worbarrow bay opening times` 136 i @ 35.9. `worbarrow beach` 101 i @ 12.9.
-- **Aligns with pending `ACTION-PLAN.md` M2 ("Worbarrow-bay planner facts first").** Do the M2 content rework (parking / 1-mile walk / ranges access / dogs / swimming rules / no facilities before the history) **and** tighten title/meta for the head term.
+- **Aligns with `ACTION-PLAN.md` M2 ("Worbarrow-bay planner facts first").** Planner facts (parking / 1-mile walk / ranges access / dogs / swimming / no facilities) already lead via the "at a glance" box; title/meta tightened in **G1**.
+- **Done (G1 + 2026-09-23 content pass):** title → "Worbarrow Bay | Tyneham Beach, Secluded Dorset Cove" (bc9991f); content enriched from the village archive: coastguard tragedies (1865/1874/1886), Sea Cottage (Granny Rose, both aged 77, campaign postcards), Rose Cottage caravan anecdote, Hill Cottage (smuggling Millers), Gate Cottages (Reggie Ware / *Witch of Worbarrow*), Tizzard's, 1940 dragon's teeth + lookout, "Warbarrow" name origin, 1923 Draper letter, shelves-steeply swimming warning. Byline → Sep 2026.
 - Highest-value content task on the site.
 
 ---
@@ -99,8 +100,8 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 
 1. **G1 + G2** (15 min) — the two biggest owned-intent gaps. ✅ Done 2026-09-23
 2. **G3 + G4** (15 min) — opening-times and car park intent. ✅ Done 2026-09-23
-3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task). ← next
-4. **G5** (30 min) — tide-times section on kimmeridge-bay.
+3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task). ✅ Done 2026-09-23
+4. **G5** (30 min) — tide-times section on kimmeridge-bay. ← next
 5. **G7** optional (30 min) — durdle-door snippet pass.
 6. **G8–G12** as time allows.
 
