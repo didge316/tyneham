@@ -55,9 +55,9 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 
 ## TIER 2 — Needs Content, Medium Effort
 
-### G5. Tide times — Kimmeridge cluster 767 i @ pos 9.6, only 12 clicks
-`tide times kimmeridge bay` 450 i @ 9.6 · `tide times kimmeridge` 87 i · `kimmeridge tide times` 49 i · etc. Page ranks page-1 but gets ~1.5% CTR; no tide resource on the page.
-- Add a **tide times** section to `kimmeridge-bay` (link to an authoritative live tide table for Kimmeridge Bay + a quick "check tides before rock-pooling" note).
+### G5. Tide times — Kimmeridge cluster 767 i @ pos 9.6, only 12 clicks ✅ Done 2026-09-23
+`tide times kimmeridge bay` 450 i @ 9.6 · `tide times kimmeridge` 87 i · `kimmeridge tide times` 49 i · etc. Page ranks page-1 but gets ~1.5% CTR; the page already had a tide section (link-out to tidetimes.org.uk).
+- **Done:** added a **live tide widget** (Open-Meteo Marine API, client-side, no key) showing today's High/Low times + next high/low + Rising/Falling now, with the official tidetimes.org.uk table as fallback/authority link; smoothed 3-hour average to remove model jitter. Title → "Kimmeridge Bay | Tide Times, Rock Pools & Fossils"; tide section moved up above the village section; byline → Sep 2026.
 - Target: hold pos ~9 but lift CTR to ~5%+.
 
 ### G6. `worbarrow bay` head term + `worbarrow bay opening times` — 2,267 i @ pos 28 / 35.9 ✅ Done 2026-09-23
@@ -101,8 +101,8 @@ The day-intent phrasing is untargeted. Only the "2026" phrasing ranks (pos 8.5).
 1. **G1 + G2** (15 min) — the two biggest owned-intent gaps. ✅ Done 2026-09-23
 2. **G3 + G4** (15 min) — opening-times and car park intent. ✅ Done 2026-09-23
 3. **G6** with `ACTION-PLAN.md` **M2** (2–3 h) — worbarrow-bay rework (biggest content task). ✅ Done 2026-09-23
-4. **G5** (30 min) — tide-times section on kimmeridge-bay. ← next
-5. **G7** optional (30 min) — durdle-door snippet pass.
+4. **G5** (30 min) — tide-times section on kimmeridge-bay. ✅ Done 2026-09-23
+5. **G7** optional (30 min) — durdle-door snippet pass. ← next
 6. **G8–G12** as time allows.
 
 **Re-measure:** re-export GSC (`gsc/gsc_export.py --current`) after 4–6 weeks (from 2026-09-23); check positions for the G1–G6 target queries.
