@@ -13,9 +13,31 @@ CONF="$SCRIPT_DIR/disc.conf"
 DO_ENSURE=0
 DO_PREVIEW=0
 
+# Temps cleaned on any exit (set -e / signals)
+TMP_MASK=""
+TMP_IMG=""
+TMP_OUT=""
+cleanup() {
+  local rc=$?
+  set +e
+  [ -n "$TMP_MASK" ] && rm -f "$TMP_MASK"
+  [ -n "$TMP_IMG" ] && rm -f "$TMP_IMG"
+  [ -n "$TMP_OUT" ] && rm -f "$TMP_OUT"
+  return "$rc"
+}
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+trap 'exit 129' HUP
+
 usage() {
   echo "Usage: $0 [--conf PATH] [--ensure] [--preview]" >&2
   exit 2
+}
+
+usage_stdout() {
+  echo "Usage: $0 [--conf PATH] [--ensure] [--preview]"
+  exit 0
 }
 
 while [ $# -gt 0 ]; do
@@ -27,7 +49,7 @@ while [ $# -gt 0 ]; do
       ;;
     --ensure) DO_ENSURE=1; shift ;;
     --preview) DO_PREVIEW=1; shift ;;
-    -h|--help) usage ;;
+    -h|--help) usage_stdout ;;
     *) echo "Unknown option: $1" >&2; usage ;;
   esac
 done
@@ -55,8 +77,14 @@ PREVIEW="$(dirname "$OUTPUT")/preview.png"
 
 die() { echo "ERROR: $*" >&2; exit 1; }
 
-# Validate sizes (integers or simple decimals)
-python3 - "$INNER_MM" "$OUTER_MM" <<'PY' || die "invalid INNER_MM/OUTER_MM"
+# Validate sizes (integers or simple decimals); no Python traceback on bad input
+is_num() {
+  [[ "${1:-}" =~ ^[0-9]+([.][0-9]+)?$ ]]
+}
+if ! is_num "$INNER_MM" || ! is_num "$OUTER_MM"; then
+  die "invalid INNER_MM/OUTER_MM"
+fi
+python3 - "$INNER_MM" "$OUTER_MM" 2>/dev/null <<'PY' || die "invalid INNER_MM/OUTER_MM"
 import sys
 inner, outer = float(sys.argv[1]), float(sys.argv[2])
 ok = inner >= 15 and outer <= 120 and inner < outer
@@ -71,8 +99,19 @@ if ! command -v convert >/dev/null 2>&1; then
   die "ImageMagick 'convert' not found (install imagemagick)"
 fi
 
+output_looks_valid() {
+  [ -s "$OUTPUT" ] || return 1
+  [ -r "$OUTPUT" ] || return 1
+  if command -v identify >/dev/null 2>&1; then
+    identify "$OUTPUT" >/dev/null 2>&1 || return 1
+  else
+    convert "$OUTPUT" -format '' info: >/dev/null 2>&1 || return 1
+  fi
+  return 0
+}
+
 is_stale() {
-  [ -f "$OUTPUT" ] || return 0
+  output_looks_valid || return 0
   [ -f "$META" ] || return 0
   # OUTPUT must be newer than conf and source
   [ "$OUTPUT" -nt "$CONF" ] || return 0
@@ -95,27 +134,28 @@ build() {
   r_out="$(python3 -c "print(round(float('$OUTER_MM')/2 * $px_per_mm))")"
   r_in="$(python3 -c "print(round(float('$INNER_MM')/2 * $px_per_mm))")"
 
-  local tmp_mask tmp_img
-  tmp_mask="$(mktemp /tmp/disc_mask.XXXXXX.png)"
-  tmp_img="$(mktemp /tmp/disc_img.XXXXXX.png)"
-  # shellcheck disable=SC2064
-  trap "rm -f '$tmp_mask' '$tmp_img'" RETURN
+  TMP_MASK="$(mktemp /tmp/disc_mask.XXXXXX.png)"
+  TMP_IMG="$(mktemp /tmp/disc_img.XXXXXX.png)"
+  # Atomic OUTPUT: temp in same directory, then mv
+  TMP_OUT="$(mktemp "$(dirname "$OUTPUT")/.disc_out.XXXXXX.png")"
 
   # circle CX,CY PX,PY — PX,PY is a point on the circumference: (cx, cy - r)
   convert -size "${canvas}x${canvas}" xc:none \
     -fill white -draw "circle $cx,$cy $cx,$((cy - r_out))" \
     -fill black -draw "circle $cx,$cy $cx,$((cy - r_in))" \
-    "$tmp_mask"
+    "$TMP_MASK"
 
   # Fit source into outer diameter box, center on full canvas, keep alpha
   local box
   box="$(python3 -c "print(round(float('$OUTER_MM')/120 * $canvas))")"
   convert "$SOURCE" -resize "${box}x${box}" -gravity center \
     -background none -extent "${canvas}x${canvas}" \
-    "$tmp_img"
+    "$TMP_IMG"
 
-  convert "$tmp_img" "$tmp_mask" -alpha off -compose CopyOpacity -composite \
-    "$OUTPUT"
+  convert "$TMP_IMG" "$TMP_MASK" -alpha off -compose CopyOpacity -composite \
+    "$TMP_OUT"
+  mv -f "$TMP_OUT" "$OUTPUT"
+  TMP_OUT=""
 
   {
     echo "INNER_MM=$INNER_MM"
