@@ -2,6 +2,7 @@
 simply-static*.zip
 content/documentary-assets/
 *.png
+dvd_labels/*.meta
 corfe_imgs/
 unnamed.*
 tyneham-village-colour.jpg

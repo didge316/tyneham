@@ -123,9 +123,9 @@ is_stale() {
   [ "$OUTPUT" -nt "$CONF" ] || return 0
   [ "$OUTPUT" -nt "$SOURCE" ] || return 0
   # meta must match current sizes
-  grep -qx "INNER_MM=$INNER_MM" "$META" || return 0
-  grep -qx "OUTER_MM=$OUTER_MM" "$META" || return 0
-  grep -qx "SOURCE=$SOURCE" "$META" || return 0
+  grep -qxF "INNER_MM=$INNER_MM" "$META" || return 0
+  grep -qxF "OUTER_MM=$OUTER_MM" "$META" || return 0
+  grep -qxF "SOURCE=$SOURCE" "$META" || return 0
   return 1
 }
 
