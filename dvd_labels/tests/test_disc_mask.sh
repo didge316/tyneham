@@ -123,6 +123,34 @@ fi
 assert_ok "--preview writes preview.png" "$MAKE" --conf "$TMP/run.conf" --preview
 assert_ok "preview.png exists" test -f "$TMP/preview.png"
 
+# 10) empty OUTPUT + --ensure → rebuilds
+: > "$TMP/tyneham_disc.png"
+assert_ok "rebuilds after empty OUTPUT" "$MAKE" --conf "$TMP/run.conf" --ensure
+assert_ok "empty OUTPUT rebuilt non-empty" test -s "$TMP/tyneham_disc.png"
+assert_ok "empty OUTPUT rebuilt valid PNG" identify "$TMP/tyneham_disc.png"
+
+# 11) garbage/truncated non-empty OUTPUT + --ensure → rebuilds
+printf 'not-a-real-png-just-garbage' > "$TMP/tyneham_disc.png"
+assert_ok "rebuilds after garbage OUTPUT" "$MAKE" --conf "$TMP/run.conf" --ensure
+assert_ok "garbage OUTPUT rebuilt valid PNG" identify "$TMP/tyneham_disc.png"
+assert_ok "garbage OUTPUT rebuilt non-empty" test -s "$TMP/tyneham_disc.png"
+
+# 12) --help exits 0
+assert_ok "--help exits 0" "$MAKE" --help
+
+# 13) INNER_MM=abc → non-zero, stderr has ERROR:, no Traceback
+sed 's/^INNER_MM=.*/INNER_MM=abc/' "$TMP/disc.conf" > "$TMP/abc.conf"
+assert_fail "rejects INNER_MM=abc" "$MAKE" --conf "$TMP/abc.conf"
+ABC_ERR="$("$MAKE" --conf "$TMP/abc.conf" 2>&1 >/dev/null || true)"
+case "$ABC_ERR" in
+  *ERROR:*) echo "PASS: INNER_MM=abc stderr contains ERROR:"; PASS=$((PASS + 1)) ;;
+  *) echo "FAIL: INNER_MM=abc stderr missing ERROR: [$ABC_ERR]" >&2; FAIL=$((FAIL + 1)) ;;
+esac
+case "$ABC_ERR" in
+  *Traceback*) echo "FAIL: INNER_MM=abc stderr contains Traceback" >&2; FAIL=$((FAIL + 1)) ;;
+  *) echo "PASS: INNER_MM=abc stderr has no Traceback"; PASS=$((PASS + 1)) ;;
+esac
+
 echo ""
 echo "Results: $PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]

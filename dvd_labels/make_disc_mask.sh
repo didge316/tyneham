@@ -17,12 +17,14 @@ DO_PREVIEW=0
 TMP_MASK=""
 TMP_IMG=""
 TMP_OUT=""
+TMP_META=""
 cleanup() {
   local rc=$?
   set +e
   [ -n "$TMP_MASK" ] && rm -f "$TMP_MASK"
   [ -n "$TMP_IMG" ] && rm -f "$TMP_IMG"
   [ -n "$TMP_OUT" ] && rm -f "$TMP_OUT"
+  [ -n "$TMP_META" ] && rm -f "$TMP_META"
   return "$rc"
 }
 trap cleanup EXIT
@@ -76,6 +78,10 @@ META="${OUTPUT%.png}.meta"
 PREVIEW="$(dirname "$OUTPUT")/preview.png"
 
 die() { echo "ERROR: $*" >&2; exit 1; }
+
+if [ -d "$OUTPUT" ]; then
+  die "OUTPUT path is a directory: $OUTPUT"
+fi
 
 # Validate sizes (integers or simple decimals); no Python traceback on bad input
 is_num() {
@@ -157,12 +163,16 @@ build() {
   mv -f "$TMP_OUT" "$OUTPUT"
   TMP_OUT=""
 
+  # Atomic META: write temp in same directory, then mv
+  TMP_META="$(mktemp "$(dirname "$META")/.disc_meta.XXXXXX")"
   {
     echo "INNER_MM=$INNER_MM"
     echo "OUTER_MM=$OUTER_MM"
     echo "SOURCE=$SOURCE"
     echo "BUILT_AT=$(date -Iseconds)"
-  } > "$META"
+  } > "$TMP_META"
+  mv -f "$TMP_META" "$META"
+  TMP_META=""
 
   echo "Using inner=${INNER_MM}mm outer=${OUTER_MM}mm → $(basename "$OUTPUT")"
 }
