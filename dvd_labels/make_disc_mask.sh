@@ -1,0 +1,150 @@
+#!/usr/bin/env bash
+# make_disc_mask.sh — build annulus-masked DVD PNG from disc.conf
+#
+# Usage:
+#   ./make_disc_mask.sh [--conf PATH] [--ensure] [--preview]
+#
+# --ensure   rebuild only if OUTPUT stale vs conf/SOURCE/meta
+# --preview  also write preview.png (white flatten) and print path
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONF="$SCRIPT_DIR/disc.conf"
+DO_ENSURE=0
+DO_PREVIEW=0
+
+usage() {
+  echo "Usage: $0 [--conf PATH] [--ensure] [--preview]" >&2
+  exit 2
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --conf)
+      [ $# -ge 2 ] || usage
+      CONF="$2"
+      shift 2
+      ;;
+    --ensure) DO_ENSURE=1; shift ;;
+    --preview) DO_PREVIEW=1; shift ;;
+    -h|--help) usage ;;
+    *) echo "Unknown option: $1" >&2; usage ;;
+  esac
+done
+
+if [ ! -f "$CONF" ]; then
+  echo "ERROR: config not found: $CONF" >&2
+  exit 1
+fi
+
+# Resolve paths relative to the config file's directory
+CONF_DIR="$(cd "$(dirname "$CONF")" && pwd)"
+# shellcheck source=/dev/null
+source "$CONF"
+
+: "${INNER_MM:?INNER_MM missing in $CONF}"
+: "${OUTER_MM:?OUTER_MM missing in $CONF}"
+: "${SOURCE:?SOURCE missing in $CONF}"
+: "${OUTPUT:?OUTPUT missing in $CONF}"
+
+# Relative paths in conf are relative to conf dir
+case "$SOURCE" in /*) ;; *) SOURCE="$CONF_DIR/$SOURCE" ;; esac
+case "$OUTPUT" in /*) ;; *) OUTPUT="$CONF_DIR/$OUTPUT" ;; esac
+META="${OUTPUT%.png}.meta"
+PREVIEW="$(dirname "$OUTPUT")/preview.png"
+
+die() { echo "ERROR: $*" >&2; exit 1; }
+
+# Validate sizes (integers or simple decimals)
+python3 - "$INNER_MM" "$OUTER_MM" <<'PY' || die "invalid INNER_MM/OUTER_MM"
+import sys
+inner, outer = float(sys.argv[1]), float(sys.argv[2])
+ok = inner >= 15 and outer <= 120 and inner < outer
+sys.exit(0 if ok else 1)
+PY
+
+if [ ! -f "$SOURCE" ]; then
+  die "SOURCE not found: $SOURCE"
+fi
+
+if ! command -v convert >/dev/null 2>&1; then
+  die "ImageMagick 'convert' not found (install imagemagick)"
+fi
+
+is_stale() {
+  [ -f "$OUTPUT" ] || return 0
+  [ -f "$META" ] || return 0
+  # OUTPUT must be newer than conf and source
+  [ "$OUTPUT" -nt "$CONF" ] || return 0
+  [ "$OUTPUT" -nt "$SOURCE" ] || return 0
+  # meta must match current sizes
+  grep -qx "INNER_MM=$INNER_MM" "$META" || return 0
+  grep -qx "OUTER_MM=$OUTER_MM" "$META" || return 0
+  grep -qx "SOURCE=$SOURCE" "$META" || return 0
+  return 1
+}
+
+build() {
+  local canvas=4724
+  local cx=$((canvas / 2))
+  local cy=$((canvas / 2))
+  # px per mm on 120mm canvas
+  local px_per_mm
+  px_per_mm="$(python3 -c "print($canvas / 120.0)")"
+  local r_out r_in
+  r_out="$(python3 -c "print(round(float('$OUTER_MM')/2 * $px_per_mm))")"
+  r_in="$(python3 -c "print(round(float('$INNER_MM')/2 * $px_per_mm))")"
+
+  local tmp_mask tmp_img
+  tmp_mask="$(mktemp /tmp/disc_mask.XXXXXX.png)"
+  tmp_img="$(mktemp /tmp/disc_img.XXXXXX.png)"
+  # shellcheck disable=SC2064
+  trap "rm -f '$tmp_mask' '$tmp_img'" RETURN
+
+  # circle CX,CY PX,PY — PX,PY is a point on the circumference: (cx, cy - r)
+  convert -size "${canvas}x${canvas}" xc:none \
+    -fill white -draw "circle $cx,$cy $cx,$((cy - r_out))" \
+    -fill black -draw "circle $cx,$cy $cx,$((cy - r_in))" \
+    "$tmp_mask"
+
+  # Fit source into outer diameter box, center on full canvas, keep alpha
+  local box
+  box="$(python3 -c "print(round(float('$OUTER_MM')/120 * $canvas))")"
+  convert "$SOURCE" -resize "${box}x${box}" -gravity center \
+    -background none -extent "${canvas}x${canvas}" \
+    "$tmp_img"
+
+  convert "$tmp_img" "$tmp_mask" -alpha off -compose CopyOpacity -composite \
+    "$OUTPUT"
+
+  {
+    echo "INNER_MM=$INNER_MM"
+    echo "OUTER_MM=$OUTER_MM"
+    echo "SOURCE=$SOURCE"
+    echo "BUILT_AT=$(date -Iseconds)"
+  } > "$META"
+
+  echo "Using inner=${INNER_MM}mm outer=${OUTER_MM}mm → $(basename "$OUTPUT")"
+}
+
+preview() {
+  convert "$OUTPUT" -background white -alpha remove -alpha off "$PREVIEW"
+  echo "Preview: $PREVIEW"
+  if [ -n "${DISPLAY:-}" ] && command -v xdg-open >/dev/null 2>&1; then
+    xdg-open "$PREVIEW" >/dev/null 2>&1 || true
+  fi
+}
+
+if [ "$DO_ENSURE" -eq 1 ]; then
+  if is_stale; then
+    build
+  else
+    echo "Mask up to date: inner=${INNER_MM}mm outer=${OUTER_MM}mm → $(basename "$OUTPUT")"
+  fi
+else
+  build
+fi
+
+if [ "$DO_PREVIEW" -eq 1 ]; then
+  preview
+fi
